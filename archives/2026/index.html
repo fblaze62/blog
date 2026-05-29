@@ -1995,7 +1995,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1780052330556),
+    lastupdate: new Date(1780059197942),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2003,8 +2003,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       fancybox_js: 'https://unpkg.com/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.umd.js'
     },
     sidebar: {
-      for_page: ["blogger","category","tagcloud","lastupdate","webinfo"],
-      for_post: ["blogger","toc"],
+      for_page: ["blogger","category","tagcloud","webinfo"],
+      for_post: ["blogger","toc","webinfo"],
       webinfo: {
         lastupd: {
           enable: true,
@@ -2420,12 +2420,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.fblaze62.top/posts/hello-world/">
+  <link itemprop="mainEntityOfPage" href="http://blog.fblaze62.top/posts/crack-mythware/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="FeatherBlaze's Blog">
   </span>
   <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="name" content="Hello World">
+    <meta itemprop="name" content="破解极域，解放你的电脑！">
     <meta itemprop="description" content="FeatherBlaze的个人博客。欢迎看看！">
   </span>
   
@@ -2438,16 +2438,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/posts/hello-world/"  itemprop="url">
-        Hello World
+      <a href="/posts/crack-mythware/"  itemprop="url">
+        破解极域，解放你的电脑！
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
+        破解上网&#x2F;U盘限制极域的网络和文件限制是通过MasterHelper.exe进程和服务实现的，因此我们只需结束进程和服务即可破解。
+首先打开cmd或PowerShell（通过搜索或Win+R）,然后输入下面的指令：
+123taskkill /im MasterHelper.exe /fsc stop TDNetFiltersc stop TDFileFilter
+
+其中TASKKI...
       
     
   </div>
@@ -2455,12 +2458,24 @@ Qu...
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2026-05-25T21:31:17+08:00">2026-05-25</time>
+        <time itemprop="dateCreated datePublished" datetime="2026-05-29T19:11:48+08:00">2026-05-29</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%99%E7%A8%8B/%E8%BD%AF%E4%BB%B6/">软件</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url"><span itemprop="name">教程</span></a>
+            </span>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E6%95%99%E7%A8%8B/%E8%BD%AF%E4%BB%B6/" itemprop="url"><span itemprop="name">软件</span></a>
+            </span>
+          
         
       </div>
       
         <div>
-          <a class='readmore' href='/posts/hello-world/' itemprop="url">
+          <a class='readmore' href='/posts/crack-mythware/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2612,36 +2627,56 @@ Qu...
     
     
       
-
-    
   
-
-  
+  <section class="widget category desktop">
     
-    
-      
-
-    
-  
-
-  
-    
-    
-      
-
-<section class="widget desktop mobile">
-  
   <header>
     
-      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
+      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
     
   </header>
 
 
-  <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/posts/hello-world/"><div class="item"><time>2026-05-25</time></div><span>Hello World</span></a></li></ul>
-  </div>
-</section>
+    <div class='content'>
+      <ul class="entry navigation">
+        
+          <li><a class="flat-box"
+            title="/categories/%E6%95%99%E7%A8%8B/" href="/categories/%E6%95%99%E7%A8%8B/"
+            active-action="action-categoriesE69599E7A88B"
+            ><div class='name'>教程</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E6%95%99%E7%A8%8B/%E8%BD%AF%E4%BB%B6/" href="/categories/%E6%95%99%E7%A8%8B/%E8%BD%AF%E4%BB%B6/"
+            active-action="action-categoriesE69599E7A88BE8BDAFE4BBB6"
+            ><div class='name'>软件</div><div class='badge'>(1)</div></a></li>
+        
+      </ul>
+    </div>
+  </section>
+
+
+    
+  
+
+  
+    
+    
+      
+  
+  <section class="widget tagcloud desktop mobile">
+    
+  <header>
+    
+      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 14px; color: #999">教程</a> <a href="/tags/%E6%9E%81%E5%9F%9F/" style="font-size: 14px; color: #999">极域</a>
+    </div>
+  </section>
+
 
     
   
@@ -2766,7 +2801,7 @@ Qu...
     
       
         <div class='copyright'>
-        <p><a href="/">Copyright © since 2017 XXX</a></p>
+        <p><a href="/">Copyright © since 2026 FeatherBlaze</a></p>
 
         </div>
       
