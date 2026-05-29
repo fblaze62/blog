@@ -46,7 +46,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2026-05-29T11:11:48.000Z">
-<meta property="article:modified_time" content="2026-05-29T12:58:49.570Z">
+<meta property="article:modified_time" content="2026-05-29T13:03:30.401Z">
 <meta property="article:author" content="FeatherBlaze">
 <meta property="article:tag" content="教程">
 <meta property="article:tag" content="极域">
@@ -2000,7 +2000,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1780059545840),
+    lastupdate: new Date(1780061622876),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2360,7 +2360,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
             
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <a itemprop="url" class='author' href="/" rel="nofollow">
+  <a itemprop="url" class='author' href="about/" rel="nofollow">
     <img itemprop="image" src="https://gcore.jsdelivr.net/gh/fblaze62/blog@main/images/avatar.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/fblaze62/blog@main/images/avatar.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
     <p itemprop="name">FeatherBlaze</p>
   </a>
@@ -2429,18 +2429,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h2 id="破解上网-U盘限制"><a href="#破解上网-U盘限制" class="headerlink" title="破解上网&#x2F;U盘限制"></a>破解上网&#x2F;U盘限制</h2><p>极域的网络和文件限制是通过<code>MasterHelper.exe</code>进程和服务实现的，因此我们只需结束进程和服务即可破解。</p>
-<p>首先打开<code>cmd</code>或<code>PowerShell</code>（通过搜索或<code>Win+R</code>）,然后输入下面的指令：</p>
+    <h2 id="破解上网-U盘限制"><a href="#破解上网-U盘限制" class="headerlink" title="破解上网&#x2F;U盘限制"></a>破解上网&#x2F;U盘限制</h2><p>极域的网络和文件限制是通过MasterHelper.exe进程和服务实现的，因此我们只需结束进程和服务即可破解。</p>
+<p>首先打开cmd或PowerShell（通过搜索或Win+R）,然后输入下面的指令：</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">taskkill</span> /im MasterHelper.exe /f</span><br><span class="line">sc stop TDNetFilter</span><br><span class="line">sc stop TDFileFilter</span><br></pre></td></tr></table></figure>
 
-<p>其中<code>taskkill /im MasterHelper.exe /f</code>结束<code>MasterHelper.exe</code>进程，<code>sc stop TDNetFilter</code>解除网络过滤服务，<code>sc stop TDFileFilter</code>解除文件过滤服务（U盘&#x2F;光盘&#x2F;文件锁）。</p>
+<p>其中<code>taskkill /im MasterHelper.exe /f</code>结束MasterHelper.exe进程，<code>sc stop TDNetFilter</code>解除网络过滤服务，<code>sc stop TDFileFilter</code>解除文件过滤服务（U盘&#x2F;光盘&#x2F;文件锁）。</p>
 <p>如果已经被限制网络，可以访问<a target="_blank" rel="noopener" href="https://fbblog.pages.dev/">fbblog.pages.dev</a>（本博客的另一个域名），可能可以无视网络限制正常访问。打开后搜索该文章或直接访问<a target="_blank" rel="noopener" href="https://fbblog.pages.dev/posts/crack-mythware">本文链接</a>。</p>
-<h2 id="结束极域"><a href="#结束极域" class="headerlink" title="结束极域"></a>结束极域</h2><p>首先打开<code>cmd</code>或<code>PowerShell</code>（通过搜索或<code>Win+R</code>）,然后输入下面的指令：</p>
+<h2 id="结束极域"><a href="#结束极域" class="headerlink" title="结束极域"></a>结束极域</h2><p>首先打开cmd或PowerShell（通过搜索或Win+R）,然后输入下面的指令：</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">taskkill</span> /im StudentMain.exe /f</span><br></pre></td></tr></table></figure>
 
 <p>这样就可以结束极域了，但教师端可以看到你没有连接上。</p>
-<p>如果不生效，可尝试用管理员运行<code>cmd</code>或<code>PowerShell</code>。</p>
-<h2 id="屏幕广播"><a href="#屏幕广播" class="headerlink" title="屏幕广播"></a>屏幕广播</h2><h3 id="结束任务"><a href="#结束任务" class="headerlink" title="结束任务"></a>结束任务</h3><p>在教师开启屏幕广播前，打开任务管理器（通过搜索、右键任务栏、<code>Ctrl+Shift+Esc</code>或<code>Win+R</code>&gt;<code>taskmgr</code>），确保 选项&gt;置于顶层 已被开启，然后拖动标题栏将任务管理器放到任务栏区域，边缘不超出任务栏。</p>
+<p>如果不生效，可尝试用管理员运行cmd或PowerShell。</p>
+<h2 id="屏幕广播"><a href="#屏幕广播" class="headerlink" title="屏幕广播"></a>屏幕广播</h2><h3 id="结束任务"><a href="#结束任务" class="headerlink" title="结束任务"></a>结束任务</h3><p>在教师开启屏幕广播前，打开任务管理器（通过搜索、右键任务栏、Ctrl+Shift+Esc或Win+R&gt;<code>taskmgr</code>），确保 选项&gt;置于顶层 已被开启，然后拖动标题栏将任务管理器放到任务栏区域，边缘不超出任务栏。</p>
 <p>教师开启屏幕广播后，拖出任务管理器，找到“Windows 进程”中的“桌面窗口管理器”，右键结束进程。</p>
 <p>等待一段时间（桌面可能会黑屏，几乎所有非系统进程都会被结束），极域就被结束了，但教师端可以看到你没有连接上。</p>
 <h3 id="卡退"><a href="#卡退" class="headerlink" title="卡退"></a>卡退</h3><p>教师开启屏幕广播后，移动鼠标到屏幕顶部，反复点击“↺”或“↻”按钮，不要停止，大约5~10分钟屏幕广播就会卡退。</p>
@@ -2449,8 +2449,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>你可以当场下载或提前下载，存在U盘中（可能需要先<a href="https://blog.fblaze62.top/posts/crack-mythware/#%E7%A0%B4%E8%A7%A3%E4%B8%8A%E7%BD%91-U%E7%9B%98%E9%99%90%E5%88%B6">破解上网&#x2F;U盘限制</a>）。</p>
 <h2 id="防止截屏"><a href="#防止截屏" class="headerlink" title="防止截屏"></a>防止截屏</h2><p>可以使用<a target="_blank" rel="noopener" href="https://www.cnblogs.com/petyr/articles/19001342">这个工具</a>让老师查看你的屏幕时看不到你设定的窗口，下载：<a target="_blank" rel="noopener" href="https://wwzk.lanzouo.com/igG7a31kn7kf">GUI版(推荐)</a>&#x2F;<a target="_blank" rel="noopener" href="https://wwzk.lanzouo.com/iTQDY31j84zg">命令行</a>(提取码:<code>114514</code>)。</p>
 <p>可能会被杀毒软件误报，选择保留即可。</p>
-<p>GUI版：输入对应进程名称然后点击“开启防护”即可。进程名称可在任务管理器（通过搜索、右键任务栏、<code>Ctrl+Shift+Esc</code>或<code>Win+R</code>&gt;<code>taskmgr</code>）中右键选择“打开文件所在的位置”或“详细信息”查看。</p>
-<p>命令行版：在主程序所在的目录的文件路径栏输入<code>cmd</code>或<code>PowerShell</code>，或打开<code>cmd</code>或<code>PowerShell</code>（通过搜索或<code>Win+R</code>）后使用<code>cd</code>命令进入。输入<code>injector.exe 进程名称 -notopmost</code>即可。进程名称可在任务管理器（通过搜索、右键任务栏、<code>Ctrl+Shift+Esc</code>或<code>Win+R</code>&gt;<code>taskmgr</code>）中右键选择“打开文件所在的位置”或“详细信息”查看。</p>
+<p>GUI版：输入对应进程名称然后点击“开启防护”即可。进程名称可在任务管理器（通过搜索、右键任务栏、Ctrl+Shift+Esc或Win+R&gt;<code>taskmgr</code>）中右键选择“打开文件所在的位置”或“详细信息”查看。</p>
+<p>命令行版：在主程序所在的目录的文件路径栏输入<code>cmd</code>或<code>PowerShell</code>，或打开cmd或PowerShell（通过搜索或Win+R）后使用<code>cd</code>命令进入文件夹。输入<code>injector.exe 进程名称 -notopmost</code>即可。进程名称可在任务管理器（通过搜索、右键任务栏、Ctrl+Shift+Esc或Win+R&gt;<code>taskmgr</code>）中右键选择“打开文件所在的位置”或“详细信息”查看。</p>
 <h2 id="卸载极域"><a href="#卸载极域" class="headerlink" title="卸载极域"></a>卸载极域</h2><p>卸载极域一般需要密码，可以使用这个万能密码：<code>mythware_super_password</code>。</p>
 <p>不推荐，因为教师端可以看到你没有连接上。</p>
 
@@ -2477,7 +2477,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2026-05-29T20:58:49+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2026-05-29T21:03:30+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2026年5月29日</p>
@@ -3245,7 +3245,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"FeatherBlaze's Blog","url":"http://blog.fblaze62.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"FeatherBlaze","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.fblaze62.top/","sameAs":["https://github.com/volantis-x"],"description":"FeatherBlaze的个人博客。欢迎看看！"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.fblaze62.top/","name":"FeatherBlaze's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.fblaze62.top/categories/教程/","name":"教程"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.fblaze62.top/posts/crack-mythware/","name":"破解极域，解放你的电脑！"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"FeatherBlaze's Blog","url":"http://blog.fblaze62.top/","keywords":null,"description":"FeatherBlaze的个人博客。欢迎看看！","author":{"@type":"Person","name":"FeatherBlaze","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.fblaze62.top/","description":"FeatherBlaze的个人博客。欢迎看看！"},"publisher":{"@type":"Organization","name":"FeatherBlaze's Blog","url":"http://blog.fblaze62.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.fblaze62.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"破解极域，解放你的电脑！","description":"FeatherBlaze的个人博客。欢迎看看！","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.fblaze62.top/posts/crack-mythware/"},"author":{"@type":"Person","name":"FeatherBlaze","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.fblaze62.top/"},"publisher":{"@type":"Organization","name":"FeatherBlaze's Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.fblaze62.top/posts/crack-mythware/","wordCount":0,"datePublished":"2026-05-29T11:11:48.000Z","dateModified":"2026-05-29T12:58:49.570Z","articleSection":"教程","keywords":"极域,教程,软件","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"FeatherBlaze's Blog","url":"http://blog.fblaze62.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"FeatherBlaze","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.fblaze62.top/","sameAs":["https://github.com/volantis-x"],"description":"FeatherBlaze的个人博客。欢迎看看！"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.fblaze62.top/","name":"FeatherBlaze's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.fblaze62.top/categories/教程/","name":"教程"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.fblaze62.top/posts/crack-mythware/","name":"破解极域，解放你的电脑！"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"FeatherBlaze's Blog","url":"http://blog.fblaze62.top/","keywords":null,"description":"FeatherBlaze的个人博客。欢迎看看！","author":{"@type":"Person","name":"FeatherBlaze","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.fblaze62.top/","description":"FeatherBlaze的个人博客。欢迎看看！"},"publisher":{"@type":"Organization","name":"FeatherBlaze's Blog","url":"http://blog.fblaze62.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.fblaze62.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"破解极域，解放你的电脑！","description":"FeatherBlaze的个人博客。欢迎看看！","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.fblaze62.top/posts/crack-mythware/"},"author":{"@type":"Person","name":"FeatherBlaze","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.fblaze62.top/"},"publisher":{"@type":"Organization","name":"FeatherBlaze's Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.fblaze62.top/posts/crack-mythware/","wordCount":0,"datePublished":"2026-05-29T11:11:48.000Z","dateModified":"2026-05-29T13:03:30.401Z","articleSection":"教程","keywords":"极域,教程,软件","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
