@@ -12,7 +12,7 @@ export const profileConfig: ProfileConfig = {
 	name: "FeatherBlaze",
 
 	// 个人签名
-	bio: "等风来，不如追风去。",
+	bio: "达成成就：超越生死！",
 
 	// 链接配置
 	// 已经预装的图标集：fa7-brands，fa7-regular，fa7-solid，material-symbols，simple-icons

@@ -1,4 +1,13 @@
-。
+---
+title: 破解极域，解放你的电脑！
+published: 2026-05-29
+pinned: false
+description: 用多种方法解除极域教师端的控制！推荐 [破解上网/U盘限制](https://blog.fblaze62.top/posts/crack-mythware/#%E7%A0%B4%E8%A7%A3%E4%B8%8A%E7%BD%91-U%E7%9B%98%E9%99%90%E5%88%B6)+[禁用全屏广播](https://blog.fblaze62.top/posts/crack-mythware/#%E7%A6%81%E7%94%A8%E5%85%A8%E5%B1%8F%E5%B9%BF%E6%92%AD)+[防止截屏](https://blog.fblaze62.top/posts/crack-mythware/#%E9%98%B2%E6%AD%A2%E6%88%AA%E5%B1%8F) 三种方法组合。
+tags: [教程, 软件, 极域]
+category: 教程
+draft: false
+# image: ./images/crack-mythware.avif
+---
 
 ## 破解上网/U盘限制
 

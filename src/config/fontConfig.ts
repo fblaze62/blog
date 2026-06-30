@@ -75,7 +75,7 @@ export const fontsList: FontDefinition[] = [
 		options: {
 			variants: [
 				{
-					src: ["./public/assets/fonts/MiSans-Regular.ttf"],
+					src: ["./public/assets/fonts/MiSans-Regular.woff2"],
 				},
 			],
 		},
