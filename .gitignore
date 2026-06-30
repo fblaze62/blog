@@ -30,9 +30,7 @@ yarn.lock
 .idea
 *.iml
 .claude
-
-# docs
-Firefly-docs/
+.vscode
 
 cache/
 package/
