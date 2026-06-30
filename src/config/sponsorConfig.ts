@@ -30,7 +30,7 @@ export const sponsorConfig: SponsorConfig = {
 		// 	link: "",
 		// 	description: "使用 支付宝 扫码打赏",
 		// 	enabled: true,
-		// },？
+		// },
 		// {
 		// 	name: "微信",
 		// 	icon: "fa7-brands:weixin",
