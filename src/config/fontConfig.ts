@@ -37,15 +37,6 @@ export const fontsList: FontDefinition[] = [
 		fallbacks: ["sans-serif"],
 	},
 	{
-		name: "Inter",
-		cssVariable: "--font-inter",
-		provider: "fontsource",
-		weights: ["300", "400", "500", "600", "700"],
-		styles: ["normal"],
-		subsets: ["latin", "cyrillic"],
-		fallbacks: ["sans-serif"],
-	},
-	{
 		name: "JetBrains Mono",
 		cssVariable: "--font-jetbrains-mono",
 		provider: "google",
@@ -96,7 +87,7 @@ export const fontConfig: FontSelectionConfig = {
 	// 主页横幅主标题字体
 	bannerTitleFont: "--font-zen-maru-gothic",
 	// 主页横幅副标题字体
-	bannerSubtitleFont: "--font-inter",
+	bannerSubtitleFont: "--font-misans",
 	// 导航栏标题字体
 	navbarTitleFont: "",
 	// 代码块字体（用于代码高亮和等宽字体场景）
