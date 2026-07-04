@@ -60,8 +60,8 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "知乎",
 			icon: "fa7-brands:zhihu",
-			url: "https://www.zhihu.com/people/featherblaze"
-			showname: false,
+			url: "https://www.zhihu.com/people/featherblaze",
+			showName: false,
 		},
 		{
 			name: "洛谷",
