@@ -36,7 +36,7 @@
    - GitHub Pages
 
      Select *GitHub Actions* in the *Source* options.
-   - CloudFlare Workers / Pages
+   - Cloudflare Workers / Pages
 
      Build Command: `pnpm build`<br>
      Output Directory: `dist`
