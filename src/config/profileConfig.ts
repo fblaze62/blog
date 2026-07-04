@@ -58,15 +58,15 @@ export const profileConfig: ProfileConfig = {
 			showName: false,
 		},
 		{
+			name: "知乎",
+			icon: "fa7-brands:zhihu",
+			url: "https://www.zhihu.com/people/featherblaze"
+			showname: false,
+		},
+		{
 			name: "洛谷",
 			icon: "simple-icons:luogu",
 			url: "https://www.luogu.com.cn/user/1656141",
-			showName: false,
-		},
-		{
-			name: "链滴",
-			icon: "simple-icons:siyuan",
-			url: "https://ld246.com/member/FeatherBlaze/points",
 			showName: false,
 		},
 		{
