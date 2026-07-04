@@ -42,4 +42,4 @@
      Output Directory: `dist`
 6. Configuration
 
-   Refer to the [Astro documentation](https://docs.astro.build/getting-started/) 和 [Firefly theme documentation](https://docs-firefly.cuteleaf.cn/).
+   Refer to the [Astro documentation](https://docs.astro.build/getting-started/) and [Firefly theme documentation](https://docs-firefly.cuteleaf.cn/).
