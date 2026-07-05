@@ -7,25 +7,21 @@
    ```bash
    git clone https://github.com/fblaze62/blog.git
    ```
-
 2. Install dependencies
 
    ```bash
    pnpm install
    ```
-
 3. Start the development server
 
    ```bash
    pnpm dev
    ```
-
 4. Build for production
 
    ```bash
    pnpm build
    ```
-
 5. Deploy
    - Vercel
 
