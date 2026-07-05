@@ -2,14 +2,16 @@
 title: 破解极域，解放你的电脑！
 published: 2026-05-29
 pinned: false
-description: 用多种方法解除极域教师端的控制！推荐 [破解上网/U盘限制](https://blog.fblaze62.top/posts/crack-mythware/#%E7%A0%B4%E8%A7%A3%E4%B8%8A%E7%BD%91-U%E7%9B%98%E9%99%90%E5%88%B6)+[禁用全屏广播](https://blog.fblaze62.top/posts/crack-mythware/#%E7%A6%81%E7%94%A8%E5%85%A8%E5%B1%8F%E5%B9%BF%E6%92%AD)+[防止截屏](https://blog.fblaze62.top/posts/crack-mythware/#%E9%98%B2%E6%AD%A2%E6%88%AA%E5%B1%8F) 三种方法组合。
+description: 用多种方法解除极域教师端的控制，拯救你的电脑！
 tags: [教程, 软件, 极域]
 category: 教程
 draft: false
 # image: ./images/crack-mythware.avif
 ---
 
-## 破解上网/U盘限制
+相信大家都被极域的控制困扰过，这篇文章就是来拯救你的！破解上网限制、防截屏……一应俱全。其中的命令不用记，在[破解网络/U盘限制](https://fbblog.pages.dev/posts/crack-mythware/#%E7%A0%B4%E8%A7%A3%E7%BD%91%E7%BB%9Cu%E7%9B%98%E9%99%90%E5%88%B6)部分有可以无视极域网络限制访问的链接。
+
+## 破解网络/U盘限制
 
 极域的网络和文件限制是通过MasterHelper.exe进程和服务实现的，因此我们只需结束进程和服务即可破解。
 
@@ -59,11 +61,11 @@ taskkill /im StudentMain.exe /f
 
 你可以当场下载或提前下载，存在U盘中（可能需要先破解上网/U盘限制）。
 
-## 防止截屏
+## 防截屏
 
-可以使用[这个工具](https://www.cnblogs.com/petyr/articles/19001342)让老师查看你的屏幕时看不到你设定的窗口，下载：[GUI版(推荐)](https://wwzk.lanzouo.com/igG7a31kn7kf)/[命令行(提取码:114514)](https://wwzk.lanzouo.com/iTQDY31j84zg)。
+可以使用[这个工具](https://www.cnblogs.com/petyr/articles/19001342)让老师查看你的屏幕时看不到你设定的窗口，下载：[GUI版(推荐)](https://wwzk.lanzouo.com/igG7a31kn7kf)/[命令行](https://wwzk.lanzouo.com/iTQDY31j84zg)(提取码:114514)。
 
-可能会被杀毒软件误报，选择保留即可。
+可能会被杀毒软件或浏览器误报，选择保留即可。
 
 GUI版：输入对应进程名称然后点击“开启防护”即可。进程名称可在任务管理器（通过搜索、右键任务栏、Ctrl+Shift+Esc或Win+R>taskmgr）中右键选择“打开文件所在的位置”或“详细信息”查看。
 
