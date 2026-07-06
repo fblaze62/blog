@@ -3,8 +3,8 @@ title: 国内免科学上网使用Discord
 published: 2026-05-31
 pinned: false
 description: 一个可以加速 Discord 的加速器——Steamcommunity 302。
-tags: [Discord, 加速器, 教程, 软件, Steamcommunity 302]
-category: 教程
+tags: [教程, 软件, Discord, 加速器, Steamcommunity 302]
+category: 软件
 draft: false
 # image: ./images/discord-accelerator.avif
 ---
