@@ -31,7 +31,7 @@
      Install Command: `pnpm install`
    - GitHub Pages
 
-     Select *GitHub Actions* in the *Source* options.
+     Set the *Source* option to *GitHub Actions*.
    - Cloudflare Workers / Pages
 
      Build Command: `pnpm build`<br>
