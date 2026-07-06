@@ -13,9 +13,9 @@ draft: false
 
 ## 破解网络/U盘限制
 
-极域的网络和文件限制是通过MasterHelper.exe进程和服务实现的，因此我们只需结束进程和服务即可破解。
+极域的网络和文件限制是通过服务和 MasterHelper.exe 进程实现的，因此我们只需结束进程和服务即可破解。
 
-首先打开cmd或PowerShell（通过搜索或Win+R）,然后输入下面的指令：
+首先打开 cmd 或 PowerShell（通过搜索或Win+R）,然后输入下面的指令：
 
 ```cmd
 taskkill /im MasterHelper.exe /f
@@ -23,13 +23,13 @@ sc stop TDNetFilter
 sc stop TDFileFilter
 ```
 
-其中`taskkill /im MasterHelper.exe /f`结束MasterHelper.exe进程，`sc stop TDNetFilter`解除网络过滤服务，`sc stop TDFileFilter`解除文件过滤服务（U盘/光盘/文件锁）。
+其中`taskkill /im MasterHelper.exe /f`结束 MasterHelper.exe 进程，`sc stop TDNetFilter`解除网络过滤服务，`sc stop TDFileFilter`解除文件过滤服务（U盘/光盘/文件锁）。
 
-如果已经被限制网络，可以访问[fbblog.pages.dev](https://fbblog.pages.dev/)（本博客的另一个域名），可能可以无视网络限制正常访问。打开后搜索该文章或直接访问[本文链接](https://fbblog.pages.dev/posts/crack-mythware/)。
+如果已经被限制网络，可以访问 [fbblog.pages.dev](https://fbblog.pages.dev/)（本博客的另一个域名），可能可以无视网络限制正常访问。打开后搜索该文章或直接访问[本文链接](https://fbblog.pages.dev/posts/crack-mythware/)。
 
 ## 结束极域
 
-首先打开cmd或PowerShell（通过搜索或Win+R）,然后输入下面的指令：
+首先打开 cmd 或 PowerShell（通过搜索或Win+R）,然后输入下面的指令：
 
 ```cmd
 taskkill /im StudentMain.exe /f
@@ -37,7 +37,7 @@ taskkill /im StudentMain.exe /f
 
 这样就可以结束极域了，但教师端可以看到你没有连接上。
 
-如果不生效，可尝试用管理员运行cmd或PowerShell。
+如果不生效，可尝试用管理员运行 cmd 或 PowerShell。
 
 ## 屏幕广播
 
@@ -57,19 +57,19 @@ taskkill /im StudentMain.exe /f
 
 ### 禁用全屏广播
 
-你可以借助[极域工具包](https://blog.csdn.net/weixin_42112038/article/details/127480471)窗口化屏幕广播，下载链接：[蓝奏云(提取码:bbzl)](https://wwt.lanzoub.com/b00pu06li)/[GitHub](https://github.com/BengbuGuards/MythwareToolkit/releases)。
+你可以借助[极域工具包](https://blog.csdn.net/weixin_42112038/article/details/127480471)窗口化屏幕广播，下载链接：[蓝奏云(提取码:bbzl)](https://wwt.lanzoub.com/b00pu06li)/[GitHub Releases](https://github.com/BengbuGuards/MythwareToolkit/releases)。
 
 你可以当场下载或提前下载，存在U盘中（可能需要先破解上网/U盘限制）。
 
 ## 防截屏
 
-可以使用[这个工具](https://www.cnblogs.com/petyr/articles/19001342)让老师查看你的屏幕时看不到你设定的窗口，下载：[GUI版(推荐)](https://wwzk.lanzouo.com/igG7a31kn7kf)/[命令行](https://wwzk.lanzouo.com/iTQDY31j84zg)(提取码:114514)。
+可以使用[这个工具](https://www.cnblogs.com/petyr/articles/19001342)让老师查看你的屏幕时看不到你设定的窗口，下载链接：[GUI版(推荐)](https://wwzk.lanzouo.com/igG7a31kn7kf)/[命令行](https://wwzk.lanzouo.com/iTQDY31j84zg)(提取码:114514)。
 
 可能会被杀毒软件或浏览器误报，选择保留即可。
 
 GUI版：输入对应进程名称然后点击“开启防护”即可。进程名称可在任务管理器（通过搜索、右键任务栏、Ctrl+Shift+Esc或Win+R>taskmgr）中右键选择“打开文件所在的位置”或“详细信息”查看。
 
-命令行版：在主程序所在的目录的文件路径栏输入`cmd`或`PowerShell`，或打开cmd或PowerShell（通过搜索或Win+R）后使用`cd`命令进入文件夹。输入`injector.exe 进程名称 -notopmost`即可。进程名称可在任务管理器（通过搜索、右键任务栏、Ctrl+Shift+Esc或Win+R>`taskmgr`）中右键选择“打开文件所在的位置”或“详细信息”查看。
+命令行版：在主程序所在的目录的文件路径栏输入`cmd`或`PowerShell`，或打开 cmd 或 PowerShell（通过搜索或Win+R）后使用`cd`命令进入文件夹。输入`injector.exe 进程名称 -notopmost`即可。进程名称可在任务管理器（通过搜索、右键任务栏、Ctrl+Shift+Esc或Win+R>`taskmgr`）中右键选择“打开文件所在的位置”或“详细信息”查看。
 
 ## 卸载极域
 
