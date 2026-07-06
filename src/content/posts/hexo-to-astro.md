@@ -88,6 +88,7 @@ published: 是否发布
 这是 Astro 的：
 
 ```markdown
+---
 title: 标题
 published: 发布时间 (yyyy-MM-dd)
 pinned: 是否置顶
@@ -96,6 +97,7 @@ tags: [标签1, 标签2, 标签3]
 category: 分类
 draft: 是否是草稿
 image: 封面路径或URL
+---
 ```
 
 只需要替换一下一部分名称和日期的格式就可以了。
