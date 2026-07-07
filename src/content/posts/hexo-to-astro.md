@@ -1,6 +1,7 @@
 ---
 title: 将博客从 Hexo 迁移到 Astro
 published: 2026-07-06
+updated: 2026-07-07
 pinned: false
 description: 一次把博客从 Hexo 迁移到 Astro 的记录。
 tags: [博客, Astro, Hexo]
@@ -68,12 +69,13 @@ draft: false
 
 文章最主要的不同就是 Front-matter 了。
 
-这是 Hexo 的 Front-matter 格式：（置顶和封面取决于主题）
+这是 Hexo 的 Front-matter 格式：（作者、置顶和封面取决于主题）
 
 ```markdown
 ---
 title: 标题
 date: 发布时间 (yyyy-MM-dd HH:mm:ss)
+updated: 更新时间 (yyyy-MM-dd HH:mm:ss)
 excerpt: 摘要
 tags:
   - 标签1
@@ -85,12 +87,14 @@ published: 是否发布
 ---
 ```
 
-这是 Astro 的：
+这是 Astro 的：（Astro 没有内置，我用的是 Firefly 主题）
 
 ```markdown
 ---
 title: 标题
-published: 发布时间 (yyyy-MM-dd)
+author: 作者
+published: 发布日期 (yyyy-MM-dd)
+updated: 更新日期 (yyyy-MM-dd)
 pinned: 是否置顶
 description: 摘要
 tags: [标签1, 标签2, 标签3]

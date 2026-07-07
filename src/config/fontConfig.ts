@@ -36,24 +36,24 @@ export const fontsList: FontDefinition[] = [
 		subsets: ["latin", "cyrillic"],
 		fallbacks: ["sans-serif"],
 	},
-	{
-		name: "JetBrains Mono",
-		cssVariable: "--font-jetbrains-mono",
-		provider: "google",
-		weights: ["400", "700"],
-		styles: ["normal"],
-		subsets: ["latin", "cyrillic"],
-		fallbacks: [
-			"ui-monospace",
-			"SFMono-Regular",
-			"Menlo",
-			"Monaco",
-			"Consolas",
-			"Liberation Mono",
-			"Courier New",
-			"monospace",
-		],
-	},
+	// {
+	// 	name: "JetBrains Mono",
+	// 	cssVariable: "--font-jetbrains-mono",
+	// 	provider: "google",
+	// 	weights: ["400", "700"],
+	// 	styles: ["normal"],
+	// 	subsets: ["latin", "cyrillic"],
+	// 	fallbacks: [
+	// 		"ui-monospace",
+	// 		"SFMono-Regular",
+	// 		"Menlo",
+	// 		"Monaco",
+	// 		"Consolas",
+	// 		"Liberation Mono",
+	// 		"Courier New",
+	// 		"monospace",
+	// 	],
+	// },
 	// ─── 本地字体示例 ───
 	// 使用步骤：
 	// 1. 将 TTF/OTF/WOFF2 字体文件放在 public/assets/fonts/ 目录下
@@ -71,6 +71,19 @@ export const fontsList: FontDefinition[] = [
 			],
 		},
 		fallbacks: ["sans-serif"],
+	},
+	{
+		name: "JetBrains Maple Mono Regular",
+		cssVariable: "--font-jetbrains-maple-mono",
+		provider: "local",
+		options: {
+			variants: [
+				{
+					src: ["./public/assets/fonts/JetBrainsMapleMono-Regular.woff2"],
+				},
+			],
+		},
+		fallbacks: ["monospace"],
 	},
 ];
 
@@ -91,12 +104,16 @@ export const fontConfig: FontSelectionConfig = {
 	// 导航栏标题字体
 	navbarTitleFont: "",
 	// 代码块字体（用于代码高亮和等宽字体场景）
-	codeFont: "--font-jetbrains-mono",
+	codeFont: "--font-jetbrains-maple-mono",
 
 	// 本地字体子集化配置（构建时由 scripts/subset-fonts.ts 处理）
 	// key 为 fonts 数组中对应的 cssVariable，value 为子集化选项
 	subsetFonts: {
 		"--font-misans": {
+			// 额外包含的字符
+			extraChars: "",
+		},
+		"--font-jetbrains-maple-mono": {
 			// 额外包含的字符
 			extraChars: "",
 		},
