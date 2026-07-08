@@ -61,7 +61,6 @@ export type FontSelectionConfig = {
 	 * 当前选择的字体 CSS 变量名，支持多个字体组合。
 	 * 填写 fontConfig.ts fonts 中定义的 cssVariable 值。
 	 * 使用 "system" 表示系统字体（不加载任何自定义字体）。
-	 * 使用 "misans" 表示使用 misans-webfont 字体。
 	 */
 	selected: string | string[];
 	/** 各区域独立字体 CSS 变量名（留空则使用全局 selected 字体） */
