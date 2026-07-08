@@ -79,7 +79,7 @@ export const fontsList: FontDefinition[] = [
 		options: {
 			variants: [
 				{
-					src: ["./public/assets/fonts/JetBrainsMapleMono-Regular.woff2"],
+					src: ["./public/assets/fonts/JetBrainsMapleMono-Regular.ttf"],
 				},
 			],
 		},
