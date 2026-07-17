@@ -188,7 +188,7 @@ content:
             type: date
             required: true
             options:
-              time: false
+              time: true
               format: yyyy-MM-dd HH:mm:ss
 
           - name: body
