@@ -166,7 +166,7 @@ content:
 
       # 动态 (collection)
       - name: dynamic
-        label: 📓 动态
+        label: 📓 个人动态
         type: collection
         path: src/content/dynamic
         format: yaml-frontmatter
@@ -189,104 +189,20 @@ content:
             required: true
             options:
               time: false
-              format: yyyy-MM-dd
-
-          - name: updated
-            label: 更新时间
-            type: date
-            options:
-              time: false
-              format: yyyy-MM-dd
+              format: yyyy-MM-dd HH:mm:ss
 
           - name: draft
             label: 草稿
             type: boolean
             default: false
 
-          - name: description
-            label: 文章摘要
-            type: text
-            description: 简短描述，留空则自动截取正文
-
-          - name: image
-            label: 封面图
-            type: image
-            description: 文章封面图片路径
-
-          - name: tags
-            label: 标签
-            type: select
-            options:
-              multiple: true
-              creatable: true
-              values:
-                - { label: 演示, value: 演示 }
-                - { label: 示例, value: 示例 }
-                - { label: Markdown, value: Markdown }
-                - { label: Firefly, value: Firefly }
-                - { label: 博客, value: 博客 }
-                - { label: 主题, value: 主题 }
-                - { label: 教程, value: 教程 }
-                - { label: JavaScript, value: JavaScript }
-                - { label: Astro, value: Astro }
-
-          - name: category
-            label: 分类
-            type: string
-            description: 文章分类（如"文章示例"、"技术笔记"）
-
-          - name: lang
-            label: 语言
-            type: select
-            options:
-              values:
-                - { label: 中文, value: "" }
-                - { label: English, value: en }
-                - { label: 日本語, value: ja }
-                - { label: 繁體中文, value: zh_TW }
-                - { label: Русский, value: ru }
-
           - name: pinned
             label: 置顶
             type: boolean
             default: false
 
-          - name: author
-            label: 作者
-            type: string
-            description: 覆盖默认作者名（通常留空）
-
-          - name: sourceLink
-            label: 原文链接
-            type: string
-            description: 转载/翻译文章的原始出处
-
-          - name: licenseName
-            label: 许可协议名称
-            type: string
-            description: 如 CC BY-NC-SA 4.0
-
-          - name: licenseUrl
-            label: 许可协议链接
-            type: string
-
-          - name: comment
-            label: 启用评论
-            type: boolean
-            default: true
-
-          - name: password
-            label: 文章密码
-            type: string
-            description: 设置后需要密码才能查看（留空为公开）
-
-          - name: passwordHint
-            label: 密码提示
-            type: string
-            description: 提示访问者密码是什么
-
           - name: body
-            label: 正文
+            label: 内容
             type: rich-text
             required: true
 
