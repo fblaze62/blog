@@ -176,9 +176,9 @@ content:
         exclude: ["**/images/**", "**/*.avif", "**/*.webp", "**/*.png", "**/*.jpg"]
         view:
           primary: published
-          fields: [published, tags, category, draft, pinned]
+          fields: [published, draft, pinned, comment]
           sort: ["published desc", "title asc"]
-          search: [published, description, tags, category]
+          search: [published]
           default:
             sort: published
             order: desc
@@ -200,6 +200,11 @@ content:
             label: 置顶
             type: boolean
             default: false
+
+          - name: comment
+            label: 启用评论
+            type: boolean
+            default: true
 
           - name: body
             label: 内容
