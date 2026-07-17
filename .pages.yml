@@ -17,11 +17,11 @@ media:
     output: /assets
     categories: [image]
 
-  # 头图 / 壁纸
-  - name: banner
-    label: 站点头图
-    input: public/assets/images
-    output: /assets/images
+  # 站点资源 - 自动优化
+  - name: src-assets
+    label: 站点资源(自动优化)
+    input: src/assets/images
+    output: assets/images
     categories: [image]
 
 content:
