@@ -176,7 +176,7 @@ content:
         exclude: ["**/images/**", "**/*.avif", "**/*.webp", "**/*.png", "**/*.jpg"]
         view:
           primary: published
-          fields: [published, draft, pinned, comment]
+          fields: [published]
           sort: ["published desc", "title asc"]
           search: [published]
           default:
@@ -190,21 +190,6 @@ content:
             options:
               time: false
               format: yyyy-MM-dd HH:mm:ss
-
-          - name: draft
-            label: 草稿
-            type: boolean
-            default: false
-
-          - name: pinned
-            label: 置顶
-            type: boolean
-            default: false
-
-          - name: comment
-            label: 启用评论
-            type: boolean
-            default: true
 
           - name: body
             label: 内容
