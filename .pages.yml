@@ -63,7 +63,7 @@ content:
             required: true
             options:
               time: false
-              format: yyyy-MM-dd
+              format: yyyy-MM-dd HH:mm:ss
 
           - name: updated
             label: 更新时间
