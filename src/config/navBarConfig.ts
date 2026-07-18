@@ -40,13 +40,19 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 	links.push({
 		name: "页面",
 		url: "#",
-		icon: "material-symbols:group",
+		icon: "material-symbols:file-export", // "material-symbols:group",
 		children: [
 			// 相册
 			LinkPresets.Friends,
 
 			// 追番
 			LinkPresets.Guestbook,
+
+			{
+				name: "管理",
+				url: "https://app.pagescms.org/fblaze62/blog/main/",
+				icon: "material-symbols:edit-document",
+			},
 		],
 	});
 
