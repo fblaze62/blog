@@ -23,17 +23,15 @@
    pnpm build
    ```
 5. Deploy
-   - Vercel
 
+   - Vercel<br>
      Application Preset: `Astro`<br>
      Build Command: `pnpm build`<br>
      Output Directory: `dist`<br>
      Install Command: `pnpm install`
-   - GitHub Pages
-
+   - GitHub Pages<br>
      Set the *Source* option to *GitHub Actions*.
-   - Cloudflare Workers / Pages
-
+   - Cloudflare Workers / Pages<br>
      Build Command: `pnpm build`<br>
      Output Directory: `dist`
 6. Configuration
