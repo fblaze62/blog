@@ -404,6 +404,13 @@ content:
         format: code
         description: 相册列表（ID、名称、描述、地点、日期、标签、密码）和布局设置
 
+      - name: dynamic-config
+        label: 📓 动态配置
+        type: file
+        path: src/config/dynamicConfig.ts
+        format: code
+        description: 动态页面布局设置
+
       - name: pio-config
         label: 🎭 看板娘
         type: file
@@ -417,6 +424,13 @@ content:
         path: src/config/plantumlConfig.ts
         format: code
         description: PlantUML 服务器地址和明暗主题配置
+
+      - name: mermaid-config
+        label: 📐 Mermaid 图表
+        type: file
+        path: src/config/mermaidConfig.ts
+        format: code
+        description: Mermaid 明暗主题配置
 
 settings:
   content:
