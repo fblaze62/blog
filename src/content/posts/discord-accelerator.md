@@ -6,7 +6,7 @@ pinned: false
 description: 一个可以加速 Discord 的加速器——Steamcommunity 302。
 tags: [软件, Discord, 加速器, Steamcommunity 302]
 category: 软件
-draft: false
+draft: true
 # image: ./images/discord-accelerator.avif
 ---
 
