@@ -6,7 +6,7 @@ pinned: false
 description: 用多种方法解除极域教师端的控制，拯救你的电脑！
 tags: [教程, 软件, 极域]
 category: 教程
-draft: false
+draft: true
 # image: ./images/crack-mythware.avif
 ---
 
