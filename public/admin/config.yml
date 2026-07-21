@@ -3,6 +3,8 @@
 backend:
   name: github
   repo: fblaze62/blog
+  branch: main
+  base_url: https://sveltia-cms-auth.fblaze62.workers.dev/
 
 locale: zh_CN
 
@@ -38,7 +40,10 @@ collections:
     path: src/content/posts
     media_folder: /content/posts/images
     public_folder: /images
+    create: true
     format: yaml-frontmatter
+    extension: md
+    slug: "{{slug}}"
     sortable_fields:
       fields: [title, published, tags, category, draft, pinned]
       default:
@@ -69,7 +74,10 @@ collections:
     path: src/content/dynamic
     media_folder: /content/dynamic/images
     public_folder: /images
+    create: true
     format: yaml-frontmatter
+    extension: md
+    slug: "{{slug}}"
     sortable_fields:
       fields: [published]
       default:
