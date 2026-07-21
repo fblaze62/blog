@@ -4,7 +4,7 @@ backend:
   name: github
   repo: fblaze62/blog
   branch: main
-  base_url: https://sveltia-cms-auth.fblaze62.workers.dev/
+  base_url: https://auth.fblaze62.top/
 
 locale: zh_CN
 
