@@ -10,6 +10,13 @@ media:
     output: /images
     categories: [image]
 
+  # 动态配图 - 上传到动态目录的 images 子文件夹
+  - name: dynamic-images
+    label: 动态配图
+    input: src/content/dynamic/images
+    output: /images
+    categories: [image]
+
   # public 静态资源 - 封面图、音乐封面等
   - name: assets
     label: 站点资源
@@ -17,11 +24,11 @@ media:
     output: /assets
     categories: [image]
 
-  # 站点资源 - 自动优化
-  - name: src-assets
-    label: 站点资源(自动优化)
+  # 站点图片
+  - name: images
+    label: 站点图片
     input: src/assets/images
-    output: assets/images
+    output: /ssets/images
     categories: [image]
 
 content:
@@ -89,20 +96,8 @@ content:
 
           - name: tags
             label: 标签
-            type: select
-            options:
-              multiple: true
-              creatable: true
-              values:
-                - { label: 演示, value: 演示 }
-                - { label: 示例, value: 示例 }
-                - { label: Markdown, value: Markdown }
-                - { label: Firefly, value: Firefly }
-                - { label: 博客, value: 博客 }
-                - { label: 主题, value: 主题 }
-                - { label: 教程, value: 教程 }
-                - { label: JavaScript, value: JavaScript }
-                - { label: Astro, value: Astro }
+            type: string
+            description: 文章标签（如"教程"、"软件"）
 
           - name: category
             label: 分类
@@ -177,7 +172,7 @@ content:
         view:
           primary: published
           fields: [published]
-          sort: ["published desc", "title asc"]
+          sort: ["published desc"]
           search: [published]
           default:
             sort: published

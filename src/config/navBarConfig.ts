@@ -50,6 +50,11 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 
 			{
 				name: "管理",
+				url: "/admin/",
+				icon: "material-symbols:edit-document",
+			},
+			{
+				name: "管理(站外)",
 				url: "https://app.pagescms.org/fblaze62/blog/main",
 				icon: "material-symbols:edit-document",
 			},
