@@ -238,8 +238,13 @@ collections:
   - name: cms-settings
     label: ✏️ CMS 配置
     files:
-      - name: cms-config
-        label: ❗ YAML 配置文件
+      - name: sveltia-cms
+        label: Sveltia CMS
         file: public/admin/config.yml
+        fields:
+          - { label: 配置, name: body, widget: code, required: true }
+      - name: pages-cms
+        label: Pages CMS
+        file: /.pages.yml
         fields:
           - { label: 配置, name: body, widget: code, required: true }

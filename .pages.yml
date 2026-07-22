@@ -426,6 +426,20 @@ content:
         path: src/config/mermaidConfig.ts
         format: code
         description: Mermaid 明暗主题配置
+  # ============================================================
+  # ✏️ CMS 配置
+  # ============================================================
+  - name: cms-settings
+    label: ✏️ CMS 配置
+    type: group
+    description: Sveltia CMS 的配置
+    items:
+      - name: sveltia-cms
+        label: Sveltia CMS
+        type: file
+        path: public/admin/config.yml
+        format: code
+        description: Sveltia CMS 的配置文件
 
 settings:
   content:
