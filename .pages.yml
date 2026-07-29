@@ -186,6 +186,10 @@ content:
               time: true
               format: yyyy-MM-dd HH:mm:ss
 
+          - name: location
+            label: 所在地
+            type: string
+
           - name: body
             label: 内容
             type: rich-text
