@@ -23,7 +23,7 @@ export const friendsPageConfig: FriendsPageConfig = {
 // 友链配置
 export const friendsConfig: FriendLink[] = [
 	{
-		title: "飞焰服务器",
+		title: "飞焰矩阵",
 		imgurl: "https://gcore.jsdelivr.net/gh/fblaze62/blog@main/src/assets/images/fblaze-docs.png",
 		desc: "我的 Minecraft 服务器，欢迎加入！",
 		siteurl: "https://docs.fblaze62.top",
