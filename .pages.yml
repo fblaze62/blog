@@ -187,7 +187,7 @@ content:
               format: yyyy-MM-dd HH:mm:ss
 
           - name: location
-            label: 所在地
+            label: 发布地点
             type: string
 
           - name: body

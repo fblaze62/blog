@@ -85,7 +85,7 @@ collections:
         direction: descending
     fields:
       - { label: 发布时间, name: published, widget: datetime, type: datetime, format: yyyy-MM-dd HH:mm:ss, pattern: true }
-      - { label: 所在地, name: location, widget: string }
+      - { label: 发布地点, name: location, widget: string }
       - { label: 正文, name: body, widget: richtext, required: true }
   - name: pages
     label: 📄 页面
