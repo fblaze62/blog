@@ -24,7 +24,7 @@ export const friendsPageConfig: FriendsPageConfig = {
 export const friendsConfig: FriendLink[] = [
 	{
 		title: "飞焰矩阵",
-		imgurl: "https://gcore.jsdelivr.net/gh/fblaze62/blog@main/src/assets/images/fblaze-docs.png",
+		imgurl: "https://gcore.jsdelivr.net/gh/fblaze62/blog@main/src/assets/images/FBlazeMatrix.png",
 		desc: "我的 Minecraft 服务器，欢迎加入！",
 		siteurl: "https://docs.fblaze62.top",
 		tags: ["Minecraft"],
@@ -33,7 +33,7 @@ export const friendsConfig: FriendLink[] = [
 	},
 	{
 		title: "天御千云",
-		imgurl: "https://gcore.jsdelivr.net/gh/fblaze62/blog@main/src/assets/images/tyqy.png",
+		imgurl: "https://i1.hdslb.com/bfs/face/ebbc983bcc597e4d883a02c45d85f78c3cf9c1c8.jpg@168w_168h_1c.webp",
 		desc: "一个 Minecraft & 三角洲博主，偶尔也弹弹钢琴。",
 		siteurl: "https://space.bilibili.com/3546898069719530",
 		tags: ["Friends"],
