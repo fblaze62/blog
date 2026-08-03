@@ -291,3 +291,9 @@ body.wallpaper-transparent .expressive-code .ec-collapse__gradient {
     transform: none;
   }
 }
+
+pre code {
+    font-family:
+      var(--font-jetbrains-maple-mono), ui-monospace, SFMono-Regular, Menlo, Monaco,
+      Consolas, "Liberation Mono", "Courier New", monospace !important;
+  }
