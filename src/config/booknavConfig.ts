@@ -70,7 +70,7 @@ export const booknavConfig: BooknavGroup[] = [
 	{
 		id: "minecraft",
 		name: "Minecraft",
-		icon: "simple-icons:minecraft",
+		icon: "mdi:minecraft",
 		desc: "Minecraft 相关站点和工具",
 		weight: 90,
 		items: [

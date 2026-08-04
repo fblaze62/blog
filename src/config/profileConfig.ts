@@ -71,7 +71,7 @@ export const profileConfig: ProfileConfig = {
 		},
 		{
 			name: "Littleskin",
-			icon: "simple-icons:minecraft",
+			icon: "arcticons:minecraft-steve",
 			url: "https://littleskin.cn/skinlib?filter=skin&uploader=3503129",
 			showName: false,
 		},
