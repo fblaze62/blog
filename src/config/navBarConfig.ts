@@ -45,6 +45,9 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 			// 友链
 			LinkPresets.Friends,
 
+			// 书签导航
+			LinkPresets.Booknav,
+
 			// 留言
 			LinkPresets.Guestbook,
 
