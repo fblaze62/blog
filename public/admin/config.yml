@@ -207,6 +207,11 @@ collections:
         file: src/config/friendsConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
+      - name: booknav-data
+        label: 🔖 书签数据
+        file: src/config/booknavConfig.ts
+        fields:
+          - { label: 配置, name: body, widget: code, required: true }
       - name: effects-config
         label: 🌸 樱花特效
         file: src/config/effectsConfig.ts

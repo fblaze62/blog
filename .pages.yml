@@ -394,6 +394,13 @@ content:
         format: code
         description: 友链列表（站点名、头像、描述、链接、标签、权重）
 
+      - name: booknav-data
+        label: 🔖 书签数据
+        type: file
+        path: src/config/booknavConfig.ts
+        format: code
+        description: 书签列表（站点名、头像、描述、链接、标签、权重）
+
       - name: effects-config
         label: 🌸 樱花特效
         type: file
