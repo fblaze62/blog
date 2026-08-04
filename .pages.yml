@@ -190,6 +190,11 @@ content:
             label: 发布地点
             type: string
 
+          - name: pinned
+            label: 置顶
+            type: boolean
+            default: false
+
           - name: body
             label: 内容
             type: rich-text
