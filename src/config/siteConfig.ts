@@ -16,7 +16,7 @@ export const siteConfig: SiteConfig = {
 
 	// 站点描述
 	description:
-		"FeatherBlaze 的个人博客，记录我的学习和生活。",
+		"FeatherBlaze 的个人博客，分享有趣的内容，记录学习的点滴",
 
 	// 站点关键词
 	keywords: [
