@@ -112,6 +112,8 @@ export const siteConfig: SiteConfig = {
 		anime: true,
 		// 动态页面开关
         dynamic: true,
+		// 书签导航页面开关
+		booknav: true,
 	},
 
 	// 分类导航栏开关，在首页和归档页顶部显示分类快捷导航
@@ -123,13 +125,45 @@ export const siteConfig: SiteConfig = {
 	// 文章列表布局配置
 	postListLayout: {
 		// 默认布局模式："list" 列表模式（单列布局），"grid" 网格模式（多列布局）
-		defaultMode: "grid",
+		defaultMode: "list",
 		// 移动端默认布局模式，不设置则跟随 defaultMode
-		mobileDefaultMode: "list",
-		// 是否在文章列表中显示标签
-		showTags: true,
+		mobileDefaultMode: "grid",
+		// 列表模式下封面图显示在哪一侧："right" 右侧，"left" 左侧
+		// 网格模式的封面固定在卡片顶部，不受此项影响
+		coverPosition: "right",
 		// 文章简介显示行数，设为 0 则不截断
 		descriptionLines: 2,
+		// 文章卡片底部统计和发布日期是否显示图标
+		showStatsIcons: true,
+		// 标签显示位置
+		// 设置为"meta"：显示在文章标题下的元数据
+		// 设置为"bottom"：顶替stats在底部显示
+		tagsPosition: "bottom",
+		// PostMeta 元数据显示控制
+		meta: {
+			// 是否显示发布日期
+			showPublished: true,
+			// 是否显示分类
+			showCategory: true,
+			// 是否显示标签
+			showTags: true,
+			// 标签数量，设为 0 则不限制
+			tagCount: 5,
+			// 是否显示字数
+			showWords: false,
+			// 是否显示阅读时间
+			showReadingTime: false,
+		},
+		// 底部 PostStats 统计信息显示控制
+		// 如果tagsPosition设置为"bottom"，则stats将不显示
+		stats: {
+			// 是否显示发布日期
+			showPublished: true,
+			// 是否显示字数
+			showWords: true,
+			// 是否显示阅读时间
+			showReadingTime: true,
+		},
 		// 网格布局配置，仅在 defaultMode 为 "grid" 或允许切换布局时生效
 		grid: {
 			// 是否开启瀑布流布局，同时有封面图和无封面图的混合文章推荐开启
