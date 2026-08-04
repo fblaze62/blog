@@ -70,9 +70,9 @@ export const profileConfig: ProfileConfig = {
 			showName: false,
 		},
 		{
-			name: "Littleskin",
-			icon: "arcticons:minecraft-steve",
-			url: "https://littleskin.cn/skinlib?filter=skin&uploader=3503129",
+			name: "Steam",
+			icon: "fa7-brands:steam",
+			url: "https://steamcommunity.com/profiles/76561199666160667/",
 			showName: false,
 		},
 		{

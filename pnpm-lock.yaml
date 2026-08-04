@@ -210,9 +210,6 @@ importers:
       '@biomejs/biome':
         specifier: 2.5.5
         version: 2.5.5
-      '@iconify-json/arcticons':
-        specifier: ^1.2.56
-        version: 1.2.56
       '@iconify-json/mdi':
         specifier: ^1.2.3
         version: 1.2.3
@@ -1363,9 +1360,6 @@ packages:
 
   '@fancyapps/ui@6.1.14':
     resolution: {integrity: sha512-cBV73XXHrc0qMca+PJJ6qay3xweIgsoYse13rGRstgUs0xA5WAv1tgbSzPCIOOjiLs2S2jiVFJxyszgvgyfxMg==}
-
-  '@iconify-json/arcticons@1.2.56':
-    resolution: {integrity: sha512-GXGSoKHbnuSGPpU1sS3urdWP1FseNKgvPgAkfOcEz1+ShbRtBiXJjDrZqbSNtARuk+9/PweksXn+UGzBL4nTqw==}
 
   '@iconify-json/fa7-brands@1.2.4':
     resolution: {integrity: sha512-60acXyxhQl1lddBH5YGzfQLkzlP9jqNcblFmgel7lJpgsVx/4QmrXAL90ARb8XhHX7dFMGRDmlqER9mq8aaz2g==}
@@ -7390,10 +7384,6 @@ snapshots:
       '@expressive-code/core': 0.44.1
 
   '@fancyapps/ui@6.1.14': {}
-
-  '@iconify-json/arcticons@1.2.56':
-    dependencies:
-      '@iconify/types': 2.0.0
 
   '@iconify-json/fa7-brands@1.2.4':
     dependencies:
