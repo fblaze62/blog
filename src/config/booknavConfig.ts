@@ -119,6 +119,18 @@ export const booknavConfig: BooknavGroup[] = [
 				desc: "阿里巴巴矢量图标库",
 				weight: 8,
 			},
+			{
+				title: "Icônes",
+				url: "https://icones.js.org",
+				desc: "通过 Icônes 探索大量图标资源",
+				weight: 7,
+			},
+			{
+				title: "Cloudflare Pages",
+				url: "https://www.cloudflare.com/products/pages/",
+				desc: "面向前端开发人员的全栈平台",
+				weight: 6,
+			},
 		],
 	},
 ];
