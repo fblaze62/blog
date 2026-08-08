@@ -7,7 +7,6 @@ description: 一次把博客从 Hexo 迁移到 Astro 的记录。
 tags: [博客, Astro, Hexo]
 category: 博客
 draft: false
-# image: ./images/hexo-to-astro.avif
 ---
 
 这几天把博客迁移到了 Astro，界面整体焕新了许多，下面就是迁移的过程。
@@ -27,6 +26,7 @@ draft: false
    Hexo 需要手动构建完才能上传，构建时间很久，而且都是在本地进行的。未来文章多了这点就会更加明显。
 
    也考虑过换 Hugo，但 Hugo 的主题少，而且都是比较简洁的风格，个人觉得不好看。
+
 2. 需要备份源文件
 
    Hexo 上传到 GitHub 的是构建好的静态文件，如果误删了本地的源文件就要从头开始。
@@ -69,7 +69,10 @@ draft: false
 
 文章最主要的不同就是 Front-matter 了。
 
-这是 Hexo 的 Front-matter 格式：（作者、置顶和封面取决于主题）
+<details>
+<summary>点击展开 Hexo 的 Front-matter 格式</summary>
+
+（作者、置顶和封面取决于主题）
 
 ```markdown
 ---
@@ -88,7 +91,12 @@ published: 是否发布
 ---
 ```
 
-这是 Astro 的：（Astro 没有内置，我用的是 Firefly 主题）
+</details>
+
+<details>
+<summary>点击展开 Astro 的 Front-matter 格式</summary>
+
+（Astro 没有内置，我用的是 Firefly 主题）
 
 ```markdown
 ---
@@ -104,6 +112,8 @@ draft: 是否是草稿
 image: 封面路径或URL
 ---
 ```
+
+</details>
 
 分类只能保留一级，其他只需要替换一下一部分名称和日期的格式就可以了。
 
