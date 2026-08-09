@@ -1,7 +1,7 @@
 ---
 title: 将博客从 Hexo 迁移到 Astro
 published: 2026-07-06
-updated: 2026-08-08
+updated: 2026-08-09
 pinned: false
 description: 一次把博客从 Hexo 迁移到 Astro 的记录。
 tags: [博客, Astro, Hexo]
@@ -49,7 +49,7 @@ draft: false
 
 ### 安装
 
-找一个想要的主题，将 Code 里的仓库链接复制一下。
+找一个想要的主题，将“Code”里的仓库链接复制一下。
 
 找到一个用于存放博客文件夹的位置。右键，Open Git Bash here，`git clone 仓库链接`，等待克隆完成，然后把生成的文件夹重命名一下。
 
