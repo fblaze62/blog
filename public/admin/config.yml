@@ -65,8 +65,7 @@ asset_collections:
 collections:
   - name: posts
     label: 📝 博客文章
-    folder: /content/posts
-    path: src/content/posts
+    folder: content/posts
     media_folder: /content/posts/images
     public_folder: /images
     create: true
@@ -99,8 +98,7 @@ collections:
       - { label: 正文, name: body, widget: richtext, required: true }
   - name: dynamic
     label: 📓 个人动态
-    folder: /content/dynamic
-    path: src/content/dynamic
+    folder: content/dynamic
     media_folder: /content/dynamic/images
     public_folder: /images
     create: true
@@ -147,22 +145,22 @@ collections:
     files:
       - name: site-config
         label: 🌐 站点主配置
-        file: src/config/siteConfig.ts
+        file: config/siteConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: profile-config
         label: 👤 个人信息
-        file: src/config/profileConfig.ts
+        file: config/profileConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: announcement-config
         label: 📢 公告栏
-        file: src/config/announcementConfig.ts
+        file: config/announcementConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: license-config
         label: 📜 许可协议
-        file: src/config/licenseConfig.ts
+        file: config/licenseConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
   - name: layout-appearance
@@ -170,42 +168,42 @@ collections:
     files:
       - name: nav-bar-config
         label: 🧭 导航栏
-        file: src/config/navBarConfig.ts
+        file: config/navBarConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: sidebar-config
         label: 📐 侧边栏布局
-        file: src/config/sidebarConfig.ts
+        file: config/sidebarConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: footer-config
         label: 📏 页脚设置
-        file: src/config/footerConfig.ts
+        file: config/footerConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: footer-html
         label: 📏 页脚 HTML
-        file: src/config/FooterConfig.html
+        file: config/FooterConfig.html
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: font-config
         label: 🔤 字体设置
-        file: src/config/fontConfig.ts
+        file: config/fontConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: cover-image-config
         label: 🖼️ 文章封面图
-        file: src/config/coverImageConfig.ts
+        file: config/coverImageConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: background-wallpaper
         label: 🏞️ 背景壁纸
-        file: src/config/backgroundWallpaper.ts
+        file: config/backgroundWallpaper.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: expressive-code-config
         label: 💻 代码块样式
-        file: src/config/expressiveCodeConfig.ts
+        file: config/expressiveCodeConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
   - name: feature-settings
@@ -213,62 +211,62 @@ collections:
     files:
       - name: comment-config
         label: 💬 评论系统
-        file: src/config/commentConfig.ts
+        file: config/commentConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: analytics-config
         label: 📊 数据统计
-        file: src/config/analyticsConfig.ts
+        file: config/analyticsConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: music-config
         label: 🎵 音乐播放器
-        file: src/config/musicConfig.ts
+        file: config/musicConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: sponsor-config
         label: 💰 打赏页面
-        file: src/config/sponsorConfig.ts
+        file: config/sponsorConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: friends-data
         label: 🔗 友链数据
-        file: src/config/friendsConfig.ts
+        file: config/friendsConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: booknav-data
         label: 🔖 书签数据
-        file: src/config/booknavConfig.ts
+        file: config/booknavConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: effects-config
         label: 🌸 樱花特效
-        file: src/config/effectsConfig.ts
+        file: config/effectsConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: gallery-config
         label: 🖼️ 相册配置
-        file: src/config/galleryConfig.ts
+        file: config/galleryConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: dynamic-config
         label: 📓 动态配置
-        file: src/config/dynamicConfig.ts
+        file: config/dynamicConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: pio-config
         label: 🎭 看板娘
-        file: src/config/pioConfig.ts
+        file: config/pioConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: plantuml-config
         label: 📐 PlantUML 图表
-        file: src/config/plantumlConfig.ts
+        file: config/plantumlConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: mermaid-config
         label: 📐 Mermaid 图表
-        file: src/config/mermaidConfig.ts
+        file: config/mermaidConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
   - name: cms-settings
