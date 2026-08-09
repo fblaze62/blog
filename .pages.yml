@@ -456,6 +456,12 @@ content:
         path: public/admin/config.yml
         format: code
         description: Sveltia CMS 的配置文件
+      - name: sveltia-html
+        label: Sveltia CMS - 页面
+        type: file
+        path: public/admin/index.html
+        format: code
+        description: Sveltia CMS 的页面文件
 
 settings:
   content:
