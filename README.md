@@ -7,33 +7,37 @@
    ```bash
    git clone https://github.com/fblaze62/blog.git
    ```
+
 2. Install dependencies
 
    ```bash
    pnpm install
    ```
+
 3. Start the development server
 
    ```bash
    pnpm dev
    ```
+
 4. Build for production
 
    ```bash
    pnpm build
    ```
-5. Deploy
 
+5. Deploy
    - Vercel<br>
      Application Preset: `Astro`<br>
      Build Command: `pnpm build`<br>
      Output Directory: `dist`<br>
      Install Command: `pnpm install`
    - GitHub Pages<br>
-     Set the *Source* option to *GitHub Actions*.
+     Set the _Source_ option to _GitHub Actions_.
    - Cloudflare Workers / Pages<br>
      Build Command: `pnpm build`<br>
      Output Directory: `dist`
+
 6. Configuration
 
    Refer to the [Astro documentation](https://docs.astro.build/getting-started/) and [Firefly theme documentation](https://docs-firefly.cuteleaf.cn/).
