@@ -40,17 +40,17 @@ asset_collections:
     public_folder: /assets/images
   - name: fonts
     label: 站点字体
-    icon: font-download-outline-rounded
+    icon: font-download
     media_folder: /public/assets/fonts
     public_folder: /assets/fonts
   - name: gallery
     label: 站点相册
-    icon: gallery-thumbnail-outline-rounded
+    icon: gallery-thumbnail
     media_folder: /public/assets/gallery
     public_folder: /assets/gallery
   - name: music
     label: 站点音乐
-    icon: library-music-outline-rounded
+    icon: library-music
     media_folder: /public/assets/music
     public_folder: /assets/music
   - name: music-cover
