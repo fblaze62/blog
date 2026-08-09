@@ -11,7 +11,7 @@ locale: zh_CN
 app_title: 管理 - FeatherBlaze's Blog
 
 logo:
-  src: https://gcore.jsdelivr.net/gh/fblaze62/blog/public/favicon/fb-32.png
+  src: https://gcore.jsdelivr.net/gh/fblaze62/blog/public/favicon/fb-128.png
   show_in_header: true
 
 media_folder: /public/assets/images
