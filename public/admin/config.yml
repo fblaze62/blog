@@ -67,8 +67,7 @@ asset_collections:
 collections:
   - name: posts
     label: 📝 博客文章
-    folder: src/
-    content/posts
+    folder: src/content/posts
     media_folder: src/content/posts/images
     public_folder: /images
     create: true
