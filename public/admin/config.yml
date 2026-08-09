@@ -8,8 +8,10 @@ backend:
 
 locale: zh_CN
 
+app_title: 管理 - FeatherBlaze's Blog
+
 logo:
-  src: /public/favicon/fb-32.png
+  src: https://gcore.jsdelivr.net/gh/fblaze62/blog/public/favicon/fb-32.png
   show_in_header: true
 
 media_folder: /public/assets/images
@@ -53,20 +55,21 @@ asset_collections:
     public_folder: /assets/music
   - name: music-cover
     label: 音乐封面
-    icon: album-outline
+    icon: album
     media_folder: /public/assets/music/cover
     public_folder: /assets/music/cover
   - name: favicon
     label: 站点图标
-    icon: star-outline-rounded
-    media_folder: /public/assets/favicon
-    public_folder: /assets/favicon
+    icon: star
+    media_folder: /public/favicon
+    public_folder: /favicon
 
 collections:
   - name: posts
     label: 📝 博客文章
-    folder: content/posts
-    media_folder: /content/posts/images
+    folder: src/
+    content/posts
+    media_folder: src/content/posts/images
     public_folder: /images
     create: true
     format: yaml-frontmatter
@@ -98,8 +101,8 @@ collections:
       - { label: 正文, name: body, widget: richtext, required: true }
   - name: dynamic
     label: 📓 个人动态
-    folder: content/dynamic
-    media_folder: /content/dynamic/images
+    folder: src/content/dynamic
+    media_folder: src/content/dynamic/images
     public_folder: /images
     create: true
     format: yaml-frontmatter
@@ -120,14 +123,14 @@ collections:
     files:
       - name: about
         label: 📄 关于页面
-        file: content/spec/about.md
+        file: src/content/spec/about.md
         format: yaml-frontmatter
         fields:
           - { label: 页面标题, name: title, widget: string, default: "关于我" }
           - { label: 正文, name: body, widget: richtext }
       - name: friends
         label: 🔗 友情链接
-        file: content/spec/friends.mdx
+        file: src/content/spec/friends.mdx
         format: yaml-frontmatter
         fields:
           - { label: 页面标题, name: title, widget: string, default: "友情链接" }
@@ -135,7 +138,7 @@ collections:
           - { label: 正文, name: body, widget: richtext, format: mdx }
       - name: guestbook
         label: 📝 留言板
-        file: content/spec/guestbook.md
+        file: src/content/spec/guestbook.md
         format: yaml-frontmatter
         fields:
           - { label: 页面标题, name: title, widget: string, default: "留言板" }
@@ -145,22 +148,22 @@ collections:
     files:
       - name: site-config
         label: 🌐 站点主配置
-        file: config/siteConfig.ts
+        file: src/config/siteConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: profile-config
         label: 👤 个人信息
-        file: config/profileConfig.ts
+        file: src/config/profileConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: announcement-config
         label: 📢 公告栏
-        file: config/announcementConfig.ts
+        file: src/config/announcementConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: license-config
         label: 📜 许可协议
-        file: config/licenseConfig.ts
+        file: src/config/licenseConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
   - name: layout-appearance
@@ -168,42 +171,42 @@ collections:
     files:
       - name: nav-bar-config
         label: 🧭 导航栏
-        file: config/navBarConfig.ts
+        file: src/config/navBarConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: sidebar-config
         label: 📐 侧边栏布局
-        file: config/sidebarConfig.ts
+        file: src/config/sidebarConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: footer-config
         label: 📏 页脚设置
-        file: config/footerConfig.ts
+        file: src/config/footerConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: footer-html
         label: 📏 页脚 HTML
-        file: config/FooterConfig.html
+        file: src/config/FooterConfig.html
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: font-config
         label: 🔤 字体设置
-        file: config/fontConfig.ts
+        file: src/config/fontConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: cover-image-config
         label: 🖼️ 文章封面图
-        file: config/coverImageConfig.ts
+        file: src/config/coverImageConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: background-wallpaper
         label: 🏞️ 背景壁纸
-        file: config/backgroundWallpaper.ts
+        file: src/config/backgroundWallpaper.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: expressive-code-config
         label: 💻 代码块样式
-        file: config/expressiveCodeConfig.ts
+        file: src/config/expressiveCodeConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
   - name: feature-settings
@@ -211,62 +214,62 @@ collections:
     files:
       - name: comment-config
         label: 💬 评论系统
-        file: config/commentConfig.ts
+        file: src/config/commentConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: analytics-config
         label: 📊 数据统计
-        file: config/analyticsConfig.ts
+        file: src/config/analyticsConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: music-config
         label: 🎵 音乐播放器
-        file: config/musicConfig.ts
+        file: src/config/musicConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: sponsor-config
         label: 💰 打赏页面
-        file: config/sponsorConfig.ts
+        file: src/config/sponsorConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: friends-data
         label: 🔗 友链数据
-        file: config/friendsConfig.ts
+        file: src/config/friendsConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: booknav-data
         label: 🔖 书签数据
-        file: config/booknavConfig.ts
+        file: src/config/booknavConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: effects-config
         label: 🌸 樱花特效
-        file: config/effectsConfig.ts
+        file: src/config/effectsConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: gallery-config
         label: 🖼️ 相册配置
-        file: config/galleryConfig.ts
+        file: src/config/galleryConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: dynamic-config
         label: 📓 动态配置
-        file: config/dynamicConfig.ts
+        file: src/config/dynamicConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: pio-config
         label: 🎭 看板娘
-        file: config/pioConfig.ts
+        file: src/config/pioConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: plantuml-config
         label: 📐 PlantUML 图表
-        file: config/plantumlConfig.ts
+        file: src/config/plantumlConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: mermaid-config
         label: 📐 Mermaid 图表
-        file: config/mermaidConfig.ts
+        file: src/config/mermaidConfig.ts
         fields:
           - { label: 配置, name: body, widget: code, required: true }
   - name: cms-settings
@@ -284,6 +287,6 @@ collections:
           - { label: 配置, name: body, widget: code, required: true }
       - name: pages-cms
         label: Pages CMS
-        file: /.pages.yml
+        file: .pages.yml
         fields:
           - { label: 配置, name: body, widget: code, required: true }
