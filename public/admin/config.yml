@@ -8,6 +8,10 @@ backend:
 
 locale: zh_CN
 
+logo:
+  src: /public/favicon/fb-32.png
+  show_in_header: true
+
 media_folder: /public/assets/images
 public_folder: /assets/images
 
@@ -32,6 +36,31 @@ asset_collections:
     icon: image
     media_folder: /src/assets/images
     public_folder: /assets/images
+  - name: fonts
+    label: 站点字体
+    icon: font-download-outline-rounded
+    media_folder: /public/assets/fonts
+    public_folder: /assets/fonts
+  - name: gallery
+    label: 站点相册
+    icon: gallery-thumbnail-outline-rounded
+    media_folder: /public/assets/gallery
+    public_folder: /assets/gallery
+  - name: music
+    label: 站点音乐
+    icon: library-music-outline-rounded
+    media_folder: /public/assets/music
+    public_folder: /assets/music
+  - name: music-cover
+    label: 音乐封面
+    icon: album-outline
+    media_folder: /public/assets/music/cover
+    public_folder: /assets/music/cover
+  - name: favicon
+    label: 站点图标
+    icon: star-outline-rounded
+    media_folder: /public/assets/favicon
+    public_folder: /assets/favicon
 
 collections:
   - name: posts
@@ -93,14 +122,14 @@ collections:
     files:
       - name: about
         label: 📄 关于页面
-        file: src/content/spec/about.md
+        file: content/spec/about.md
         format: yaml-frontmatter
         fields:
           - { label: 页面标题, name: title, widget: string, default: "关于我" }
           - { label: 正文, name: body, widget: richtext }
       - name: friends
         label: 🔗 友情链接
-        file: src/content/spec/friends.mdx
+        file: content/spec/friends.mdx
         format: yaml-frontmatter
         fields:
           - { label: 页面标题, name: title, widget: string, default: "友情链接" }
@@ -108,7 +137,7 @@ collections:
           - { label: 正文, name: body, widget: richtext, format: mdx }
       - name: guestbook
         label: 📝 留言板
-        file: src/content/spec/guestbook.md
+        file: content/spec/guestbook.md
         format: yaml-frontmatter
         fields:
           - { label: 页面标题, name: title, widget: string, default: "留言板" }
@@ -248,6 +277,11 @@ collections:
       - name: sveltia-cms
         label: Sveltia CMS
         file: public/admin/config.yml
+        fields:
+          - { label: 配置, name: body, widget: code, required: true }
+      - name: sveltia-cms-html
+        label: Sveltia CMS - 页面
+        file: public/admin/index.html
         fields:
           - { label: 配置, name: body, widget: code, required: true }
       - name: pages-cms
