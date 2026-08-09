@@ -1,7 +1,7 @@
 ---
 title: 将博客从 Hexo 迁移到 Astro
 published: 2026-07-06
-updated: 2026-07-07
+updated: 2026-08-08
 pinned: false
 description: 一次把博客从 Hexo 迁移到 Astro 的记录。
 tags: [博客, Astro, Hexo]
