@@ -81,12 +81,12 @@ collections:
         direction: descending
     fields:
       - { name: title, label: 标题, widget: string }
-      - { name: published, label: 发布时间, widget: datetime, type: datetime, format: YYYY-MM-DD, pattern: true }
-      - { name: updated, label: 更新时间, widget: datetime, type: datetime, format: YYYY-MM-DD, pattern: true }
+      - { name: published, label: 发布时间, widget: datetime, format: YYYY-MM-DD }
+      - { name: updated, label: 更新时间, widget: datetime, format: YYYY-MM-DD }
       - { name: draft, label: 草稿, widget: boolean, default: false }
       - { name: description, label: 文章摘要, widget: string, required: false }
       - { name: image, label: 封面图, widget: image, required: false }
-      - { name: tags, label: 标签, widget: list }
+      - { name: tags, label: 标签, widget: string }
       - { name: category, label: 分类, widget: string }
       - { name: lang, label: 语言, widget: select, options: [{ label: 中文, value: "" }, { label: English, value: en }, { label: 日本語, value: ja }, { label: 繁體中文, value: zh_TW }, { label: Русский, value: ru }], required: false }
       - { name: pinned, label: 置顶, widget: boolean, default: false }
@@ -129,11 +129,14 @@ collections:
       - name: friends
         label: 🔗 友情链接
         file: src/content/spec/friends.mdx
-        format: yaml-frontmatter
+        format: raw
         fields:
-          - { name: title, label: 页面标题, widget: string, default: "友情链接" }
-          - { name: description, label: 页面描述, widget: string }
-          - { name: body, label: 正文, widget: richtext, format: mdx }
+          - name: body
+            label: 配置
+            widget: code
+            required: true
+            output_code_only: true
+            default_language: html
       - name: guestbook
         label: 📝 留言板
         file: src/content/spec/guestbook.md
@@ -459,7 +462,7 @@ collections:
           - name: body
             label: 内容
             widget: code
-            required: false
+            required: true
             output_code_only: true
             default_language: html
       - name: pages-cms
