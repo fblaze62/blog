@@ -80,24 +80,24 @@ collections:
         field: published
         direction: descending
     fields:
-      - { label: 标题, name: title, widget: string }
-      - { label: 发布时间, name: published, widget: datetime, type: datetime, format: yyyy-MM-dd, pattern: true }
-      - { label: 更新时间, name: updated, widget: datetime, type: datetime, format: yyyy-MM-dd, pattern: true }
-      - { label: 草稿, name: draft, widget: boolean, default: false }
-      - { label: 文章摘要, name: description, widget: string, required: false }
-      - { label: 封面图, name: image, widget: image, required: false }
-      - { label: 标签, name: tags, widget: string }
-      - { label: 分类, name: category, widget: string }
-      - { label: 语言, name: lang, widget: select, options: { values: [{ label: 中文, value: "" }, { label: English, value: en }, { label: 日本語, value: ja }, { label: 繁體中文, value: zh_TW }, { label: Русский, value: ru }] }, required: false }
-      - { label: 置顶, name: pinned, widget: boolean, default: false }
-      - { label: 作者, name: author, widget: string, required: false }
-      - { label: 原文链接, name: sourceLink, widget: string, required: false }
-      - { label: 许可协议名称, name: licenseName, widget: string, required: false }
-      - { label: 许可协议链接, name: licenseUrl, widget: string, required: false }
-      - { label: 启用评论, name: comment, widget: boolean, default: true }
-      - { label: 文章密码, name: password, widget: string, required: false }
-      - { label: 密码提示, name: passwordHint, widget: string, required: false }
-      - { label: 正文, name: body, widget: richtext, required: true }
+      - { name: title, label: 标题, widget: string }
+      - { name: published, label: 发布时间, widget: datetime, type: datetime, format: YYYY-MM-DD, pattern: true }
+      - { name: updated, label: 更新时间, widget: datetime, type: datetime, format: YYYY-MM-DD, pattern: true }
+      - { name: draft, label: 草稿, widget: boolean, default: false }
+      - { name: description, label: 文章摘要, widget: string, required: false }
+      - { name: image, label: 封面图, widget: image, required: false }
+      - { name: tags, label: 标签, widget: string }
+      - { name: category, label: 分类, widget: string }
+      - { name: lang, label: 语言, widget: select, options: { values: [{ label: 中文, value: "" }, { label: English, value: en }, { label: 日本語, value: ja }, { label: 繁體中文, value: zh_TW }, { label: Русский, value: ru }] }, required: false }
+      - { name: pinned, label: 置顶, widget: boolean, default: false }
+      - { name: author, label: 作者, widget: string, required: false }
+      - { name: sourceLink, label: 原文链接, widget: string, required: false }
+      - { name: licenseName, label: 许可协议名称, widget: string, required: false }
+      - { name: licenseUrl, label: 许可协议链接, widget: string, required: false }
+      - { name: comment, label: 启用评论, widget: boolean, default: true }
+      - { name: password, label: 文章密码, widget: string, required: false }
+      - { name: passwordHint, label: 密码提示, widget: string, required: false }
+      - { name: body, label: 正文, widget: richtext, required: true }
   - name: dynamic
     label: 📓 个人动态
     folder: src/content/dynamic
@@ -113,10 +113,10 @@ collections:
         field: published
         direction: descending
     fields:
-      - { label: 发布时间, name: published, widget: datetime, type: datetime, format: yyyy-MM-dd HH:mm:ss, pattern: true }
-      - { label: 发布地点, name: location, widget: string, required: false }
-      - { label: 置顶, name: pinned, widget: boolean, default: false }
-      - { label: 正文, name: body, widget: richtext, required: true }
+      - { name: published, label: 发布时间, widget: datetime, type: datetime, format: YYYY-MM-DD HH:mm:ss, pattern: true }
+      - { name: location, label: 发布地点, widget: string, required: false }
+      - { name: pinned, label: 置顶, widget: boolean, default: false }
+      - { name: body, label: 正文, widget: richtext, required: true }
   - name: pages
     label: 📄 页面
     files:
@@ -125,22 +125,22 @@ collections:
         file: src/content/spec/about.md
         format: yaml-frontmatter
         fields:
-          - { label: 正文, name: body, widget: richtext }
+          - { name: body, label: 正文, widget: richtext }
       - name: friends
         label: 🔗 友情链接
         file: src/content/spec/friends.mdx
         format: yaml-frontmatter
         fields:
-          - { label: 页面标题, name: title, widget: string, default: "友情链接" }
-          - { label: 页面描述, name: description, widget: string }
-          - { label: 正文, name: body, widget: richtext, format: mdx }
+          - { name: title, label: 页面标题, widget: string, default: "友情链接" }
+          - { name: description, label: 页面描述, widget: string }
+          - { name: body, label: 正文, widget: richtext, format: mdx }
       - name: guestbook
         label: 📝 留言板
         file: src/content/spec/guestbook.md
         format: yaml-frontmatter
         fields:
-          - { label: 页面标题, name: title, widget: string, default: "留言板" }
-          - { label: 正文, name: body, widget: richtext }
+          - { name: title, label: 页面标题, widget: string, default: "留言板" }
+          - { name: body, label: 正文, widget: richtext }
   - name: site-settings
     label: ⚙️ 站点设置
     files:
@@ -149,25 +149,25 @@ collections:
         file: src/config/siteConfig.ts
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
       - name: profile-config
         label: 👤 个人信息
         file: src/config/profileConfig.ts
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
       - name: announcement-config
         label: 📢 公告栏
         file: src/config/announcementConfig.ts
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
       - name: license-config
         label: 📜 许可协议
         file: src/config/licenseConfig.ts
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
   - name: layout-appearance
     label: 🎨 布局与外观
     files:
@@ -176,49 +176,49 @@ collections:
         file: src/config/navBarConfig.ts
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
       - name: sidebar-config
         label: 📐 侧边栏布局
         file: src/config/sidebarConfig.ts
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
       - name: footer-config
         label: 📏 页脚设置
         file: src/config/footerConfig.ts
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
       - name: footer-html
         label: 📏 页脚 HTML
         file: src/config/FooterConfig.html
         format: raw
         fields:
-          - { label: 内容, name: body, widget: code, required: false }
+          - { name: body, label: 内容, widget: text, required: false }
       - name: font-config
         label: 🔤 字体设置
         file: src/config/fontConfig.ts
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
       - name: cover-image-config
         label: 🖼️ 文章封面图
         file: src/config/coverImageConfig.ts
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
       - name: background-wallpaper
         label: 🏞️ 背景壁纸
         file: src/config/backgroundWallpaper.ts
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
       - name: expressive-code-config
         label: 💻 代码块样式
         file: src/config/expressiveCodeConfig.ts
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
   - name: feature-settings
     label: 🔧 功能配置
     files:
@@ -227,73 +227,73 @@ collections:
         file: src/config/commentConfig.ts
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
       - name: analytics-config
         label: 📊 数据统计
         file: src/config/analyticsConfig.ts
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
       - name: music-config
         label: 🎵 音乐播放器
         file: src/config/musicConfig.ts
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
       - name: sponsor-config
         label: 💰 打赏页面
         file: src/config/sponsorConfig.ts
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
       - name: friends-data
         label: 🔗 友链数据
         file: src/config/friendsConfig.ts
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
       - name: booknav-data
         label: 🔖 书签数据
         file: src/config/booknavConfig.ts
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
       - name: effects-config
         label: 🌸 樱花特效
         file: src/config/effectsConfig.ts
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
       - name: gallery-config
         label: 🖼️ 相册配置
         file: src/config/galleryConfig.ts
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
       - name: dynamic-config
         label: 📓 动态配置
         file: src/config/dynamicConfig.ts
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
       - name: pio-config
         label: 🎭 看板娘
         file: src/config/pioConfig.ts
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
       - name: plantuml-config
         label: 📐 PlantUML 图表
         file: src/config/plantumlConfig.ts
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
       - name: mermaid-config
         label: 📐 Mermaid 图表
         file: src/config/mermaidConfig.ts
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
   - name: cms-settings
     label: ✏️ CMS 配置
     files:
@@ -302,16 +302,16 @@ collections:
         file: public/admin/config.yml
         format: yaml
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
       - name: sveltia-cms-html
         label: Sveltia CMS - 页面
         file: public/admin/index.html
         format: raw
         fields:
-          - { label: 内容, name: body, widget: code, required: true }
+          - { name: body, label: 内容, widget: text, required: true }
       - name: pages-cms
         label: Pages CMS
         file: .pages.yml
         format: yaml
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { name: body, label: 配置, widget: text, required: true }
