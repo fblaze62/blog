@@ -207,10 +207,6 @@ content:
         path: src/content/spec/about.md
         format: yaml-frontmatter
         fields:
-          - name: title
-            label: 页面标题
-            type: string
-            default: "关于我"
           - name: body
             label: 正文
             type: rich-text

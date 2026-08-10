@@ -125,7 +125,6 @@ collections:
         file: src/content/spec/about.md
         format: yaml-frontmatter
         fields:
-          - { label: 页面标题, name: title, widget: string, default: "关于我" }
           - { label: 正文, name: body, widget: richtext }
       - name: friends
         label: 🔗 友情链接
