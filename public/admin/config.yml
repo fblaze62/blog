@@ -136,7 +136,8 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            default_language: html
+            allow_language_selection: false
+            default_language: jsx
       - name: guestbook
         label: 📝 留言板
         file: src/content/spec/guestbook.md
@@ -244,6 +245,7 @@ collections:
             widget: code
             required: false
             output_code_only: true
+            allow_language_selection: false
             default_language: html
       - name: font-config
         label: 🔤 字体设置
