@@ -64,6 +64,9 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		],
 	});
 
+	// 关于页面
+	links.push(LinkPresets.About);
+
 	// 我的及其子菜单
 	// links.push({
 	// 	name: "我的",
