@@ -84,19 +84,19 @@ collections:
       - { label: 发布时间, name: published, widget: datetime, type: datetime, format: yyyy-MM-dd, pattern: true }
       - { label: 更新时间, name: updated, widget: datetime, type: datetime, format: yyyy-MM-dd, pattern: true }
       - { label: 草稿, name: draft, widget: boolean, default: false }
-      - { label: 文章摘要, name: description, widget: string }
-      - { label: 封面图, name: image, widget: image }
+      - { label: 文章摘要, name: description, widget: string, required: false }
+      - { label: 封面图, name: image, widget: image, required: false }
       - { label: 标签, name: tags, widget: string }
       - { label: 分类, name: category, widget: string }
-      - { label: 语言, name: lang, widget: select, options: { values: [{ label: 中文, value: "" }, { label: English, value: en }, { label: 日本語, value: ja }, { label: 繁體中文, value: zh_TW }, { label: Русский, value: ru }] } }
+      - { label: 语言, name: lang, widget: select, options: { values: [{ label: 中文, value: "" }, { label: English, value: en }, { label: 日本語, value: ja }, { label: 繁體中文, value: zh_TW }, { label: Русский, value: ru }] }, required: false }
       - { label: 置顶, name: pinned, widget: boolean, default: false }
-      - { label: 作者, name: author, widget: string }
-      - { label: 原文链接, name: sourceLink, widget: string }
-      - { label: 许可协议名称, name: licenseName, widget: string }
-      - { label: 许可协议链接, name: licenseUrl, widget: string }
+      - { label: 作者, name: author, widget: string, required: false }
+      - { label: 原文链接, name: sourceLink, widget: string, required: false }
+      - { label: 许可协议名称, name: licenseName, widget: string, required: false }
+      - { label: 许可协议链接, name: licenseUrl, widget: string, required: false }
       - { label: 启用评论, name: comment, widget: boolean, default: true }
-      - { label: 文章密码, name: password, widget: string }
-      - { label: 密码提示, name: passwordHint, widget: string }
+      - { label: 文章密码, name: password, widget: string, required: false }
+      - { label: 密码提示, name: passwordHint, widget: string, required: false }
       - { label: 正文, name: body, widget: richtext, required: true }
   - name: dynamic
     label: 📓 个人动态
@@ -114,7 +114,7 @@ collections:
         direction: descending
     fields:
       - { label: 发布时间, name: published, widget: datetime, type: datetime, format: yyyy-MM-dd HH:mm:ss, pattern: true }
-      - { label: 发布地点, name: location, widget: string }
+      - { label: 发布地点, name: location, widget: string, required: false }
       - { label: 置顶, name: pinned, widget: boolean, default: false }
       - { label: 正文, name: body, widget: richtext, required: true }
   - name: pages
@@ -194,7 +194,7 @@ collections:
         file: src/config/FooterConfig.html
         format: raw
         fields:
-          - { label: 内容, name: body, widget: code, required: true }
+          - { label: 内容, name: body, widget: code, required: false }
       - name: font-config
         label: 🔤 字体设置
         file: src/config/fontConfig.ts
