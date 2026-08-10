@@ -108,7 +108,7 @@ collections:
     format: yaml-frontmatter
     extension: md
     slug: "{{slug}}"
-    summary: "发布于 {{published}} | 地点: {{location}} | 置顶: {{pinned}}"
+    summary: "{{published}} | 地点: {{location}} | 置顶: {{pinned}}"
     sortable_fields:
       fields: [published]
       default:
