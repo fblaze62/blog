@@ -32,11 +32,20 @@
      Build Command: `pnpm build`<br>
      Output Directory: `dist`<br>
      Install Command: `pnpm install`
+   - Netlify<br>
+     Build command: `pnpm build`<br>
+     Publish directory: `dist`
    - GitHub Pages<br>
      Set the _Source_ option to _GitHub Actions_.
    - Cloudflare Workers / Pages<br>
-     Build Command: `pnpm build`<br>
+     Build Command: `pnpm run build`<br>
+     Build Command (Workers): `npx wrangler deploy`<br>
      Output Directory: `dist`
+   - EdgeOne Pages<br>
+     Application Preset: `Astro`<br>
+     Output Directory: `dist`<br>
+     Build Command: `pnpm build`<br>
+     Install Command: `pnpm install`
 
 6. Configuration
 
