@@ -194,7 +194,7 @@ collections:
         file: src/config/FooterConfig.html
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { label: 内容, name: body, widget: code, required: true }
       - name: font-config
         label: 🔤 字体设置
         file: src/config/fontConfig.ts
@@ -308,7 +308,7 @@ collections:
         file: public/admin/index.html
         format: raw
         fields:
-          - { label: 配置, name: body, widget: code, required: true }
+          - { label: 内容, name: body, widget: code, required: true }
       - name: pages-cms
         label: Pages CMS
         file: .pages.yml
