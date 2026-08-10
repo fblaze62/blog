@@ -74,6 +74,7 @@ collections:
     format: yaml-frontmatter
     extension: md
     slug: "{{slug}}"
+    summary: "{{title}} | {{published}} | {{tags}} | {{category}} | {{draft}} | {{pinned}}"
     sortable_fields:
       fields: [title, published, tags, category, draft, pinned]
       default:
@@ -107,6 +108,7 @@ collections:
     format: yaml-frontmatter
     extension: md
     slug: "{{slug}}"
+    summary: "{{published}} | {{location}} | {{pinned}}"
     sortable_fields:
       fields: [published]
       default:
