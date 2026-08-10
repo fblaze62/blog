@@ -74,7 +74,7 @@ collections:
     format: yaml-frontmatter
     extension: md
     slug: "{{slug}}"
-    summary: "{{title}} | {{published}} | {{tags}} | {{category}} | {{draft}} | {{pinned}}"
+    summary: "{{title}} | 发布于 {{published}} | 更新于 {{updated}} | 标签: {{tags}} | 分类: {{category}} | 草稿: {{draft}} | 置顶: {{pinned}}"
     sortable_fields:
       fields: [title, published, tags, category, draft, pinned]
       default:
@@ -82,8 +82,8 @@ collections:
         direction: descending
     fields:
       - { name: title, label: 标题, widget: string }
-      - { name: published, label: 发布时间, widget: datetime, format: YYYY-MM-DD }
-      - { name: updated, label: 更新时间, widget: datetime, format: YYYY-MM-DD }
+      - { name: published, label: 发布时间, widget: datetime, type: date, format: YYYY-MM-DD }
+      - { name: updated, label: 更新时间, widget: datetime, type: date, format: YYYY-MM-DD }
       - { name: draft, label: 草稿, widget: boolean, default: false }
       - { name: description, label: 文章摘要, widget: string, required: false }
       - { name: image, label: 封面图, widget: image, required: false }
@@ -108,7 +108,7 @@ collections:
     format: yaml-frontmatter
     extension: md
     slug: "{{slug}}"
-    summary: "{{published}} | {{location}} | {{pinned}}"
+    summary: "发布于 {{published}} | 地点: {{location}} | 置顶: {{pinned}}"
     sortable_fields:
       fields: [published]
       default:
