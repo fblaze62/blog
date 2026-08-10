@@ -70,14 +70,17 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 	// 	url: "#",
 	// 	icon: "material-symbols:person",
 	// 	children: [
-	//      // 动态
-	// 		links.push(LinkPresets.Dynamic);
+	// 		// 动态
+	// 		LinkPresets.Dynamic,
 
 	// 		// 相册
 	// 		LinkPresets.Gallery,
 
 	// 		// 追番
 	// 		LinkPresets.Anime,
+
+	// 		// VNDB
+	// 		LinkPresets.VNDB,
 
 	// 		// 番组计划
 	// 		LinkPresets.Bangumi,
@@ -86,8 +89,6 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 	// 		LinkPresets.Booknav,
 	// 	],
 	// });
-
-	links.push(LinkPresets.About);
 
 	// 关于及其子菜单
 	// links.push({
@@ -212,6 +213,12 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		url: "/bangumi/",
 		icon: "material-symbols:movie",
 		pageKey: "bangumi",
+	},
+	VNDB: {
+		name: "VNDB",
+		url: "/vndb/",
+		icon: "material-symbols:movie",
+		pageKey: "vndb",
 	},
 	Gallery: {
 		name: "相册",
