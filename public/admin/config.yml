@@ -88,7 +88,7 @@ collections:
       - { name: image, label: 封面图, widget: image, required: false }
       - { name: tags, label: 标签, widget: string }
       - { name: category, label: 分类, widget: string }
-      - { name: lang, label: 语言, widget: select, options: { values: [{ label: 中文, value: "" }, { label: English, value: en }, { label: 日本語, value: ja }, { label: 繁體中文, value: zh_TW }, { label: Русский, value: ru }] }, required: false }
+      - { name: lang, label: 语言, widget: select, options: { { label: 中文, value: "" }, { label: English, value: en }, { label: 日本語, value: ja }, { label: 繁體中文, value: zh_TW }, { label: Русский, value: ru }] }, required: false }
       - { name: pinned, label: 置顶, widget: boolean, default: false }
       - { name: author, label: 作者, widget: string, required: false }
       - { name: sourceLink, label: 原文链接, widget: string, required: false }
