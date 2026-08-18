@@ -1,0 +1,40 @@
+---
+title: 聪明的输入法懂我心意——Rime 输入法使用体验
+published: 2026-08-18
+updated: 2026-08-18
+pinned: false
+description: 使用 Rime 输入法一年的感受和配置方案推荐。
+tags: [软件, 输入法, Rime, 使用体验]
+category: 软件
+draft: true
+---
+
+## 初次了解
+
+我第一次接触到 Rime 输入法是在一年前刷B站时刷到的，那时我才刚开始学习双拼，对输入法的了解还仅限于搜狗输入法。:spoiler[（现在看来那玩意就是一坨）]
+
+我立刻就被视频中介绍的无广告、高自定义度吸引了，立刻就准备下载下来试试。
+
+## 下载安装
+
+Rime 只是一个输入法引擎，他在不同平台有不同的应用。比如 Windows 是小狼毫，macOS 端是鼠须管。
+
+先打开[下载页面](https://rime.im/download/)，然后根据自己的系统选择对应的版本，目前支持 Windows、macOS、Linux、Android。对于 iOS 这种比较封闭的系统和 HarmonyOS 桌面端、移动端5以上版本目前暂时不支持。
+
+## 配置方案
+
+输入法内置的 朙月拼音 输入方案功能确实有些功能欠缺，我便开始搜索配置方案了。
+
+第1个搜到的，毫无疑问，就是目前 Star 最多的[雾凇拼音](https://github.com/iDvel/rime-ice)。
+
+::github{repo="iDvel/rime-ice"}
+
+这款配置方案的功能已经足够满足日常使用。我也只用了这套方案很长时间。
+
+那时我对 Rime 输入法配置一窍不通，甚至连雾凇拼音的皮肤是怎么实现的都不知道，就只会改改方案选单的提示文本。
+
+后来随着搜索的深入，开始使用雾凇拼音的一个分支——[白霜拼音](https://github.com/gaboolic/rime-frost)。
+
+::github{repo="gaboolic/rime-frost"}
+
+白霜拼音的词库比雾凇拼音更加全面，但除此之外就没有太大变化了。
