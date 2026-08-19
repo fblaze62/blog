@@ -138,7 +138,6 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            allow_language_selection: false
             default_language: jsx
       - name: guestbook
         label: 📝 留言板
@@ -160,7 +159,6 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            allow_language_selection: false
             default_language: typescript
       - name: profile-config
         label: 👤 个人信息
@@ -172,7 +170,6 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            allow_language_selection: false
             default_language: typescript
       - name: announcement-config
         label: 📢 公告栏
@@ -184,7 +181,6 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            allow_language_selection: false
             default_language: typescript
       - name: license-config
         label: 📜 许可协议
@@ -196,7 +192,6 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            allow_language_selection: false
             default_language: typescript
   - name: layout-appearance
     label: 🎨 布局与外观
@@ -211,7 +206,6 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            allow_language_selection: false
             default_language: typescript
       - name: sidebar-config
         label: 📐 侧边栏布局
@@ -223,7 +217,6 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            allow_language_selection: false
             default_language: typescript
       - name: footer-config
         label: 📏 页脚设置
@@ -235,7 +228,6 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            allow_language_selection: false
             default_language: typescript
       - name: footer-html
         label: 📏 页脚 HTML
@@ -247,7 +239,6 @@ collections:
             widget: code
             required: false
             output_code_only: true
-            allow_language_selection: false
             default_language: html
       - name: font-config
         label: 🔤 字体设置
@@ -259,7 +250,6 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            allow_language_selection: false
             default_language: typescript
       - name: cover-image-config
         label: 🖼️ 文章封面图
@@ -271,7 +261,6 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            allow_language_selection: false
             default_language: typescript
       - name: background-wallpaper
         label: 🏞️ 背景壁纸
@@ -283,7 +272,6 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            allow_language_selection: false
             default_language: typescript
       - name: expressive-code-config
         label: 💻 代码块样式
@@ -295,7 +283,6 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            allow_language_selection: false
             default_language: typescript
   - name: feature-settings
     label: 🔧 功能配置
@@ -310,7 +297,6 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            allow_language_selection: false
             default_language: typescript
       - name: analytics-config
         label: 📊 数据统计
@@ -322,7 +308,6 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            allow_language_selection: false
             default_language: typescript
       - name: music-config
         label: 🎵 音乐播放器
@@ -334,7 +319,6 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            allow_language_selection: false
             default_language: typescript
       - name: sponsor-config
         label: 💰 打赏页面
@@ -346,7 +330,6 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            allow_language_selection: false
             default_language: typescript
       - name: friends-data
         label: 🔗 友链数据
@@ -358,7 +341,6 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            allow_language_selection: false
             default_language: typescript
       - name: booknav-data
         label: 🔖 书签数据
@@ -370,7 +352,6 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            allow_language_selection: false
             default_language: typescript
       - name: effects-config
         label: 🌸 樱花特效
@@ -382,7 +363,6 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            allow_language_selection: false
             default_language: typescript
       - name: gallery-config
         label: 🖼️ 相册配置
@@ -394,7 +374,6 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            allow_language_selection: false
             default_language: typescript
       - name: dynamic-config
         label: 📓 动态配置
@@ -406,7 +385,6 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            allow_language_selection: false
             default_language: typescript
       - name: pio-config
         label: 🎭 看板娘
@@ -418,7 +396,6 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            allow_language_selection: false
             default_language: typescript
       - name: plantuml-config
         label: 📐 PlantUML 图表
@@ -430,7 +407,6 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            allow_language_selection: false
             default_language: typescript
       - name: mermaid-config
         label: 📐 Mermaid 图表
@@ -442,7 +418,6 @@ collections:
             widget: code
             required: true
             output_code_only: true
-            allow_language_selection: false
             default_language: typescript
   - name: cms-settings
     label: ✏️ CMS 配置
