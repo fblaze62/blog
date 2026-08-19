@@ -17,17 +17,17 @@ draft: false
 
 我第一次接触到 Rime 输入法是在一年前刷B站时刷到的，那时我才刚开始学习双拼，对输入法的了解还仅限于搜狗输入法。:spoiler[（现在看来那玩意就是一坨）]
 
-我立刻就被视频中介绍的无广告、高自定义度吸引了，立刻就准备下载下来试试。
+我被视频中介绍的无广告、高自定义度吸引了，立刻就准备下载下来试试。
 
 ## 下载安装
 
-Rime 只是一个输入法引擎，他在不同平台有不同的应用。比如 Windows 是小狼毫，macOS 端是鼠须管。
+Rime 只是一个输入法引擎，他在不同平台有不同的应用。比如 Windows 段是小狼毫，macOS 端是鼠须管。
 
 先打开[下载页面](https://rime.im/download/)，然后根据自己的系统选择对应的版本，目前支持 Windows、macOS、Linux、Android。iOS 目前暂时不支持。纯血鸿蒙更是几乎别想了。
 
 ## 初步探索
 
-输入法内置的 朙月拼音 输入方案功能确实有些功能欠缺，我便开始搜索配置方案了。
+输入法内置的 朙(míng)月拼音 输入方案功能确实有些功能欠缺，我便开始搜索配置方案了。
 
 第1个搜到的，毫无疑问，就是目前 Star 最多的[雾凇拼音](https://github.com/iDvel/rime-ice)。
 
@@ -41,9 +41,9 @@ Rime 只是一个输入法引擎，他在不同平台有不同的应用。比如
 
 ::github{repo="gaboolic/rime-frost"}
 
-白霜拼音的词库比雾凇拼音更加全面，但除此之外就没有太大变化了。
+白霜拼音的词库比雾凇拼音更加全面，但除此之外就没有太大变化了。这个方案应该算是我使用时间比较长的了
 
-后来了解到了另一个方案：[薄荷输入法](https://github.com/Mintimate/oh-my-rime)
+之后又切换到了另一个配置方案：[薄荷输入法](https://github.com/Mintimate/oh-my-rime)
 
 ::github{repo="Mintimate/oh-my-rime"}
 
@@ -69,7 +69,7 @@ Rime 只是一个输入法引擎，他在不同平台有不同的应用。比如
 
 为了更加高效的输入，我切换到了我现在正在使用的方案——[万象拼音](https://github.com/amzxyz/rime-wanxiang)
 
-:github{repo="amzxyz/rime-wanxiang"}
+::github{repo="amzxyz/rime-wanxiang"}
 
 这套方案不仅拥有 Rime 生态最全面的词库和 lua 脚本，还能搭配作者训练的语法模型大幅提升长句输入准确率。这几乎做到了大厂输入法的输入准确率。
 
