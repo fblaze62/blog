@@ -134,7 +134,7 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 			subtitle: [
 				"达成成就：超越生死！",
 				"等风来，不如追风去。",
-				"Creep?",
+				"Creeper?",
 				'print("Hello world!")',
 			],
 			// 主页横幅副标题字体大小
