@@ -23,7 +23,7 @@ draft: false
 
 Rime 只是一个输入法引擎，他在不同平台有不同的应用。比如 Windows 端是小狼毫，macOS 端是鼠须管。
 
-先打开[下载页面](https://rime.im/download/)，然后根据自己的系统选择对应的版本，目前支持 Windows、macOS、Linux、Android。iOS 目前暂时不支持。纯血鸿蒙更是几乎别想了。
+先打开[下载页面](https://rime.im/download/)，然后根据自己的系统选择对应的版本，目前支持 Windows、macOS、Linux、Android。iOS 目前暂时不支持。HarmonyOS 目前只支持手机端。
 
 ## 初步探索
 
