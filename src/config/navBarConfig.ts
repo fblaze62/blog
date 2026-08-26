@@ -37,10 +37,23 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 	links.push(LinkPresets.Dynamic);
 
 	//社交及其子菜单
+	// links.push({
+	// 	name: "社交",
+	// 	url: "#",
+	// 	icon: "material-symbols:group",
+	// 	children: [
+	// 		// 友链
+	// 		LinkPresets.Friends,
+
+	// 		// 留言
+	// 		LinkPresets.Guestbook,
+	// 	],
+	// });
+
 	links.push({
 		name: "页面",
 		url: "#",
-		icon: "material-symbols:file-export", // "material-symbols:group",
+		icon: "material-symbols:file-export",
 		children: [
 			// 友链
 			LinkPresets.Friends,
@@ -65,36 +78,41 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 	});
 
 	// 关于页面
-	links.push(LinkPresets.About);
+	links.push({
+		name: "关于我",
+		url: "/about/",
+		icon: "material-symbols:person",
+	});
 
 	// 我的及其子菜单
-	links.push({
-		name: "我的",
-		url: "#",
-		icon: "material-symbols:person",
-		children: [
-			// 动态
-			LinkPresets.Dynamic,
+	// links.push({
+	// 	name: "我的",
+	// 	url: "#",
+	// 	icon: "material-symbols:person",
+	// 	children: [
+	// 		// 动态
+	// 		LinkPresets.Dynamic,
 
-			// 相册
-			LinkPresets.Gallery,
+	// 		// 相册
+	// 		LinkPresets.Gallery,
 
-			// 书签导航
-			LinkPresets.Booknav,
+	// 		// 书签导航
+	// 		LinkPresets.Booknav,
 
-			// 哔哩哔哩追番
-			LinkPresets.Bilibili,
+	// 		// 哔哩哔哩追番
+	// 		LinkPresets.Bilibili,
 
-			// 番组计划
-			LinkPresets.Bangumi,
+	// 		// 番组计划
+	// 		LinkPresets.Bangumi,
 
-			// VNDB
-			LinkPresets.VNDB,
+	// 		// VNDB
+	// 		LinkPresets.VNDB,
 
-			// MyAnimeList
-			LinkPresets.MAL,
-		],
-	});
+	// 		// MyAnimeList
+	// 		LinkPresets.MAL,
+	// 	],
+	// });
+
 	// 关于及其子菜单
 	// links.push({
 	// 	name: "关于",
