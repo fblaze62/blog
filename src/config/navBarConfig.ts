@@ -79,7 +79,7 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 
 	// 关于页面
 	links.push({
-		name: "关于我",
+		name: "关于",
 		url: "/about/",
 		icon: "material-symbols:person",
 	});
