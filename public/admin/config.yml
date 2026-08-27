@@ -99,6 +99,8 @@ collections:
       - { name: licenseUrl, label: 许可协议链接, widget: string, required: false }
       - { name: password, label: 文章密码, widget: string, required: false }
       - { name: passwordHint, label: 密码提示, widget: string, required: false }
+      - { name: series, label: 系列, widget: string, required: false }
+      - { name: seriesOrder, label: 系列序号, widget: number, required: false }
       - { name: body, label: 正文, widget: richtext, required: true }
   - name: dynamic
     label: 📓 个人动态
