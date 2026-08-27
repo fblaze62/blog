@@ -2,11 +2,9 @@
 title: 聪明的输入法懂我心意——Rime 输入法使用体验
 published: 2026-08-19
 updated: 2026-08-19
-pinned: false
 description: 使用 Rime 输入法一年的感受和配置方案推荐。
 tags: [软件, 输入法, Rime, 使用体验]
 category: 软件
-draft: false
 ---
 
 [Rime/中州韵输入法引擎](https://rime.im/) 是一款跨平台的输入法算法框架。
