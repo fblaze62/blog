@@ -79,11 +79,6 @@ content:
               time: false
               format: yyyy-MM-dd
 
-          - name: draft
-            label: 草稿
-            type: boolean
-            default: false
-
           - name: description
             label: 文章摘要
             type: text
@@ -104,31 +99,41 @@ content:
             type: string
             description: 文章分类（如"文章示例"、"技术笔记"）
 
-          - name: lang
-            label: 语言
-            type: select
-            options:
-              values:
-                - { label: 中文, value: "" }
-                - { label: English, value: en }
-                - { label: 日本語, value: ja }
-                - { label: 繁體中文, value: zh_TW }
-                - { label: Русский, value: ru }
+          - name: draft
+            label: 草稿
+            type: boolean
+            default: false
 
           - name: pinned
             label: 置顶
             type: boolean
             default: false
 
+          - name: slug
+            label: URL 别名
+            type: string
+            description: 自定义 URL 路径
+
+          - name: lang
+            label: 语言
+            type: select
+            options:
+              values:
+                - { name: zh-CN, label: 中文 }
+                - { name: en, label: English }
+                - { name: ja, label: 日本語 }
+                - { name: zh_TW, label: 繁體中文 }
+                - { name: ru, label: Русский }
+
+          - name: comment
+            label: 启用评论
+            type: boolean
+            default: true
+
           - name: author
             label: 作者
             type: string
             description: 覆盖默认作者名（通常留空）
-
-          - name: sourceLink
-            label: 原文链接
-            type: string
-            description: 转载/翻译文章的原始出处
 
           - name: licenseName
             label: 许可协议名称
@@ -139,10 +144,10 @@ content:
             label: 许可协议链接
             type: string
 
-          - name: comment
-            label: 启用评论
-            type: boolean
-            default: true
+          - name: sourceLink
+            label: 原文链接
+            type: string
+            description: 转载/翻译文章的原始出处
 
           - name: password
             label: 文章密码

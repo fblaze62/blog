@@ -76,26 +76,27 @@ collections:
     slug: "{{slug}}"
     summary: "{{title}} | 发布于 {{published}} | 更新于 {{updated}} | 标签: {{tags}} | 分类: {{category}} | 草稿: {{draft}} | 置顶: {{pinned}}"
     sortable_fields:
-      fields: [title, published, tags, category, draft, pinned]
+      fields: [title, published, slug, author]
       default:
         field: published
         direction: descending
     fields:
       - { name: title, label: 标题, widget: string }
       - { name: published, label: 发布时间, widget: datetime, type: date, format: YYYY-MM-DD }
-      - { name: updated, label: 更新时间, widget: datetime, type: date, format: YYYY-MM-DD }
-      - { name: draft, label: 草稿, widget: boolean, default: false }
+      - { name: updated, label: 更新时间, widget: datetime, type: date, format: YYYY-MM-DD, required: false }
       - { name: description, label: 文章摘要, widget: string, required: false }
       - { name: image, label: 封面图, widget: image, required: false }
-      - { name: tags, label: 标签, widget: list }
-      - { name: category, label: 分类, widget: string }
-      - { name: lang, label: 语言, widget: select, options: [{ label: 中文, value: "" }, { label: English, value: en }, { label: 日本語, value: ja }, { label: 繁體中文, value: zh_TW }, { label: Русский, value: ru }], required: false }
+      - { name: tags, label: 标签, widget: list, required: false }
+      - { name: category, label: 分类, widget: string, required: false }
+      - { name: draft, label: 草稿, widget: boolean, default: false }
       - { name: pinned, label: 置顶, widget: boolean, default: false }
+      - { name: slug, label: URL 别名, widget: string, required: false }
+      - { name: lang, label: 语言, widget: select, options: [{ label: 中文, value: "zh-CN" }, { label: English, value: en }, { label: 日本語, value: ja }, { label: 繁體中文, value: zh_TW }, { label: Русский, value: ru }], required: false }
       - { name: author, label: 作者, widget: string, required: false }
+      - { name: comment, label: 启用评论, widget: boolean, default: true }
       - { name: sourceLink, label: 原文链接, widget: string, required: false }
       - { name: licenseName, label: 许可协议名称, widget: string, required: false }
       - { name: licenseUrl, label: 许可协议链接, widget: string, required: false }
-      - { name: comment, label: 启用评论, widget: boolean, default: true }
       - { name: password, label: 文章密码, widget: string, required: false }
       - { name: passwordHint, label: 密码提示, widget: string, required: false }
       - { name: body, label: 正文, widget: richtext, required: true }
@@ -110,7 +111,7 @@ collections:
     slug: "{{slug}}"
     summary: "{{published}} | 地点: {{location}} | 置顶: {{pinned}}"
     sortable_fields:
-      fields: [published]
+      fields: [published, location]
       default:
         field: published
         direction: descending
