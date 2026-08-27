@@ -33,47 +33,46 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		],
 	});
 
-	// 动态
-	links.push(LinkPresets.Dynamic);
-
-	//社交及其子菜单
-	// links.push({
-	// 	name: "社交",
-	// 	url: "#",
-	// 	icon: "material-symbols:group",
-	// 	children: [
-	// 		// 友链
-	// 		LinkPresets.Friends,
-
-	// 		// 留言
-	// 		LinkPresets.Guestbook,
-	// 	],
-	// });
-
+	// 社交及其子菜单
 	links.push({
-		name: "页面",
+		name: "社交",
 		url: "#",
-		icon: "material-symbols:file-export",
+		icon: "material-symbols:group",
 		children: [
 			// 友链
 			LinkPresets.Friends,
 
+			// 留言
+			LinkPresets.Guestbook,
+		],
+	});
+
+	// 我的及其子菜单
+	links.push({
+		name: "我的",
+		url: "#",
+		icon: "material-symbols:person",
+		children: [
+			// 动态
+			LinkPresets.Dynamic,
+
+			// 相册
+			// LinkPresets.Gallery,
+
 			// 书签导航
 			LinkPresets.Booknav,
 
-			// 留言
-			LinkPresets.Guestbook,
+			// 哔哩哔哩追番
+			// LinkPresets.Bilibili,
 
-			{
-				name: "管理",
-				url: "/admin/",
-				icon: "material-symbols:edit-document",
-			},
-			{
-				name: "管理(站外)",
-				url: "https://app.pagescms.org/fblaze62/blog/main",
-				icon: "material-symbols:edit-document",
-			},
+			// 番组计划
+			// LinkPresets.Bangumi,
+
+			// VNDB
+			// LinkPresets.VNDB,
+
+			// MyAnimeList
+			// LinkPresets.MAL,
 		],
 	});
 
@@ -81,37 +80,8 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 	links.push({
 		name: "关于",
 		url: "/about/",
-		icon: "material-symbols:person",
+		icon: "material-symbols:info",
 	});
-
-	// 我的及其子菜单
-	// links.push({
-	// 	name: "我的",
-	// 	url: "#",
-	// 	icon: "material-symbols:person",
-	// 	children: [
-	// 		// 动态
-	// 		LinkPresets.Dynamic,
-
-	// 		// 相册
-	// 		LinkPresets.Gallery,
-
-	// 		// 书签导航
-	// 		LinkPresets.Booknav,
-
-	// 		// 哔哩哔哩追番
-	// 		LinkPresets.Bilibili,
-
-	// 		// 番组计划
-	// 		LinkPresets.Bangumi,
-
-	// 		// VNDB
-	// 		LinkPresets.VNDB,
-
-	// 		// MyAnimeList
-	// 		LinkPresets.MAL,
-	// 	],
-	// });
 
 	// 关于及其子菜单
 	// links.push({
