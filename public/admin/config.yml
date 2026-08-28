@@ -121,7 +121,7 @@ collections:
       - { name: published, label: 发布时间, widget: datetime, type: datetime, format: YYYY-MM-DD HH:mm:ss, pattern: true }
       - { name: location, label: 发布地点, widget: string, required: false }
       - { name: pinned, label: 置顶, widget: boolean, default: false }
-      - { name: body, label: 正文, widget: richtext, required: true }
+      - { name: body, label: 正文, widget: richtext }
   - name: pages
     label: 📄 页面
     files:
@@ -136,8 +136,8 @@ collections:
         file: src/content/spec/friends.mdx
         format: raw
         fields:
-          - { name: title, label: 页面标题, widget: string, default: "友情链接" }
-          - { name: description, label: 页面描述, widget: string }
+          - { name: title, label: 页面标题, widget: string, default: "友情链接", required: false }
+          - { name: description, label: 页面描述, widget: string, required: false }
           - name: body
             label: 配置
             widget: code
@@ -148,8 +148,8 @@ collections:
         file: src/content/spec/guestbook.md
         format: yaml-frontmatter
         fields:
-          - { name: title, label: 页面标题, widget: string, default: "留言板" }
-          - { name: description, label: 页面描述, widget: string }
+          - { name: title, label: 页面标题, widget: string, default: "留言板", required: false }
+          - { name: description, label: 页面描述, widget: string, required: false }
           - { name: body, label: 正文, widget: richtext }
   - name: site-settings
     label: ⚙️ 站点设置
