@@ -28,7 +28,7 @@ media:
   - name: images
     label: 站点图片
     input: src/assets/images
-    output: /ssets/images
+    output: /assets/images
     categories: [image]
 
 content:
@@ -275,28 +275,28 @@ content:
         label: 🌐 站点主配置
         type: file
         path: src/config/siteConfig.ts
-        format: code
+        format: ts
         description: 站点标题、URL、主题色、分页、Bangumi 等核心设置
 
       - name: profile-config
         label: 👤 个人信息
         type: file
         path: src/config/profileConfig.ts
-        format: code
+        format: ts
         description: 头像、昵称、签名、社交链接等个人资料配置
 
       - name: announcement-config
         label: 📢 公告栏
         type: file
         path: src/config/announcementConfig.ts
-        format: code
+        format: ts
         description: 博客顶部公告栏的标题、内容和链接配置
 
       - name: license-config
         label: 📜 许可协议
         type: file
         path: src/config/licenseConfig.ts
-        format: code
+        format: ts
         description: 文章底部版权声明（如 CC BY-NC-SA 4.0）
 
   # ============================================================
@@ -311,56 +311,56 @@ content:
         label: 🧭 导航栏
         type: file
         path: src/config/navBarConfig.ts
-        format: code
+        format: ts
         description: 导航栏菜单项、链接预设和搜索配置
 
       - name: sidebar-config
         label: 📐 侧边栏布局
         type: file
         path: src/config/sidebarConfig.ts
-        format: code
+        format: ts
         description: 侧边栏位置、组件（个人资料、公告、音乐、分类、标签等）的显示和排序
 
       - name: footer-config
         label: 📏 页脚设置
         type: file
         path: src/config/footerConfig.ts
-        format: code
+        format: ts
         description: 页脚开关控制
 
       - name: footer-html
         label: 📏 页脚 HTML
         type: file
         path: src/config/FooterConfig.html
-        format: code
+        format: html
         description: 页脚自定义 HTML 内容（备案号、版权信息等）
 
       - name: font-config
         label: 🔤 字体设置
         type: file
         path: src/config/fontConfig.ts
-        format: code
+        format: ts
         description: 全局字体、横幅字体、Google Fonts、子集化等配置
 
       - name: cover-image-config
         label: 🖼️ 文章封面图
         type: file
         path: src/config/coverImageConfig.ts
-        format: code
+        format: ts
         description: 文章详情页封面图显示和随机图 API 配置
 
       - name: background-wallpaper
         label: 🏞️ 背景壁纸
         type: file
         path: src/config/backgroundWallpaper.ts
-        format: code
+        format: ts
         description: 全屏壁纸、横幅壁纸、视频背景、水波纹、渐变等背景特效
 
       - name: expressive-code-config
         label: 💻 代码块样式
         type: file
         path: src/config/expressiveCodeConfig.ts
-        format: code
+        format: ts
         description: 代码高亮主题、折叠插件、语言徽章等代码块配置
 
   # ============================================================
@@ -375,84 +375,84 @@ content:
         label: 💬 评论系统
         type: file
         path: src/config/commentConfig.ts
-        format: code
+        format: ts
         description: Twikoo / Waline / Giscus / Artalk / Disqus 评论系统配置
 
       - name: analytics-config
         label: 📊 数据统计
         type: file
         path: src/config/analyticsConfig.ts
-        format: code
+        format: ts
         description: Google Analytics、Microsoft Clarity、Umami、51la 统计配置
 
       - name: music-config
         label: 🎵 音乐播放器
         type: file
         path: src/config/musicConfig.ts
-        format: code
+        format: ts
         description: 音乐播放模式（Meting API / 本地音乐）、播放列表、歌词设置
 
       - name: sponsor-config
         label: 💰 打赏页面
         type: file
         path: src/config/sponsorConfig.ts
-        format: code
+        format: ts
         description: 打赏用途、支付方式（支付宝/微信/Ko-fi/爱发电）、赞助者列表
 
       - name: friends-data
         label: 🔗 友链数据
         type: file
         path: src/config/friendsConfig.ts
-        format: code
+        format: ts
         description: 友链列表（站点名、头像、描述、链接、标签、权重）
 
       - name: booknav-data
         label: 🔖 书签数据
         type: file
         path: src/config/booknavConfig.ts
-        format: code
+        format: ts
         description: 书签列表（站点名、头像、描述、链接、标签、权重）
 
       - name: effects-config
         label: 🌸 樱花特效
         type: file
         path: src/config/effectsConfig.ts
-        format: code
+        format: ts
         description: 樱花飘落动画的数量、速度、尺寸、透明度等参数
 
       - name: gallery-config
         label: 🖼️ 相册配置
         type: file
         path: src/config/galleryConfig.ts
-        format: code
+        format: ts
         description: 相册列表（ID、名称、描述、地点、日期、标签、密码）和布局设置
 
       - name: dynamic-config
         label: 📓 动态配置
         type: file
         path: src/config/dynamicConfig.ts
-        format: code
+        format: ts
         description: 动态页面布局设置
 
       - name: pio-config
         label: 🎭 看板娘
         type: file
         path: src/config/pioConfig.ts
-        format: code
+        format: ts
         description: Spine / Live2D 看板娘模型、位置、交互、气泡提示配置
 
       - name: plantuml-config
         label: 📐 PlantUML 图表
         type: file
         path: src/config/plantumlConfig.ts
-        format: code
+        format: ts
         description: PlantUML 服务器地址和明暗主题配置
 
       - name: mermaid-config
         label: 📐 Mermaid 图表
         type: file
         path: src/config/mermaidConfig.ts
-        format: code
+        format: ts
         description: Mermaid 明暗主题配置
   # ============================================================
   # ✏️ CMS 配置
@@ -466,13 +466,13 @@ content:
         label: Sveltia CMS
         type: file
         path: public/admin/config.yml
-        format: code
+        format: yaml
         description: Sveltia CMS 的配置文件
       - name: sveltia-html
         label: Sveltia CMS - 页面
         type: file
         path: public/admin/index.html
-        format: code
+        format: html
         description: Sveltia CMS 的页面文件
 
 settings:

@@ -136,18 +136,20 @@ collections:
         file: src/content/spec/friends.mdx
         format: raw
         fields:
+          - { name: title, label: 页面标题, widget: string, default: "友情链接" }
+          - { name: description, label: 页面描述, widget: string }
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
-            default_language: jsx
+            default_language: mdx
       - name: guestbook
         label: 📝 留言板
         file: src/content/spec/guestbook.md
         format: yaml-frontmatter
         fields:
           - { name: title, label: 页面标题, widget: string, default: "留言板" }
+          - { name: description, label: 页面描述, widget: string }
           - { name: body, label: 正文, widget: richtext }
   - name: site-settings
     label: ⚙️ 站点设置
@@ -160,7 +162,6 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: typescript
       - name: profile-config
@@ -171,7 +172,6 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: typescript
       - name: announcement-config
@@ -182,7 +182,6 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: typescript
       - name: license-config
@@ -193,7 +192,6 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: typescript
   - name: layout-appearance
@@ -207,7 +205,6 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: typescript
       - name: sidebar-config
@@ -218,7 +215,6 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: typescript
       - name: footer-config
@@ -229,7 +225,6 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: typescript
       - name: footer-html
@@ -251,7 +246,6 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: typescript
       - name: cover-image-config
@@ -262,7 +256,6 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: typescript
       - name: background-wallpaper
@@ -273,7 +266,6 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: typescript
       - name: expressive-code-config
@@ -284,7 +276,6 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: typescript
   - name: feature-settings
@@ -298,7 +289,6 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: typescript
       - name: analytics-config
@@ -309,7 +299,6 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: typescript
       - name: music-config
@@ -320,7 +309,6 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: typescript
       - name: sponsor-config
@@ -331,7 +319,6 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: typescript
       - name: friends-data
@@ -342,7 +329,6 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: typescript
       - name: booknav-data
@@ -353,7 +339,6 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: typescript
       - name: effects-config
@@ -364,7 +349,6 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: typescript
       - name: gallery-config
@@ -375,7 +359,6 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: typescript
       - name: dynamic-config
@@ -386,7 +369,6 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: typescript
       - name: pio-config
@@ -397,7 +379,6 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: typescript
       - name: plantuml-config
@@ -408,7 +389,6 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: typescript
       - name: mermaid-config
@@ -419,7 +399,6 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: typescript
   - name: cms-settings
@@ -433,7 +412,6 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: yaml
       - name: sveltia-cms-html
@@ -444,7 +422,6 @@ collections:
           - name: body
             label: 内容
             widget: code
-            required: true
             output_code_only: true
             default_language: html
       - name: pages-cms
@@ -455,6 +432,5 @@ collections:
           - name: body
             label: 配置
             widget: code
-            required: true
             output_code_only: true
             default_language: yaml
