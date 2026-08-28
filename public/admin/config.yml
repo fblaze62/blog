@@ -134,7 +134,7 @@ collections:
       - name: friends
         label: 🔗 友情链接
         file: src/content/spec/friends.mdx
-        format: raw
+        format: yaml-frontmatter
         fields:
           - { name: title, label: 页面标题, widget: string, default: "友情链接", required: false }
           - { name: description, label: 页面描述, widget: string, required: false }
