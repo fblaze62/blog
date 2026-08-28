@@ -138,11 +138,7 @@ collections:
         fields:
           - { name: title, label: 页面标题, widget: string, default: "友情链接", required: false }
           - { name: description, label: 页面描述, widget: string, required: false }
-          - name: body
-            label: 配置
-            widget: code
-            output_code_only: true
-            default_language: mdx
+          - { name: body, label: 正文, widget: code, output_code_only: true, default_language: jsx }
       - name: guestbook
         label: 📝 留言板
         file: src/content/spec/guestbook.md
