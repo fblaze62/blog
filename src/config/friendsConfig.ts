@@ -25,9 +25,9 @@ export const friendsConfig: FriendLink[] = [
 	{
 		title: "飞焰矩阵",
 		imgurl: "https://gcore.jsdelivr.net/gh/fblaze62/blog@main/src/assets/images/FBlazeMatrix.png",
-		desc: "我的 Minecraft 服务器，欢迎加入！",
+		desc: "一个玩法丰富的 Minecraft 1.21.1 NeoForge 服务器。",
 		siteurl: "https://docs.fblaze62.top",
-		tags: ["Minecraft"],
+		tags: ["Minecraft", "My"],
 		weight: 10, // 权重，数字越大排序越靠前
 		enabled: true, // 是否启用
 	},
@@ -41,12 +41,30 @@ export const friendsConfig: FriendLink[] = [
 		enabled: true, // 是否启用
 	},
 	{
+		title: "天云服务器",
+		imgurl: "https://p.qlogo.cn/gh/1059786518/1059786518/",
+		desc: "Fabric MC 创造建筑服。By 天御千云",
+		siteurl: "https://qm.qq.com/q/LfdlwM8uoQ",
+		tags: ["Minecraft"],
+		weight: 8, // 权重，数字越大排序越靠前
+		enabled: true, // 是否启用
+	},
+	{
+		title: "水林服务器",
+		imgurl: "https://p.qlogo.cn/gh/1021479032/1021479032/",
+		desc: "1.20.1 MTR4 铁路服务器。By Xzops",
+		siteurl: "https://qm.qq.com/q/IU4h8u1hUk",
+		tags: ["Minecraft"],
+		weight: 7, // 权重，数字越大排序越靠前
+		enabled: true, // 是否启用
+	},
+	{
 		title: "Astro",
 		imgurl: "https://avatars.githubusercontent.com/u/44914786?v=4&s=640",
 		desc: "The web framework for content-driven websites.",
 		siteurl: "https://github.com/withastro/astro",
 		tags: ["Framework"],
-		weight: 8,
+		weight: 6,
 		enabled: true,
 	},
 	{
@@ -55,7 +73,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "流萤，清新美观的 Astro 静态博客主题模板，Material Design 3 风格设计",
 		siteurl: "https://github.com/CuteLeaf/Firefly",
 		tags: ["Framework"],
-		weight: 7,
+		weight: 5,
 		enabled: true,
 	},
 ];
