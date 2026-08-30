@@ -3,7 +3,7 @@ title: 将博客从 Hexo 迁移到 Astro
 published: 2026-07-06
 updated: 2026-08-09
 description: 一次把博客从 Hexo 迁移到 Astro 的记录。
-tags: [博客, Astro, Hexo]
+tags: [博客, 教程, Astro, Firefly, Hexo, Volantis]
 category: 博客
 ---
 
