@@ -19,7 +19,7 @@ category: 软件
 
 先打开小鹤音形的[官网](https://flypy.cc/)，导航栏找到“应用”中可以找到网盘链接。打开网盘，按提示输入密码，然后根据自己的系统版本选择应用下载即可。
 
-macOS 端可以先安装[鼠须管](https://rime.im/download/)，然后在“第三方平台挂接——音形码”中找到用于 Rime 挂接的“小鹤音形“鼠须管”for macOS.zip”下载。具体挂接方法我在[[rime-ime#初步探索|之前的文章]]有讲。需要注意官方的版本**不能删除“Build”文件夹**，如果介意可以使用[第三方版本](https://github.com/cubercsl/rime-flypy)。
+macOS 端可以先安装[鼠须管](https://rime.im/download/)，然后在“第三方平台挂接——音形码”中找到用于 Rime 挂接的“小鹤音形“鼠须管”for macOS.zip”下载。具体挂接方法我在[[rime-introduction#初步探索|之前的文章]]有讲。需要注意官方的版本**不能删除“Build”文件夹**，如果介意可以使用[第三方版本](https://github.com/cubercsl/rime-flypy)。
 
 完成后就可以打字了。初次使用可能会有些不习惯：四码会自动上屏、只有少量候选项、根本打不出字。
 
@@ -49,7 +49,7 @@ macOS 端可以先安装[鼠须管](https://rime.im/download/)，然后在“第
 
 如果真的不太习惯，可以试试辅助码。辅助码和双拼没有太大区别，只是可以借助形码筛选字，将形码作为辅助，减少只有三四个候选项和匮乏的词库带来的不适应。
 
-如果需要使用辅助码，可以使用 [Rime](https://rime.im/) 输入法+[万象拼音Pro](https://github.com/amzxyz/rime-wanxiang) 输入方案。具体的配置方案可查阅我之前写的 [[rime-ime|Rime 输入法入门教程]]。
+如果需要使用辅助码，可以使用 [Rime](https://rime.im/) 输入法+[万象拼音Pro](https://github.com/amzxyz/rime-wanxiang) 输入方案。具体的配置方案可查阅我之前写的 [[rime-introduction|Rime 输入法入门教程]]。
 
 总之，渐渐适应以后就可以感受到小鹤音形打字的准确。
 
