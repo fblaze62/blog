@@ -110,4 +110,4 @@ GUI版：输入对应进程名称然后点击“开启防护”即可。进程�
 
 ## 其他
 
-对于其他方法，可以参考B站UP主 [爱玩电脑的cmd](https://space.bilibili.com/1037857042) 的这两期视频：[《论关闭极域的n种方法（卡Bug篇）》](https://www.bilibili.com/video/BV1B2tQe6Etv)、[《论关闭极域的n种方法（进阶版）》](https://www.bilibili.com/video/BV1B2tQe6Etv)。
+对于其他方法，可以参考B站UP主 [爱玩电脑的cmd](https://space.bilibili.com/1037857042) 的这两期视频：[《论关闭极域的n种方法（卡Bug篇）》](https://www.bilibili.com/video/BV1B2tQe6Etv/)、[《论关闭极域的n种方法（进阶版）》](https://www.bilibili.com/video/BV1B2tQe6Etv/)。
