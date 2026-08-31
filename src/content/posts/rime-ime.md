@@ -39,7 +39,7 @@ Rime 只是一个输入法引擎，他在不同平台有不同的应用。比如
 
 ::github{repo="iDvel/rime-ice"}
 
-先打开雾凇拼音的[仓库链接](https://github.com/iDvel/rime-ice)，点击右上角的“Code”，然后选择“Download Zip”。
+先打开雾凇拼音的[仓库链接](https://github.com/iDvel/rime-ice)，到右侧的“Releases”页面选择最新版本下载压缩包。如果没有则点击右上角的“Code”，然后选择“Download Zip”。
 
 下载下来的压缩包解压。右键任务栏输入法图标（㞢）旁的“中”，选择用户文件夹，将压缩包里所有文件复制到打开的文件夹，如有重复的文件覆盖即可。
 
