@@ -43,7 +43,12 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 	links.push(LinkPresets.Booknav);
 
 	// 留言
-	links.push(LinkPresets.Guestbook);
+	links.push({
+		name: "书签",
+		url: "/booknav/",
+		icon: "material-symbols:bookmarks",
+		pageKey: "booknav",
+	});
 
 	// 关于页面
 	links.push({
