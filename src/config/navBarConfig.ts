@@ -40,9 +40,6 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 	links.push(LinkPresets.Friends);
 
 	// 书签导航
-	links.push(LinkPresets.Booknav);
-
-	// 留言
 	links.push({
 		name: "书签",
 		url: "/booknav/",
