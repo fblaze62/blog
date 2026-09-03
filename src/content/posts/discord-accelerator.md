@@ -4,7 +4,7 @@ published: 2026-05-31
 updated: 2026-07-07
 pinned: false
 description: 一个可以加速 Discord 的加速器——Steamcommunity 302。
-tags: [软件, Discord, 加速器, Steamcommunity 302]
+tags: [软件, Discord, 加速器, Steamcommunity 302, Watt Toolkit]
 category: 软件
 draft: false
 ---

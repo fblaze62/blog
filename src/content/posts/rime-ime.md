@@ -3,8 +3,8 @@ title: 聪明的输入法懂我心意——Rime 输入法折腾记
 published: 2026-08-19
 updated: 2026-08-30
 description: Rime 的使用教程、方案推荐和使用感受。
-tags: [软件, 教程, 入门, 输入法, Rime, 中州韵, 体验]
-category: 软件
+tags: [输入法, Rime, 中州韵, 软件, 教程, 入门, 体验, 开源, 双拼, 辅助码]
+category: 输入法
 ---
 
 [Rime/中州韵输入法引擎](https://rime.im/) 是一款跨平台的输入法算法框架。
