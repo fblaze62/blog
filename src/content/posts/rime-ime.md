@@ -3,7 +3,7 @@ title: 聪明的输入法懂我心意——Rime 输入法折腾记
 published: 2026-08-19
 updated: 2026-08-30
 description: Rime 的使用教程、方案推荐和使用感受。
-tags: [输入法, Rime, 入门, 中州韵, 软件, 教程, 体验, 开源, 双拼, 辅助码]
+tags: [输入法, Rime, 入门, 中州韵, 软件, 教程, 开源]
 category: 输入法
 ---
 
