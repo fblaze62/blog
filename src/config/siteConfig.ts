@@ -56,6 +56,7 @@ export const siteConfig: SiteConfig = {
 	keywords: [
 		"FeatherBlaze",
 		"Astro",
+		"Firefly",
 		"博客",
 		"技术博客",
 		"静态博客",
