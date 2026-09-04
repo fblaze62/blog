@@ -12,7 +12,7 @@
 
 | 平台 | 域名 | 备注 |
 | --- | --- | --- |
-| Cloudflare Pages | [fbblog.pages.dev](https://fbblog.pages.dev/) | 默认使用，速度最快 |
+| Cloudflare Pages | [fbblog.pages.dev](https://fbblog.pages.dev/) | 默认使用，国内访问速度最快，部署速度较慢 |
 | Vercel | [fbblog.vercel.app](https://fbblog.vercel.app/) | 国内无法访问 |
 | Netlify | [fbsblog.netlify.app](https://fbsblog.netlify.app/) | |
 | GitHub Pages | [fblaze62.github.io/blog](https://fblaze62.github.io/blog) | CSS 样式丢失（根目录不一致）且国内访问稳定性差 |
