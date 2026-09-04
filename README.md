@@ -6,7 +6,7 @@
 
 ![Node.js >= 22](https://img.shields.io/badge/node.js-%3E%3D22-brightgreen) ![pnpm >= 11](https://img.shields.io/badge/pnpm-%3E%3D9-blue) ![Astro](https://img.shields.io/badge/Astro-7.2.0-orange) ![TypeScript](https://img.shields.io/badge/TypeScript-6.0.3-blue)
 
-![Cloudflare Pages](https://img.shields.io/endpoint?url=https://cfpages-badge.fblaze62.top/?projectName=fbblog) ![Vercel Deploy](https://deploy-badge.vercel.app/vercel/fbblog) [![Netlify Status](https://api.netlify.com/api/v1/badges/45156370-6239-42b1-9d48-c34b137878c4/deploy-status)](https://app.netlify.com/projects/fbsblog/deploys) [![Deploy to GitHub Pages](https://github.com/fblaze62/blog/actions/workflows/deploy.yml/badge.svg)](https://github.com/fblaze62/blog/actions/workflows/deploy.yml)
+![Vercel Deploy](https://deploy-badge.vercel.app/vercel/fbblog) [![Netlify Status](https://api.netlify.com/api/v1/badges/45156370-6239-42b1-9d48-c34b137878c4/deploy-status)](https://app.netlify.com/projects/fbsblog/deploys) [![Deploy to GitHub Pages](https://github.com/fblaze62/blog/actions/workflows/deploy.yml/badge.svg)](https://github.com/fblaze62/blog/actions/workflows/deploy.yml)
 </div>
 
 1. Clone the repository
