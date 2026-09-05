@@ -14,7 +14,7 @@
 | --- | --- | --- |
 | Cloudflare Pages | [fbblog.pages.dev](https://fbblog.pages.dev/) | 默认使用，国内访问速度最快 |
 | Vercel | [fbblog.vercel.app](https://fbblog.vercel.app/) | 国内无法访问 |
-| Netlify | [fbsblog.netlify.app](https://fbsblog.netlify.app/) | 可能无法即使同步内容（Free 计划每月仅20次部署） |
+| Netlify | [fbsblog.netlify.app](https://fbsblog.netlify.app/) | 可能无法及时同步内容（Free 计划每月仅20次部署） |
 | GitHub Pages | [fblaze62.github.io/blog](https://fblaze62.github.io/blog) | CSS 样式丢失（根目录不一致）且国内访问稳定性差 |
 
 ### 框架
