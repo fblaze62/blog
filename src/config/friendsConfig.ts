@@ -24,9 +24,9 @@ export const friendsPageConfig: FriendsPageConfig = {
 export const friendsConfig: FriendLink[] = [
 	{
 		title: "飞焰矩阵",
-		imgurl: "https://gcore.jsdelivr.net/gh/fblaze62/blog@main/src/assets/images/FBlazeMatrix.png",
+		imgurl: "https://p.qlogo.cn/gh/1030705184/1030705184/",
 		desc: "一个玩法丰富的 Minecraft 1.21.1 NeoForge 服务器。",
-		siteurl: "https://docs.fblaze62.top",
+		siteurl: "https://qm.qq.com/q/WXI8ntxaow",
 		tags: ["Minecraft", "My"],
 		weight: 10, // 权重，数字越大排序越靠前
 		enabled: true, // 是否启用
