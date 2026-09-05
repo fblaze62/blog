@@ -1,8 +1,8 @@
 <div align="center">
 
-## FeatherBlaze's Blog
+# FeatherBlaze's Blog
 
-[Preview](https://blog.fblaze62.top/)
+[Preview](https://blog.fblaze62.top/) | [Preview (Cloudflare Pages)](https://fbblog.pages.dev/) | [Preview (Vercel)](https://fbblog.vercel.app/) | [Preview (Netlify)](https://fbsblog.netlify.app/) | [Preview (GitHub Pages) (No CSS)](https://fblaze62.github.io/blog)
 
 ![Node.js >= 22](https://img.shields.io/badge/node.js-%3E%3D22-brightgreen) ![pnpm >= 11](https://img.shields.io/badge/pnpm-%3E%3D9-blue) ![Astro](https://img.shields.io/badge/Astro-7.2.0-orange) ![TypeScript](https://img.shields.io/badge/TypeScript-6.0.3-blue)
 
