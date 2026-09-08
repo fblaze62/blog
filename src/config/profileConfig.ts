@@ -70,15 +70,15 @@ export const profileConfig: ProfileConfig = {
 			showName: false,
 		},
 		{
-			name: "Steam",
-			icon: "fa7-brands:steam",
-			url: "https://steamcommunity.com/profiles/76561199666160667/",
-			showName: false,
-		},
-		{
 			name: "RSS",
 			icon: "fa7-solid:rss",
 			url: "/rss/",
+			showName: false,
+		},
+		{
+			name: "Atom",
+			icon: "fa7-solid:atom",
+			url: "/atom/",
 			showName: false,
 		},
 	],
