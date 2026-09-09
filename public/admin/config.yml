@@ -82,8 +82,8 @@ collections:
         direction: descending
     fields:
       - { name: title, label: 标题, widget: string }
-      - { name: published, label: 发布时间, widget: datetime, type: date, format: YYYY-MM-DD }
-      - { name: updated, label: 更新时间, widget: datetime, type: date, format: YYYY-MM-DD, required: false }
+      - { name: published, label: 发布时间, widget: datetime, format: YYYY-MM-DD }
+      - { name: updated, label: 更新时间, widget: datetime, format: YYYY-MM-DD, required: false }
       - { name: description, label: 文章摘要, widget: string, required: false, hint: 留空则自动截取正文 }
       - { name: image, label: 封面图, widget: image, required: false }
       - { name: tags, label: 标签, widget: list, required: false }
@@ -118,7 +118,7 @@ collections:
         field: published
         direction: descending
     fields:
-      - { name: published, label: 发布时间, widget: datetime, type: datetime, format: YYYY-MM-DD HH:mm:ss, pattern: true }
+      - { name: published, label: 发布时间, widget: datetime, format: YYYY-MM-DD HH:mm:ss }
       - { name: location, label: 发布地点, widget: string, required: false }
       - { name: pinned, label: 置顶, widget: boolean, default: false }
       - { name: body, label: 正文, widget: richtext }
@@ -140,7 +140,7 @@ collections:
     fields:
       - { name: title, label: 标题, widget: string }
       - { name: slug, label: URL 别名, widget: string, required: false, hint: 自定义 URL 路径，留空则使用文件名 }
-      - { name: published, label: 发布时间, widget: datetime, type: date, format: YYYY-MM-DD }
+      - { name: published, label: 发布时间, widget: datetime, format: YYYY-MM-DD }
       - { name: draft, label: 草稿, widget: boolean, default: false }
       - { name: order, label: 权重, widget: number, required: false, hint: 越大越靠前，留空则按发布日期降序 }
       - { name: description, label: 卡片简介, widget: string, required: false }
