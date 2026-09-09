@@ -74,9 +74,9 @@ collections:
     format: yaml-frontmatter
     extension: md
     slug: "{{slug}}"
-    summary: "{{title}} | 发布于 {{published}} | 更新于 {{updated}} | 标签: {{tags}} | 分类: {{category}} | 草稿: {{draft}} | 置顶: {{pinned}}"
+    summary: "{{title}}｜发布于 {{published}}｜更新于 {{updated}}｜标签: {{tags}}｜分类: {{category}}｜草稿: {{draft}}｜置顶: {{pinned}}"
     sortable_fields:
-      fields: [title, published, slug, author]
+      fields: [title, published, tags, category]
       default:
         field: published
         direction: descending
@@ -84,20 +84,20 @@ collections:
       - { name: title, label: 标题, widget: string }
       - { name: published, label: 发布时间, widget: datetime, type: date, format: YYYY-MM-DD }
       - { name: updated, label: 更新时间, widget: datetime, type: date, format: YYYY-MM-DD, required: false }
-      - { name: description, label: 文章摘要, widget: string, required: false }
+      - { name: description, label: 文章摘要, widget: string, required: false, hint: 留空则自动截取正文 }
       - { name: image, label: 封面图, widget: image, required: false }
       - { name: tags, label: 标签, widget: list, required: false }
       - { name: category, label: 分类, widget: string, required: false }
       - { name: draft, label: 草稿, widget: boolean, default: false }
       - { name: pinned, label: 置顶, widget: boolean, default: false }
-      - { name: slug, label: URL 别名, widget: string, required: false }
+      - { name: slug, label: URL 别名, widget: string, required: false, hint: 自定义 URL 路径，留空则使用文件名 }
       - { name: lang, label: 语言, widget: select, options: [{ label: 简体中文, value: "zh_CN" }, { label: 繁体中文, value: zh_TW }, { label: 英文, value: en }, { label: 日文, value: ja }, { label: 俄文, value: ru }, { label: 韩文, value: ko }], required: false }
-      - { name: author, label: 作者, widget: string, required: false }
+      - { name: author, label: 作者, widget: string, required: false, hint: 覆盖默认作者名（通常留空） }
       - { name: comment, label: 启用评论, widget: boolean, default: true }
       - { name: sourceLink, label: 原文链接, widget: string, required: false }
       - { name: licenseName, label: 许可协议名称, widget: string, required: false }
       - { name: licenseUrl, label: 许可协议链接, widget: string, required: false }
-      - { name: password, label: 文章密码, widget: string, required: false }
+      - { name: password, label: 文章密码, widget: string, required: false, hint: 设置后需要密码才能查看（留空为公开） }
       - { name: passwordHint, label: 密码提示, widget: string, required: false }
       - { name: series, label: 系列, widget: string, required: false }
       - { name: seriesOrder, label: 系列序号, widget: number, required: false }
@@ -111,7 +111,7 @@ collections:
     format: yaml-frontmatter
     extension: md
     slug: "{{slug}}"
-    summary: "{{published}} | 地点: {{location}} | 置顶: {{pinned}}"
+    summary: "{{published}}｜地点: {{location}}｜置顶: {{pinned}}"
     sortable_fields:
       fields: [published, location]
       default:
@@ -121,6 +121,34 @@ collections:
       - { name: published, label: 发布时间, widget: datetime, type: datetime, format: YYYY-MM-DD HH:mm:ss, pattern: true }
       - { name: location, label: 发布地点, widget: string, required: false }
       - { name: pinned, label: 置顶, widget: boolean, default: false }
+      - { name: body, label: 正文, widget: richtext }
+  - name: projects
+    label: 🚀 个人项目
+    folder: src/content/projects
+    media_folder: /src/content/projects/images
+    public_folder: /images
+    create: true
+    format: yaml-frontmatter
+    extension: md
+    slug: "{{slug}}"
+    summary: "{{title}}｜发布于 {{published}}｜标签: {{tags}}｜草稿: {{draft}}｜状态: {{status}}"
+    sortable_fields:
+      fields: [title, published, tags]
+      default:
+        field: published
+        direction: descending
+    fields:
+      - { name: title, label: 标题, widget: string }
+      - { name: slug, label: URL 别名, widget: string, required: false, hint: 自定义 URL 路径，留空则使用文件名 }
+      - { name: published, label: 发布时间, widget: datetime, type: date, format: YYYY-MM-DD }
+      - { name: draft, label: 草稿, widget: boolean, default: false }
+      - { name: order, label: 权重, widget: number, required: false, hint: 越大越靠前，留空则按发布日期降序 }
+      - { name: description, label: 卡片简介, widget: string, required: false }
+      - { name: image, label: 封面图, widget: image, required: false }
+      - { name: tags, label: 标签, widget: list, required: false }
+      - { name: link, label: 外链按钮, widget: list, required: false, hint: '显示在卡片左下角的外链按钮（格式`{ label: "文本", icon: "图标", value: "链接" }`）' }
+      - { name: status, label: 状态, widget: select, options: [{ label: 计划中, value: "planning" }, { label: 开发中, value: "developing" }, { label: 已发布, value: "published" }, { label: 已归档, value: "archived" }], required: false }
+      - { name: lang, label: 语言, widget: select, options: [{ label: 简体中文, value: "zh_CN" }, { label: 繁体中文, value: zh_TW }, { label: 英文, value: en }, { label: 日文, value: ja }, { label: 俄文, value: ru }, { label: 韩文, value: ko }], required: false }
       - { name: body, label: 正文, widget: richtext }
   - name: pages
     label: 📄 页面
@@ -206,6 +234,16 @@ collections:
       - name: sidebar-config
         label: 📐 侧边栏布局
         file: src/config/sidebarConfig.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+      - name: display-settings-config
+        label: 📐 设置面板
+        file: src/config/displaySettingsConfig.ts
         format: raw
         fields:
           - name: body

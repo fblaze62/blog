@@ -51,7 +51,7 @@ content:
         exclude: ["**/images/**", "**/*.avif", "**/*.webp", "**/*.png", "**/*.jpg"]
         view:
           primary: title
-          fields: [title, published, tags, category, draft, pinned]
+          fields: [title, published, updated, tags, category, draft, pinned]
           sort: ["published desc", "title asc"]
           search: [title, description, tags, category]
           default:
@@ -62,7 +62,6 @@ content:
             label: 标题
             type: string
             required: true
-            description: 文章标题
 
           - name: published
             label: 发布时间
@@ -82,22 +81,19 @@ content:
           - name: description
             label: 文章摘要
             type: text
-            description: 简短描述，留空则自动截取正文
+            description: 留空则自动截取正文
 
           - name: image
             label: 封面图
             type: image
-            description: 文章封面图片路径
 
           - name: tags
             label: 标签
             type: string
-            description: 文章标签（如"教程"、"软件"）
 
           - name: category
             label: 分类
             type: string
-            description: 文章分类（如"文章示例"、"技术笔记"）
 
           - name: draft
             label: 草稿
@@ -112,7 +108,7 @@ content:
           - name: slug
             label: URL 别名
             type: string
-            description: 自定义 URL 路径
+            description: 自定义 URL 路径，留空则使用文件名
 
           - name: lang
             label: 语言
@@ -139,7 +135,6 @@ content:
           - name: licenseName
             label: 许可协议名称
             type: string
-            description: 如 CC BY-NC-SA 4.0
 
           - name: licenseUrl
             label: 许可协议链接
@@ -148,7 +143,6 @@ content:
           - name: sourceLink
             label: 原文链接
             type: string
-            description: 转载/翻译文章的原始出处
 
           - name: password
             label: 文章密码
@@ -158,24 +152,21 @@ content:
           - name: passwordHint
             label: 密码提示
             type: string
-            description: 提示访问者密码是什么
 
           - name: series
             label: 系列
             type: string
-            description: 文章系列
 
           - name: seriesOrder
             label: 系列序号
             type: number
-            description: 系列内的序号
 
           - name: body
             label: 正文
             type: rich-text
             required: true
 
-      # 动态 (collection)
+      # 个人动态 (collection)
       - name: dynamic
         label: 📓 个人动态
         type: collection
@@ -187,9 +178,9 @@ content:
         exclude: ["**/images/**", "**/*.avif", "**/*.webp", "**/*.png", "**/*.jpg"]
         view:
           primary: published
-          fields: [published]
+          fields: [published, location, pinned]
           sort: ["published desc"]
-          search: [published]
+          search: [published, location]
           default:
             sort: published
             order: desc
@@ -213,6 +204,98 @@ content:
 
           - name: body
             label: 内容
+            type: rich-text
+            required: true
+      
+      # 个人项目 (collection)
+      - name: projects
+        label: 🚀 个人项目
+        type: collection
+        path: src/content/projects
+        format: yaml-frontmatter
+        filename:
+          template: "{primary}.md"
+          field: create
+        exclude: ["**/images/**", "**/*.avif", "**/*.webp", "**/*.png", "**/*.jpg"]
+        view:
+          primary: title
+          fields: [title, published, tags, draft, status]
+          sort: ["published desc", "title asc"]
+          search: [title, description, tags]
+          default:
+            sort: published
+            order: desc
+        fields:
+          - name: title
+            label: 标题
+            type: string
+            required: true
+
+          - name: slug
+            label: URL 别名
+            type: string
+            description: 自定义 URL 路径
+
+          - name: published
+            label: 发布时间
+            type: date
+            required: true
+            options:
+              time: false
+              format: yyyy-MM-dd
+
+          - name: draft
+            label: 草稿
+            type: boolean
+            default: false
+
+          - name: order
+            label: 权重
+            type: number
+            description: 越大越靠前，留空则按发布日期降序
+
+          - name: description
+            label: 卡片简介
+            type: text
+            description: 留空则自动截取正文
+
+          - name: image
+            label: 封面图
+            type: image
+
+          - name: tags
+            label: 标签
+            type: string
+
+          - name: link
+            label: 外链按钮
+            type: string
+            description: '显示在卡片左下角的外链按钮（{ label: "文本", icon: "图标", value: "链接" }）'
+
+          - name: status
+            label: 状态
+            type: select
+            options:
+              values:
+                - { name: planning, label: 计划中 }
+                - { name: developing, label: 开发中 }
+                - { name: published, label: 已发布 }
+                - { name: archived, label: 已归档 }
+
+          - name: lang
+            label: 语言
+            type: select
+            options:
+              values:
+                - { name: zh_CN, label: 简体中文 }
+                - { name: zh_TW, label: 繁體中文 }
+                - { name: en, label: 英文 }
+                - { name: ja, label: 日文 }
+                - { name: ru, label: 俄文 }
+                - { name: ko, label: 韩文 }
+
+          - name: body
+            label: 正文
             type: rich-text
             required: true
 
@@ -320,6 +403,13 @@ content:
         path: src/config/sidebarConfig.ts
         format: ts
         description: 侧边栏位置、组件（个人资料、公告、音乐、分类、标签等）的显示和排序
+
+      - name: display-settings-config
+        label: 📐 设置面板
+        type: file
+        path: src/config/displaySettingsConfig.ts
+        format: ts
+        description: 右上角主题设置面板功能开关
 
       - name: footer-config
         label: 📏 页脚设置
