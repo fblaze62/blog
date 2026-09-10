@@ -8,6 +8,9 @@ backend:
 
 locale: zh_CN
 
+slug:
+  timezone: utc
+
 app_title: 管理 - FeatherBlaze's Blog
 
 logo:
@@ -73,7 +76,7 @@ collections:
     create: true
     format: yaml-frontmatter
     extension: md
-    slug: "{{slug}}"
+    slug: '{{fields._slug}}'
     summary: "{{title}}｜发布于 {{published}}｜更新于 {{updated}}｜标签: {{tags}}｜分类: {{category}}｜草稿: {{draft}}｜置顶: {{pinned}}"
     sortable_fields:
       fields: [title, published, tags, category]
@@ -110,7 +113,7 @@ collections:
     create: true
     format: yaml-frontmatter
     extension: md
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}{{minute}}{{second}}"
     summary: "{{published}}｜地点: {{location}}｜置顶: {{pinned}}"
     sortable_fields:
       fields: [published, location]
@@ -130,7 +133,7 @@ collections:
     create: true
     format: yaml-frontmatter
     extension: md
-    slug: "{{slug}}"
+    slug: '{{fields._slug}}'
     summary: "{{title}}｜发布于 {{published}}｜标签: {{tags}}｜草稿: {{draft}}｜状态: {{status}}"
     sortable_fields:
       fields: [title, published, tags]
