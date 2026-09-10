@@ -5,7 +5,7 @@ export const announcementConfig: AnnouncementConfig = {
 	title: "",
 
 	// 公告内容
-	content: "这是用 Astro 重构的博客！访问 https://hexo.fblaze62.top/ 查看旧站点。",
+	content: "欢迎来到我的博客，希望在这里能找到对你有用的内容！",
 
 	// 是否允许用户关闭公告
 	closable: true,
@@ -14,9 +14,9 @@ export const announcementConfig: AnnouncementConfig = {
 		// 启用链接
 		enable: true,
 		// 链接文本
-		text: "访问旧站点",
+		text: "了解更多",
 		// 链接 URL
-		url: "https://hexo.fblaze62.top/",
+		url: "/about/",
 		// 内部链接
 		external: false,
 	},
