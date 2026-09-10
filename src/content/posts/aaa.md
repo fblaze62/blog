@@ -21,4 +21,4 @@ series: ''
 seriesOrder: null
 ---
 
-![](/images/MCV_SPR26Drop_TT_DotNet_Wallpaper_1920x1080.png)
+![](./images/MCV_SPR26Drop_TT_DotNet_Wallpaper_1920x1080.png)
