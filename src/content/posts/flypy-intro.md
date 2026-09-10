@@ -1,7 +1,7 @@
 ---
 title: 易学/准确/流畅——小鹤音形入门
 published: 2026-08-31
-updated: 2026-08-31
+updated: 2026-09-01
 description: 小鹤音形输入方案的学习经历。
 tags: [输入法, 小鹤音形, 双拼, 鹤形, 辅助码, 软件, 教程]
 category: 输入法
