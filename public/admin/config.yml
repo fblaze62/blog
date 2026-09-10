@@ -91,7 +91,7 @@ collections:
       - { name: draft, label: 草稿, widget: boolean, default: false }
       - { name: pinned, label: 置顶, widget: boolean, default: false }
       - { name: slug, label: URL 别名, widget: string, required: false, hint: 自定义 URL 路径，留空则使用文件名 }
-      - { name: lang, label: 语言, widget: select, options: [{ label: 简体中文, value: "zh_CN" }, { label: 繁体中文, value: zh_TW }, { label: 英文, value: en }, { label: 日文, value: ja }, { label: 俄文, value: ru }, { label: 韩文, value: ko }] }
+      - { name: lang, label: 语言, widget: select, options: [{ label: 简体中文, value: "zh_CN" }, { label: 繁体中文, value: zh_TW }, { label: 英文, value: en }, { label: 日文, value: ja }, { label: 俄文, value: ru }, { label: 韩文, value: ko }], required: false }
       - { name: author, label: 作者, widget: string, required: false, hint: 覆盖默认作者名（通常留空） }
       - { name: comment, label: 启用评论, widget: boolean, default: true }
       - { name: sourceLink, label: 原文链接, widget: string, required: false }
@@ -147,8 +147,8 @@ collections:
       - { name: image, label: 封面图, widget: image, required: false }
       - { name: tags, label: 标签, widget: list, required: false }
       - { name: link, label: 外链按钮, widget: list, required: false, hint: '显示在卡片左下角的外链按钮（格式`{ label: "文本", icon: "图标", value: "链接" }`）' }
-      - { name: status, label: 状态, widget: select, options: [{ label: 计划中, value: "planning" }, { label: 开发中, value: "developing" }, { label: 已发布, value: "published" }, { label: 已归档, value: "archived" }] }
-      - { name: lang, label: 语言, widget: select, options: [{ label: 简体中文, value: "zh_CN" }, { label: 繁体中文, value: zh_TW }, { label: 英文, value: en }, { label: 日文, value: ja }, { label: 俄文, value: ru }, { label: 韩文, value: ko }] }
+      - { name: status, label: 状态, widget: select, options: [{ label: 计划中, value: "planning" }, { label: 开发中, value: "developing" }, { label: 已发布, value: "published" }, { label: 已归档, value: "archived" }], required: false }
+      - { name: lang, label: 语言, widget: select, options: [{ label: 简体中文, value: "zh_CN" }, { label: 繁体中文, value: zh_TW }, { label: 英文, value: en }, { label: 日文, value: ja }, { label: 俄文, value: ru }, { label: 韩文, value: ko }], required: false }
       - { name: body, label: 正文, widget: richtext }
   - name: pages
     label: 📄 页面
