@@ -89,8 +89,7 @@ content:
 
           - name: tags
             label: 标签
-            type: object
-            list: true
+            type: string
 
           - name: category
             label: 分类
@@ -266,13 +265,11 @@ content:
 
           - name: tags
             label: 标签
-            type: object
-            list: true
+            type: string
 
           - name: link
             label: 外链按钮
-            type: object
-            list: true
+            type: string
             description: '显示在卡片左下角的外链按钮（{ label: "文本", icon: "图标", value: "链接" }）'
 
           - name: status
