@@ -18,7 +18,7 @@ licenseUrl: ''
 password: ''
 passwordHint: ''
 series: ''
-seriesOrder: null
+seriesOrder: 0
 ---
 
 ![](/images/MCV_SPR26Drop_TT_DotNet_Wallpaper_1920x1080.png)
