@@ -72,7 +72,7 @@ collections:
     label: 📝 博客文章
     folder: src/content/posts
     media_folder: /src/content/posts/images
-    public_folder: /images
+    public_folder: ./images
     create: true
     format: yaml-frontmatter
     extension: md
@@ -109,7 +109,7 @@ collections:
     label: 📓 个人动态
     folder: src/content/dynamic
     media_folder: /src/content/dynamic/images
-    public_folder: /images
+    public_folder: ./images
     create: true
     format: yaml-frontmatter
     extension: md
@@ -129,7 +129,7 @@ collections:
     label: 🚀 个人项目
     folder: src/content/projects
     media_folder: /src/content/projects/images
-    public_folder: /images
+    public_folder: ./images
     create: true
     format: yaml-frontmatter
     extension: md
