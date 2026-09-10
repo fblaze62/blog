@@ -1,0 +1,473 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+
+backend:
+  name: github
+  repo: fblaze62/blog
+  branch: main
+  base_url: https://auth.fblaze62.top/
+
+locale: zh_CN
+
+slug:
+  timezone: utc
+
+app_title: 管理 - FeatherBlaze's Blog
+
+logo:
+  src: https://gcore.jsdelivr.net/gh/fblaze62/blog/src/assets/images/avatar-round.png
+  show_in_header: true
+
+media_folder: /public/assets/images
+public_folder: /assets/images
+
+asset_collections:
+  - name: post-images
+    label: 文章配图
+    icon: post_add
+    media_folder: /src/content/posts/images
+    public_folder: /images
+  - name: dynamic-images
+    label: 动态配图
+    icon: forum
+    media_folder: /src/content/dynamic/images
+    public_folder: /images
+  - name: assets
+    label: 站点资源
+    icon: folder_open
+    media_folder: /public/assets
+    public_folder: /assets
+  - name: images
+    label: 站点图片
+    icon: image
+    media_folder: /src/assets/images
+    public_folder: /assets/images
+  - name: fonts
+    label: 站点字体
+    icon: font_download
+    media_folder: /public/assets/fonts
+    public_folder: /assets/fonts
+  - name: gallery
+    label: 站点相册
+    icon: gallery_thumbnail
+    media_folder: /public/assets/gallery
+    public_folder: /assets/gallery
+  - name: music
+    label: 站点音乐
+    icon: library_music
+    media_folder: /public/assets/music
+    public_folder: /assets/music
+  - name: music_cover
+    label: 音乐封面
+    icon: album
+    media_folder: /public/assets/music/cover
+    public_folder: /assets/music/cover
+  - name: favicon
+    label: 站点图标
+    icon: star
+    media_folder: /public/favicon
+    public_folder: /favicon
+
+collections:
+  - name: posts
+    label: 📝 博客文章
+    folder: src/content/posts
+    media_folder: /src/content/posts/images
+    public_folder: /images
+    create: true
+    format: yaml-frontmatter
+    extension: md
+    slug: '{{fields._slug}}'
+    summary: "{{title}}｜发布于 {{published}}｜更新于 {{updated}}｜标签: {{tags}}｜分类: {{category}}｜草稿: {{draft}}｜置顶: {{pinned}}"
+    sortable_fields:
+      fields: [title, published, tags, category]
+      default:
+        field: published
+        direction: descending
+    fields:
+      - { name: title, label: 标题, widget: string }
+      - { name: published, label: 发布时间, widget: datetime, format: YYYY-MM-DD }
+      - { name: updated, label: 更新时间, widget: datetime, format: YYYY-MM-DD, required: false }
+      - { name: description, label: 文章摘要, widget: string, required: false, hint: 留空则自动截取正文 }
+      - { name: image, label: 封面图, widget: image, required: false }
+      - { name: tags, label: 标签, widget: list, required: false }
+      - { name: category, label: 分类, widget: string, required: false }
+      - { name: draft, label: 草稿, widget: boolean, default: false }
+      - { name: pinned, label: 置顶, widget: boolean, default: false }
+      - { name: slug, label: URL 别名, widget: string, required: false, hint: 自定义 URL 路径，留空则使用文件名 }
+      - { name: lang, label: 语言, widget: select, options: [{ label: 简体中文, value: "zh_CN" }, { label: 繁体中文, value: zh_TW }, { label: 英文, value: en }, { label: 日文, value: ja }, { label: 俄文, value: ru }, { label: 韩文, value: ko }], required: false }
+      - { name: author, label: 作者, widget: string, required: false, hint: 覆盖默认作者名（通常留空） }
+      - { name: comment, label: 启用评论, widget: boolean, default: true }
+      - { name: sourceLink, label: 原文链接, widget: string, required: false }
+      - { name: licenseName, label: 许可协议名称, widget: string, required: false }
+      - { name: licenseUrl, label: 许可协议链接, widget: string, required: false }
+      - { name: password, label: 文章密码, widget: string, required: false, hint: 设置后需要密码才能查看（留空为公开） }
+      - { name: passwordHint, label: 密码提示, widget: string, required: false }
+      - { name: series, label: 系列, widget: string, required: false }
+      - { name: seriesOrder, label: 系列序号, widget: number, required: false }
+      - { name: body, label: 正文, widget: richtext, required: true }
+  - name: dynamic
+    label: 📓 个人动态
+    folder: src/content/dynamic
+    media_folder: /src/content/dynamic/images
+    public_folder: /images
+    create: true
+    format: yaml-frontmatter
+    extension: md
+    slug: "{{published | date('YYYY-MM-DD-HHmmss')}}"
+    summary: "{{published}}｜地点: {{location}}｜置顶: {{pinned}}"
+    sortable_fields:
+      fields: [published, location]
+      default:
+        field: published
+        direction: descending
+    fields:
+      - { name: published, label: 发布时间, widget: datetime, format: YYYY-MM-DD HH:mm:ss }
+      - { name: location, label: 发布地点, widget: string, required: false }
+      - { name: pinned, label: 置顶, widget: boolean, default: false }
+      - { name: body, label: 正文, widget: richtext }
+  - name: projects
+    label: 🚀 个人项目
+    folder: src/content/projects
+    media_folder: /src/content/projects/images
+    public_folder: /images
+    create: true
+    format: yaml-frontmatter
+    extension: md
+    slug: '{{fields._slug}}'
+    summary: "{{title}}｜发布于 {{published}}｜标签: {{tags}}｜草稿: {{draft}}｜状态: {{status}}"
+    sortable_fields:
+      fields: [title, published, tags]
+      default:
+        field: published
+        direction: descending
+    fields:
+      - { name: title, label: 标题, widget: string }
+      - { name: slug, label: URL 别名, widget: string, required: false, hint: 自定义 URL 路径，留空则使用文件名 }
+      - { name: published, label: 发布时间, widget: datetime, format: YYYY-MM-DD }
+      - { name: draft, label: 草稿, widget: boolean, default: false }
+      - { name: order, label: 权重, widget: number, required: false, hint: 越大越靠前，留空则按发布日期降序 }
+      - { name: description, label: 卡片简介, widget: string, required: false }
+      - { name: image, label: 封面图, widget: image, required: false }
+      - { name: tags, label: 标签, widget: list, required: false }
+      - { name: link, label: 外链按钮, widget: list, required: false, hint: '显示在卡片左下角的外链按钮（格式`{ label: "文本", icon: "图标", value: "链接" }`）' }
+      - { name: status, label: 状态, widget: select, options: [{ label: 计划中, value: "planning" }, { label: 开发中, value: "developing" }, { label: 已发布, value: "published" }, { label: 已归档, value: "archived" }], required: false }
+      - { name: lang, label: 语言, widget: select, options: [{ label: 简体中文, value: "zh_CN" }, { label: 繁体中文, value: zh_TW }, { label: 英文, value: en }, { label: 日文, value: ja }, { label: 俄文, value: ru }, { label: 韩文, value: ko }], required: false }
+      - { name: body, label: 正文, widget: richtext }
+  - name: pages
+    label: 📄 页面
+    files:
+      - name: about
+        label: 📄 关于页面
+        file: src/content/spec/about.md
+        format: yaml-frontmatter
+        fields:
+          - { name: body, label: 正文, widget: richtext }
+      - name: friends
+        label: 🔗 友情链接
+        file: src/content/spec/friends.mdx
+        format: yaml-frontmatter
+        fields:
+          - { name: title, label: 页面标题, widget: string, default: "友情链接", required: false }
+          - { name: description, label: 页面描述, widget: string, required: false }
+          - { name: body, label: 正文, widget: code, output_code_only: true, default_language: jsx }
+      - name: guestbook
+        label: 📝 留言板
+        file: src/content/spec/guestbook.md
+        format: yaml-frontmatter
+        fields:
+          - { name: title, label: 页面标题, widget: string, default: "留言板", required: false }
+          - { name: description, label: 页面描述, widget: string, required: false }
+          - { name: body, label: 正文, widget: richtext }
+  - name: site-settings
+    label: ⚙️ 站点设置
+    files:
+      - name: site-config
+        label: 🌐 站点主配置
+        file: src/config/siteConfig.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+      - name: profile-config
+        label: 👤 个人信息
+        file: src/config/profileConfig.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+      - name: announcement-config
+        label: 📢 公告栏
+        file: src/config/announcementConfig.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+      - name: license-config
+        label: 📜 许可协议
+        file: src/config/licenseConfig.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+  - name: layout-appearance
+    label: 🎨 布局与外观
+    files:
+      - name: nav-bar-config
+        label: 🧭 导航栏
+        file: src/config/navBarConfig.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+      - name: sidebar-config
+        label: 📐 侧边栏布局
+        file: src/config/sidebarConfig.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+      - name: display-settings-config
+        label: 📐 设置面板
+        file: src/config/displaySettingsConfig.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+      - name: footer-config
+        label: 📏 页脚设置
+        file: src/config/footerConfig.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+      - name: footer-html
+        label: 📏 页脚 HTML
+        file: src/config/FooterConfig.html
+        format: raw
+        fields:
+          - name: body
+            label: 内容
+            widget: code
+            required: false
+            output_code_only: true
+            default_language: html
+      - name: font-config
+        label: 🔤 字体设置
+        file: src/config/fontConfig.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+      - name: cover-image-config
+        label: 🖼️ 文章封面图
+        file: src/config/coverImageConfig.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+      - name: background-wallpaper
+        label: 🏞️ 背景壁纸
+        file: src/config/backgroundWallpaper.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+      - name: expressive-code-config
+        label: 💻 代码块样式
+        file: src/config/expressiveCodeConfig.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+  - name: feature-settings
+    label: 🔧 功能配置
+    files:
+      - name: comment-config
+        label: 💬 评论系统
+        file: src/config/commentConfig.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+      - name: analytics-config
+        label: 📊 数据统计
+        file: src/config/analyticsConfig.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+      - name: music-config
+        label: 🎵 音乐播放器
+        file: src/config/musicConfig.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+      - name: sponsor-config
+        label: 💰 打赏页面
+        file: src/config/sponsorConfig.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+      - name: friends-data
+        label: 🔗 友链数据
+        file: src/config/friendsConfig.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+      - name: booknav-data
+        label: 🔖 书签数据
+        file: src/config/booknavConfig.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+      - name: effects-config
+        label: 🌸 樱花特效
+        file: src/config/effectsConfig.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+      - name: gallery-config
+        label: 🖼️ 相册配置
+        file: src/config/galleryConfig.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+      - name: dynamic-config
+        label: 📓 动态配置
+        file: src/config/dynamicConfig.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+      - name: pio-config
+        label: 🎭 看板娘
+        file: src/config/pioConfig.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+      - name: plantuml-config
+        label: 📐 PlantUML 图表
+        file: src/config/plantumlConfig.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+      - name: mermaid-config
+        label: 📐 Mermaid 图表
+        file: src/config/mermaidConfig.ts
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: typescript
+  - name: cms-settings
+    label: ✏️ CMS 配置
+    files:
+      - name: sveltia-cms
+        label: Sveltia CMS
+        file: public/admin/config.yml
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: yaml
+      - name: sveltia-cms-html
+        label: Sveltia CMS - 页面
+        file: public/admin/index.html
+        format: raw
+        fields:
+          - name: body
+            label: 内容
+            widget: code
+            output_code_only: true
+            default_language: html
+      - name: pages-cms
+        label: Pages CMS
+        file: .pages.yml
+        format: raw
+        fields:
+          - name: body
+            label: 配置
+            widget: code
+            output_code_only: true
+            default_language: yaml
