@@ -5,11 +5,18 @@ backend:
   repo: fblaze62/blog
   branch: main
   base_url: https://auth.fblaze62.top/
+  commit_messages:
+    create: '创建 {{collection}} "{{slug}}" (Sveltia CMS)'
+    update: '更新 {{collection}} "{{slug}}" (Sveltia CMS)'
+    delete: '删除 {{collection}} "{{slug}}" (Sveltia CMS)'
+    uploadMedia: '上传 "{{path}}" (Sveltia CMS)'
+    deleteMedia: '删除 "{{path}}" (Sveltia CMS)'
+    openAuthoring: '{{message}}'
 
 locale: zh_CN
 
 slug:
-  timezone: utc
+  timezone: local
 
 output:
   omit_empty_optional_fields: true
