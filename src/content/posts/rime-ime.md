@@ -25,11 +25,81 @@ Rime 只是一个输入法引擎，他在不同平台有不同的应用。比如
 
 然后下载即可。因为是从 GitHub 下载的，国内访问可能不是那么顺畅。可以使用 [Watt Toolkit](https://steampp.net/) 加速访问，并使用多线程下载器（如 [AB Download Manager](https://abdownloadmanager.com/#download)）下载。
 
+### Windows
+
 下载完成后双击打开，安装。按照提示设置语言等。完成后切换到 Rime 输入法，按 Ctrl+` 或 F4 打开方案选单，选择“朙月拼音·简化字”。
 
 另外，还可以在设置>时间和语言>输入>高级键盘设置>替代默认输入法（Windows 11）或设置>时间和语言>语言>相关设置>高级键盘设置>替代默认输入法（Windows 10）将小狼毫设为默认输入法。
 
-然后就可以开始打字了。
+### macOS
+
+由于本人没有使用过 macOS，因此具体操作方法可以自行上网查询。
+
+请在 [下载页面](https://rime.im/download/) 选择“鼠须管”。
+
+### Linux
+
+> [!TIP]
+> 以下内容适用于基于 Debian 的 Linux 操作系统，其他发行版的操作方法（如命令）可能有所不同。
+
+先打开终端。
+
+检查是否存在旧版 fcitx4：
+
+```bash
+dpkg -l | grep fcitx4
+```
+
+如果有输出，先用以下命令卸载 fcitx4：
+
+```bash
+sudo apt remove --purge fcitx4*
+sudo apt autoremove
+```
+
+安装 fcitx5 本体及必装组件：
+
+```bash
+sudo apt install fcitx5 fcitx5-configtool fcitx5-gtk fcitx5-qt fcitx5-chinese-addons
+```
+
+然后添加 Rime 插件：
+
+```bash
+sudo apt install fcitx5-rime
+```
+
+安装完成后重启系统。
+
+打开终端，输入以下命令，根据提示设置 fcitx5 为默认输入法：
+
+```bash
+im-config
+```
+
+还需要配置环境变量。打开终端，输入以下命令编辑环境变量：
+
+```bash
+sudo nano /etc/environment
+```
+
+将以下内容追加到末尾：
+
+```environment
+GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+XMODIFIERS=@im=fcitx
+```
+
+然后后按 Ctrl+O 保存，并按 Enter（回车）键确认，Ctrl+X 退出。
+
+完成后再次重启系统。
+
+另外需要注意，fcitx5 是一个独立的输入法，Rime 的支持是通过插件实现的。许多配置（如主题等）也与 Rime 不通用。Rime 的配置文件需要放到`~/.local/share/fcitx5/rime`文件夹。
+
+完成后找到输入法图标，右键，选择“配置”，这时一般会打开 fcitx5 的配置界面而非系统默认的配置界面。双击右侧“可用输入法”的“汉语”部分下的“中州韵”输入法，然后选中左侧“当前输入法”里的“中州韵”，多次点击中间的 ▲ 图标将其移到最上面。
+
+完成上述配置后就可以开始打字了。
 
 ## 初步探索
 
@@ -41,9 +111,9 @@ Rime 只是一个输入法引擎，他在不同平台有不同的应用。比如
 
 先打开雾凇拼音的[仓库链接](https://github.com/iDvel/rime-ice)，到右侧的“Releases”页面选择最新版本下载压缩包。如果没有则点击右上角的“Code”，然后选择“Download Zip”。
 
-下载下来的压缩包解压。右键任务栏输入法图标（㞢）旁的“中”，选择用户文件夹，将压缩包里所有文件复制到打开的文件夹，如有重复的文件覆盖即可。
+下载下来的压缩包解压。右键任务栏输入法图标（㞢）旁的“中”，选择用户文件夹，将压缩包里所有文件复制到打开的文件夹，如有重复的文件覆盖即可。Linux 用户请放到`~/.local/share/fcitx5/rime`文件夹（没有请新建）。
 
-然后再次右键“中”，选择重新部署。Rime 每次修改配置都要重新部署才能生效。
+然后再次右键“中”，选择重新部署。Rime 每次修改配置都要重新部署才能生效。Linux 用户请右键输入法图标（㞢）。
 
 这款配置方案的功能已经足够满足日常使用。相比于朙月拼音，雾凇拼音更改了皮肤样式，支持双拼，还拥有更好的词库和 Emoji 输入、中英混打、计算器等多项功能。我也使用了这套方案很长时间。
 
