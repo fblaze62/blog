@@ -1,6 +1,6 @@
 # 关于我
 
-你好！我是 **FeatherBlaze**，一个普通的学生，正在学习Python。平时喜欢玩Minecraft，折腾各种新东西。
+你好！我是 **FeatherBlaze**，一个普通的学生，正在学习 Python。平时喜欢玩 Minecraft，折腾各种新东西。
 
 ## 关于本站
 

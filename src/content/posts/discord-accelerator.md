@@ -1,5 +1,5 @@
 ---
-title: 国内免科学上网使用Discord
+title: 国内免科学上网使用 Discord
 published: 2026-05-31
 updated: 2026-07-07
 description: 一个可以加速 Discord 的加速器——Steamcommunity 302。
