@@ -36,6 +36,15 @@ export const fontsList: FontDefinition[] = [
 		subsets: ["latin", "cyrillic"],
 		fallbacks: ["sans-serif"],
 	},
+	{
+		name: "Rubik",
+		cssVariable: "--font-rubik",
+		provider: "fontsource",
+		weights: ["300", "400", "700"],
+		styles: ["normal"],
+		subsets: ["latin", "cyrillic"],
+		fallbacks: ["sans-serif"],
+	},
 	// {
 	// 	name: "JetBrains Mono",
 	// 	cssVariable: "--font-jetbrains-mono",
@@ -93,7 +102,7 @@ export const fontConfig: FontSelectionConfig = {
 	enable: true,
 	// 当前选择的字体 CSS 变量名（对应上方 fonts 中的 cssVariable）
 	// 使用 "system" 表示系统字体（不加载任何自定义字体）
-	selected: ["--font-misans", "system"],
+	selected: ["--font-rubik", "--font-misans", "system"],
 
 	// 各区域独立字体设置（填写上方 fonts 中的 cssVariable，留空则使用全局 selected 字体）
 	// 例如：bannerTitleFont: "--font-inter", 表示主页横幅主标题使用 Inter 字体
