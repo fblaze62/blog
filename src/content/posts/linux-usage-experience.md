@@ -2,7 +2,7 @@
 title: 「操作系统的版本答案？」Linux 系统初体验
 published: 2026-09-26
 dated: 2026-09-26
-description:
+description: 初次使用 Linux 操作系统的体验。
 tags: [Linux, 操作系统, deepin, 教程, 双系统, 开源]
 category: Linux
 ---
