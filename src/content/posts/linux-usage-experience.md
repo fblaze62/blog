@@ -112,20 +112,20 @@ AppImage 软件包是一种所有 Linux 发行版通用的软件打包格式。A
 包管理器可以很方便的安装/更新/卸载软件，主要的命令如下：
 
 ```bash
-# 安装
-sudo apt install 包名 # Debian
-sudo pacman -S 包名 # Arch Linux
-sudo dnf install 包名 # Red Hat
+# apt (Debian)
+sudo apt install 包名 # 安装包
+sudo apt upgrade # 更新全部包
+sudo apt remove 包名 # 删除包
 
-# 更新
-sudo apt-get upgrade # Debian
-sudo pacman -Syu # Arch Linux
-sudo dnf upgrade # Red Hat
+# pacman (Arch Linux)
+sudo pacman -S 包名 # 安装包
+sudo pacman -Syu # 更新全部包
+sudo pacman -R 包名 # 删除包
 
-# 删除
-sudo apt remove 包名 # Debian
-sudo pacman -R 包名 # Arch Linux
-sudo dnf remove 包名 # Red Hat
+# dnf (Red Hat)
+sudo dnf install 包名 # 安装包
+sudo dnf upgrade # 更新全部包
+sudo dnf remove 包名 # 删除包
 ```
 
 关于软件包管理器的更多信息，可以自行在网上搜索自己的操作系统对应的软件包管理器。
