@@ -3,8 +3,8 @@ title: 「操作系统的版本答案？」Linux 系统初体验
 published: 2026-09-26
 dated: 2026-09-26
 description: 初次使用 Linux 操作系统的体验。
-tags: [Linux, 操作系统, deepin, 教程, 双系统, 开源]
-category: Linux
+tags: [操作系统, Linux, deepin, 教程, 双系统, 开源]
+category: 操作系统
 ---
 
 这几天用了用 Linux，感觉已经能够在一些方面替代 Windows 了，在这里分享一下使用体验。
