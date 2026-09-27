@@ -19,7 +19,7 @@ Windows 的市场占有率日渐下降，Linux 却在不断攀升，可见 Linux
 
 ## 安装
 
-Linux 本身只是个内核，真正能使用的是 **Linux 发行版**。Linux 发行版基本都是基于 Debian、Arch Linux 或者 Red Hat 的。流行的 Linux 发行版有许多，如家喻户晓的 Ubuntu 等等。
+Linux 本身只是个内核，真正能使用的是 **Linux 发行版**。Linux 发行版基本都是基于 Debian、Arch Linux 或者 Red Hat 的。流行的 Linux 发行版有许多，如家喻户晓的 Ubuntu、Linux Mint 等等。
 
 个人选择的是 deepin。尽管网上有许多人评价 deepin 比 Ubuntu 卡等缺点，但我毕竟只是一个 Linux 小白，综合其配置简单、符合国内用户使用习惯、美观的桌面环境等，还是选择了 deepin。
 
