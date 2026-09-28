@@ -101,7 +101,16 @@ export const fontsList: FontDefinition[] = [
 				},
 			],
 		},
-		fallbacks: ["monospace"],
+		fallbacks: [
+	 		"ui-monospace",
+	 		"SFMono-Regular",
+	 		"Menlo",
+	 		"Monaco",
+	 		"Consolas",
+	 		"Liberation Mono",
+	 		"Courier New",
+	 		"monospace",
+	 	],
 	},
 ];
 
@@ -120,7 +129,7 @@ export const fontConfig: FontSelectionConfig = {
 	// 主页横幅副标题字体
 	bannerSubtitleFont: "",
 	// 导航栏标题字体
-	navbarTitleFont: "",
+	navbarTitleFont: "--font-poppins",
 	// 代码块字体（用于代码高亮和等宽字体场景）
 	codeFont: "--font-jetbrains-maple-mono",
 
