@@ -70,7 +70,7 @@ taskkill /im StudentMain.exe /f
 > [!TIP]
 > 进行本部分的操作前请先[[#破解网络/U盘限制|解除网络限制]]，或将所需的文件存储在U盘中。
 
-你可以借助 [极域工具包](https://blog.csdn.net/weixin_42112038/article/details/127480471) 窗口化屏幕广播，下载链接：[蓝奏云](https://wwt.lanzoub.com/b00pu06li)(提取码:`bbzl`)/[GitHub Releases](https://github.com/BengbuGuards/MythwareToolkit/releases)。
+你可以借助 [极域工具包](https://blog.csdn.net/weixin_42112038/article/details/127480471) 窗口化屏幕广播，下载链接：[蓝奏云](https://wwt.lanzoub.com/b00pu06li)(提取码：`bbzl`)/[GitHub Releases](https://github.com/BengbuGuards/MythwareToolkit/releases)。
 
 > [!TIP]
 > 该工具可能会被杀毒软件或浏览器误报。
@@ -85,7 +85,7 @@ taskkill /im StudentMain.exe /f
 > [!TIP]
 > 进行本部分的操作前请先[[#破解网络/U盘限制|解除网络限制]]，或将所需的文件存储在U盘中。
 
-可以使用[这个工具](https://www.cnblogs.com/petyr/articles/19001342)让老师查看你的屏幕时看不到你设定的窗口，下载链接：[GUI版(推荐)](https://wwzk.lanzouo.com/igG7a31kn7kf)/[命令行版](https://wwzk.lanzouo.com/iTQDY31j84zg)(提取码:`114514`)。
+可以使用[这个工具](https://www.cnblogs.com/petyr/articles/19001342)让老师查看你的屏幕时看不到你设定的窗口，下载链接：[GUI版(推荐)](https://wwzk.lanzouo.com/igG7a31kn7kf)/[命令行版](https://wwzk.lanzouo.com/iTQDY31j84zg)(提取码：`114514`)。
 
 > [!TIP]
 > 该工具可能会被杀毒软件或浏览器误报。
@@ -104,7 +104,7 @@ GUI版：输入对应进程名称然后点击“开启防护”即可。进程�
 卸载极域一般需要密码，可以使用这个万能密码：`mythware_super_password`。
 
 > [!WARNING]
-> 极其不推荐该方法，因为教师端可以看到你没有连接上，甚至可能让你面临较为严重的后果。
+> 极其不推荐卸载极域，因为教师端可以看到你没有连接上，甚至可能让你面临较为严重的后果。
 >
 > 如果不小心卸载了极域，可以重启系统，因为学校的电脑一般有系统还原功能。
 
