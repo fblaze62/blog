@@ -11,7 +11,7 @@ category: 教程
 
 ## 破解网络/U盘限制
 
-极域的网络和文件限制是通过服务和 MasterHelper.exe 进程实现的，因此我们只需结束进程和服务即可解除限制。
+极域的网络和文件限制是通过服务和 MasterHelper.exe 进程实现的，因此我们只需结束服务和进程即可解除限制。
 
 首先打开 cmd 或 PowerShell（通过搜索或 Win+R > `cmd`/`powershell`）,然后输入下面的指令：
 
@@ -22,6 +22,8 @@ sc stop TDFileFilter
 ```
 
 其中`taskkill /im MasterHelper.exe /f`结束 MasterHelper.exe 进程，`sc stop TDNetFilter`解除网络过滤服务，`sc stop TDFileFilter`解除文件过滤服务（U盘/光盘/文件锁）。
+
+如果不生效，可尝试用管理员身份运行 cmd 或 PowerShell。
 
 ### 已被限制网络
 
@@ -38,7 +40,7 @@ sc stop TDFileFilter
 taskkill /im StudentMain.exe /f
 ```
 
-这样就可以结束极域了。如果不生效，可尝试用管理员运行 cmd 或 PowerShell。
+这样就可以结束极域了。如果不生效，可尝试用管理员身份运行 cmd 或 PowerShell。
 
 > [!CAUTION]
 > 该方法仅适用于 [[#已被限制网络]] 部分的域名无法访问时临时破解上网限制，结束后请立刻打开[本文链接](https://blog.fblaze62.top/posts/crack-mythware/)，按照 [[#破解网络/U盘限制]] 部分的方法解除网络限制并开启极域，防止教师端发现你没有连接上。
@@ -49,7 +51,7 @@ taskkill /im StudentMain.exe /f
 
 在教师开启屏幕广播前，打开任务管理器（通过搜索、右键任务栏、Ctrl+Shift+Esc 或 Win+R > `taskmgr`），确保 选项 > 置于顶层 已被开启，然后拖动标题栏将任务管理器放到任务栏区域，窗口边缘不超出任务栏。
 
-教师开启屏幕广播后，拖出任务管理器，找到“Windows 进程”中的“桌面窗口管理器”，右键结束进程。
+教师开启屏幕广播后，拖出任务管理器，找到“Windows 进程”中的“桌面窗口管理器”，右键选择“结束进程”。
 
 等待一段时间（桌面可能会黑屏，几乎所有非系统进程都会被结束），极域就被结束了，但教师端可以看到你没有连接上。
 
