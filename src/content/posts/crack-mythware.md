@@ -1,7 +1,7 @@
 ---
 title: 破解极域，解放你的电脑！
 published: 2026-05-29
-updated: 2026-08-09
+updated: 2026-10-04
 description: 用多种方法解除极域教师端的控制，拯救你的电脑！
 tags: [教程, 软件, 极域]
 category: 教程
@@ -13,7 +13,7 @@ category: 教程
 
 极域的网络和文件限制是通过服务和 MasterHelper.exe 进程实现的，因此我们只需结束进程和服务即可解除限制。
 
-首先打开 cmd 或 PowerShell（通过搜索或 Win+R）,然后输入下面的指令：
+首先打开 cmd 或 PowerShell（通过搜索或 Win+R > `cmd`/`powershell`）,然后输入下面的指令：
 
 ```cmd
 taskkill /im MasterHelper.exe /f
@@ -32,7 +32,7 @@ sc stop TDFileFilter
 
 ## 结束极域
 
-首先打开 cmd 或 PowerShell（通过搜索或 Win+R），然后输入下面的指令：
+首先打开 cmd 或 PowerShell（通过搜索或 Win+R > `cmd`/`powershell`），然后输入下面的指令：
 
 ```cmd
 taskkill /im StudentMain.exe /f
@@ -47,7 +47,7 @@ taskkill /im StudentMain.exe /f
 
 ### 结束任务
 
-在教师开启屏幕广播前，打开任务管理器（通过搜索、右键任务栏、Ctrl+Shift+Esc 或 Win+R>`taskmgr`），确保 选项>置于顶层 已被开启，然后拖动标题栏将任务管理器放到任务栏区域，边缘不超出任务栏。
+在教师开启屏幕广播前，打开任务管理器（通过搜索、右键任务栏、Ctrl+Shift+Esc 或 Win+R > `taskmgr`），确保 选项 > 置于顶层 已被开启，然后拖动标题栏将任务管理器放到任务栏区域，窗口边缘不超出任务栏。
 
 教师开启屏幕广播后，拖出任务管理器，找到“Windows 进程”中的“桌面窗口管理器”，右键结束进程。
 
@@ -95,9 +95,9 @@ taskkill /im StudentMain.exe /f
 > >
 > > - 如果被 Edge 浏览器误报，请在“下载”页面点击文件右侧的“...”图标，选择保留。如果弹出提示窗口，请点击“依然保留”（如果没有看到该选项，请先点击“详细信息”）。
 
-GUI版：输入对应进程名称然后点击“开启防护”即可。进程名称可在任务管理器（通过搜索、右键任务栏、Ctrl+Shift+Esc 或 Win+R>taskmgr）中右键选择“打开文件所在的位置”或“详细信息”查看。
+GUI版：输入对应进程名称然后点击“开启防护”即可。进程名称可在任务管理器（通过搜索、右键任务栏、Ctrl+Shift+Esc 或 Win+R > `taskmgr`）中右键选择“打开文件所在的位置”或“详细信息”查看。
 
-命令行版：在主程序所在的目录的文件路径栏输入`cmd`或`PowerShell`，或打开 cmd 或 PowerShell（通过搜索或Win+R）后使用`cd`命令进入文件夹。输入`injector.exe 进程名称 -notopmost`即可。进程名称可在任务管理器（通过搜索、右键任务栏、Ctrl+Shift+Esc 或 Win+R>`taskmgr`）中右键选择“打开文件所在的位置”或“详细信息”查看。
+命令行版：在主程序所在的目录的文件路径栏输入`cmd`或`PowerShell`，或打开 cmd 或 PowerShell（通过搜索或 Win+R > `cmd`/`powershell`）后使用`cd 文件夹`命令进入文件夹。输入`./injector.exe 进程名称 -notopmost`即可。进程名称可在任务管理器（通过搜索、右键任务栏、Ctrl+Shift+Esc 或 Win+R > `taskmgr`打开）中右键选择“打开文件所在的位置”或“详细信息”查看。
 
 ## 卸载极域
 
