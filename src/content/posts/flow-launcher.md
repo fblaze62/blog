@@ -3,6 +3,7 @@ title: 万用搜索框：Flow Launcher
 published: 2026-10-18
 dated: 2026-10-18
 description: Windows 端效率神器 Flow Launcher 的下载、安装和使用教程，以及与同类软件的对比。
+image: ./images/flow-launcher.avif
 tags: [软件, 效率, 教程, Windows, 开源]
 category: 软件
 ---

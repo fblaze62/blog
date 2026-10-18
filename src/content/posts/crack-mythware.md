@@ -3,6 +3,7 @@ title: 破解极域，解放你的电脑！
 published: 2026-05-29
 updated: 2026-10-04
 description: 用多种方法解除极域教师端的控制，拯救你的电脑！
+image: ./images/crack-mythware.avif
 tags: [教程, 软件, 极域]
 category: 教程
 ---
