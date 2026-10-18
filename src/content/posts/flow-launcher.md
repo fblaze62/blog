@@ -1,9 +1,8 @@
 ---
 title: 万用搜索框：Flow Launcher
-published: 2026-09-17
-dated: 2026-09-17
-draft: true
-description: Windows 端效率神器 Flow Launcher 的使用教程。
+published: 2026-10-18
+dated: 2026-10-18
+description: Windows 端效率神器 Flow Launcher 的下载、安装和使用教程，以及与同类软件的对比。
 tags: [软件, 效率, 教程, Windows, 开源]
 category: 软件
 ---
@@ -14,7 +13,7 @@ category: 软件
 
 ## 下载安装
 
-这款软件只支持 Windows，其他平台的用户可以移步了。
+这款软件只支持 Windows，其他平台的用户可以看看[[#同类软件]]，但这些软件与 Flow Launcher 有一些不同之处，在下文有提到。
 
 目前可以通过[官网](https://flowlauncher.com/)或 [GitHub Releases](https://github.com/Flow-Launcher/Flow.Launcher/releases) 下载，但两种渠道本质都是从 GitHub Releases 获取，个人一般使用后者。
 
@@ -38,7 +37,7 @@ category: 软件
 
 ### 文件搜索
 
-另外，如果要使用文件搜索功能，需要安装一个名为 [**Everything**](https://www.voidtools.com/zh-cn/) 的文件搜索工具。
+如果要使用文件搜索功能，需要安装一个名为 [**Everything**](https://www.voidtools.com/zh-cn/) 的文件搜索工具。
 
 打开这个工具的[下载页](https://www.voidtools.com/zh-cn/downloads/)，根据自己的情况选择对应版本安装。
 
@@ -54,6 +53,36 @@ category: 软件
 
 除了这些基本功能，你还可以输入如`关机`等内容操作系统、`s 设置名称`来搜索设置设置项等等。
 
+## 安装插件
+
+在设置中打开“**插件商店**”页面，就可以在其中浏览插件了。里面有许多实用的插件，可以自行浏览，找到想要的插件单击并选择“安装”即可。
+
+下载完成后可以在“插件”中对所有插件进行配置。
+
 ## 同类软件
 
+### uTools / ZTools
 
+[**uTools**](https://www.u-tools.cn/) 比 Flow Launcher 更加知名，但其是一款商业软件，并且与 Flow Launcher 定位不同。如果说 Flow Launcher 是“快速启动器”，那 uTools 就是“效率工具箱”。
+
+uTools 的许多插件激活后都会打开一个新窗口，需要在其中进一步操作，但个人认为这就违背了软件作为“搜索框”的初衷——只需使用键盘操作。uTools 更侧重于提供效率工具并使用一个搜索框打开它们，而非以“搜索框”为中心——搜索插件的功能都在搜索框内进行。
+
+[**ZTools**](https://github.com/ZToolsCenter/ZTools) 是 uTools 的开源实现。它虽然解决了 uTools 商业化的问题，但软件的定位并没有改变，上述问题依然存在。
+
+这两款软件的功能也不够完善，例如根据使用频率排序结果等重要功能。
+
+总之，如果你更喜欢这种软件，也可以尝试。
+
+### 命令面板 / PowerToys Run
+
+[**命令面板**](https://learn.microsoft.com/zh-cn/windows/powertoys/command-palette/overview)由微软官方开发，内置于 [**PowerToys**](https://learn.microsoft.com/zh-cn/windows/powertoys/)。它最大的特点就是采用 WinUI 3 界面设计，与 Windows 11 的界面契合。它虽与 Flow Launcher 定位相同，同样有插件市场、以“搜索框”为中心等，没有 uTools/ZTools 的问题，但完成度较低，许多功能都不完善，插件市场国内访问速度堪忧，并不是很推荐。
+
+[**PowerToys Run**](https://learn.microsoft.com/zh-cn/windows/powertoys/run) 作为命令面板的旧版，同样是 [**PowerToys**](https://learn.microsoft.com/zh-cn/windows/powertoys/) 的一部分。由于目前命令面板的功能已经更加完善，目前推荐使用前者。
+
+如果你追求与系统的高度契合，只需[安装 PowerToys](https://learn.microsoft.com/zh-cn/windows/powertoys/install) 即可使用上述软件。
+
+## 总结
+
+Flow Launcher 是一款**由社区驱动**、**以“搜索框”为中心**的软件，它能完美替代 Windows 自带的搜索，是一款非常不错的工具。
+
+虽然市面上有许多同类软件，但 Flow Launcher 依然是个人认为最好用的一款。
