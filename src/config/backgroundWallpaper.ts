@@ -70,6 +70,7 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 			"assets/images/DesktopWallpaper/wallpaper_tiny_takeover_bee_1920x1080.avif",
 			"assets/images/DesktopWallpaper/wallpaper_tiny_takeover_axo_1920x1080.avif",
 			"assets/images/DesktopWallpaper/MCV_SummerDropKeyArt_NetDownloadableWallpaper_1920x1080.avif",
+			"assets/images/DesktopWallpaper/Minecraft_WildernessBound_.Net_1920x1080.avif",
 			"assets/images/DesktopWallpaper/wallpaper_minecraft_15th-anniversary_1920x1080.avif",
 		],
 		// 移动背景图片（支持单张或多张随机）
@@ -106,6 +107,7 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 			"assets/images/MobileWallpaper/wallpaper_tiny_takeover_bee_1080x1920.avif",
 			"assets/images/MobileWallpaper/wallpaper_tiny_takeover_axo_1080x1920.avif",
 			"assets/images/MobileWallpaper/MCV_SummerDropKeyArt_NetDownloadableWallpaper_1080x1920.avif",
+			"assets/images/MobileWallpaper/Minecraft_WildernessBound_.Net_1080x1920.avif",
 			"assets/images/MobileWallpaper/wallpaper_minecraft_15th-anniversary-left_1080x1920.avif",
 			"assets/images/MobileWallpaper/wallpaper_minecraft_15th-anniversary-center_1080x1920.avif",
 			"assets/images/MobileWallpaper/wallpaper_minecraft_15th-anniversary-right_1080x1920.avif",
