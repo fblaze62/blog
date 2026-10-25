@@ -18,7 +18,7 @@ const pages = resolvePageToggles({
 	// ── 我的 (My) ──────────────────────────────────
 
 	// 动态页面开关
-	dynamic: false,	
+	dynamic: false,
 	// 项目展示页开关
 	projects: false,
 	// 相册页面开关
@@ -52,16 +52,17 @@ export const siteConfig: SiteConfig = {
 
 	// 站点描述
 	description:
-		"FeatherBlaze 的个人博客，分享有趣的内容，记录学习的点滴",
+		"这是 FeatherBlaze 的个人空间，一个记录日常折腾经验的个人小站。捣鼓各种软件和工具的心得、实用技巧都能在这里找到。",
 
 	// 站点关键词
 	keywords: [
 		"FeatherBlaze",
-		"Astro",
-		"Firefly",
+		"Blog",
 		"博客",
+		"个人博客",
 		"技术博客",
 		"静态博客",
+		"Astro",
 	],
 
 	// 主题色
