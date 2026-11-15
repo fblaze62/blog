@@ -2,9 +2,13 @@
 
 # FeatherBlaze's Blog
 
+[简体中文](https://github.com/fblaze62/blog/blob/main/README.zh_CN.md) | English
+
+> Powered by [Astro](https://astro.build/) & [Firefly theme template](https://github.com/CuteLeaf/Firefly). Hosted on Cloudflare Pages.
+
 [Preview](https://blog.fblaze62.top/) | [Preview (Cloudflare Pages)](https://fbblog.pages.dev/) | [Preview (Vercel)](https://fbblog.vercel.app/) | [Preview (Netlify)](https://fbsblog.netlify.app/) | [Preview (GitHub Pages) (No CSS)](https://fblaze62.github.io/blog)
 
-![Node.js >= 22](https://img.shields.io/badge/node.js-%3E%3D22-brightgreen) ![pnpm >= 11](https://img.shields.io/badge/pnpm-%3E%3D9-blue) ![Astro](https://img.shields.io/badge/Astro-7.2.0-orange) ![TypeScript](https://img.shields.io/badge/TypeScript-6.0.3-blue)
+![Node.js >= 22](https://img.shields.io/badge/node.js-%3E%3D22-brightgreen) ![pnpm >= 9](https://img.shields.io/badge/pnpm-%3E%3D9-blue) ![Astro](https://img.shields.io/badge/Astro-7-orange) ![TypeScript](https://img.shields.io/badge/TypeScript-6-blue)
 
 ![Vercel Deploy](https://deploy-badge.vercel.app/vercel/fbblog) [![Netlify Status](https://api.netlify.com/api/v1/badges/45156370-6239-42b1-9d48-c34b137878c4/deploy-status)](https://app.netlify.com/projects/fbsblog/deploys) [![Deploy to GitHub Pages](https://github.com/fblaze62/blog/actions/workflows/deploy.yml/badge.svg)](https://github.com/fblaze62/blog/actions/workflows/deploy.yml)
 
@@ -34,9 +38,13 @@
    pnpm build
    ```
 
-5. Deploy
+## Configuration
 
-   > From [Firefly theme documentation](https://docs-firefly.cuteleaf.cn/en/guide/deploy.html).
+   Please refer to [Firefly theme template documentation](https://docs-firefly.cuteleaf.cn/en/).
+
+## Deploy
+
+   > From [Firefly theme template documentation](https://docs-firefly.cuteleaf.cn/en/guide/deploy.html).
    - Vercel<br>
      Application Preset: `Astro`<br>
      Build Command: `pnpm build`<br>
@@ -68,7 +76,3 @@
      Build command: `pnpm build`<br>
      Output directory: `dist`<br>
      Environment variables > `NODE_VERSION`: `22`
-
-6. Configuration
-
-   Refer to the [Astro documentation](https://docs.astro.build/getting-started/) and [Firefly theme documentation](https://docs-firefly.cuteleaf.cn/).
