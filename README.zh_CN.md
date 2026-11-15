@@ -48,11 +48,11 @@
 
 ## 配置
 
-   请参考 [Firefly 主题模板文档](https://docs-firefly.cuteleaf.cn/zh/)。
+   请参考 [Firefly Docs](https://docs-firefly.cuteleaf.cn/zh/)。
 
 ## 部署
 
-   > 来自 [Firefly 主题模板文档](https://docs-firefly.cuteleaf.cn/en/guide/deploy.html)。
+   > 来自 [Firefly Docs](https://docs-firefly.cuteleaf.cn/en/guide/deploy.html)。
    - Vercel<br>
      Application Preset：`Astro`<br>
      Build Command：`pnpm build`<br>
