@@ -14,6 +14,14 @@
 
 </div>
 
+## Requirements
+
+- [Node.js](https://nodejs.org/) 22.0 or higher
+- [pnpm](https://pnpm.io/) package manager
+- [Git](https://git-scm.com/)
+
+## Installation
+
 1. Clone the repository
 
    ```bash
