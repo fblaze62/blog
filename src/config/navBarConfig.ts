@@ -39,6 +39,9 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 	// 友链
 	links.push(LinkPresets.Friends);
 
+	// 留言
+	links.push(LinkPresets.Guestbook);
+
 	// 书签导航
 	links.push({
 		name: "书签",
