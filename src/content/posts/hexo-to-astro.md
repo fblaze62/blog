@@ -1,5 +1,5 @@
 ---
-title: 将博客从 Hexo 迁移到 Astro
+title: 好看又好用——Hexo 转 Astro
 published: 2026-07-06
 updated: 2026-08-09
 description: 一次把博客从 Hexo 迁移到 Astro 的记录。

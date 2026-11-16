@@ -1,5 +1,5 @@
 ---
-title: 聪明的输入法懂我心意——Rime 输入法折腾记
+title: 让打字回归本质：Rime 输入法折腾记
 published: 2026-08-19
 updated: 2026-10-22
 description: Rime 的使用教程、方案推荐和使用感受。
