@@ -1,16 +1,16 @@
 ---
 title: 破解极域，解放你的电脑！
 published: 2026-05-29
-updated: 2026-10-04
-description: 用多种方法解除极域教师端的控制，拯救你的电脑！
+updated: 2026-11-17
+description: 用多种方法解除极域教师端的控制。
 image: ./images/crack-mythware.avif
 tags: [教程, 软件, 极域]
 category: 教程
 ---
 
-相信大家都被极域的控制困扰过，这篇文章就是来拯救你的！[[#破解网络/U盘限制|解除上网限制]]、[[#防截屏]]……一应俱全。其中的命令不用记，在 [[#已被限制网络]] 部分有可以无视极域网络限制访问的链接。
+相信大家都被极域的控制困扰过，这篇文章就是来拯救你的！[[#破解网络 / U盘限制|解除上网限制]]、[[#防截屏]]……一应俱全。其中的命令不用记，在 [[#已被限制网络]] 部分有可以无视极域网络限制访问的链接。
 
-## 破解网络/U盘限制
+## 破解网络 / U盘限制
 
 极域的网络和文件限制是通过服务和 MasterHelper.exe 进程实现的，因此我们只需结束服务和进程即可解除限制。
 
@@ -44,7 +44,7 @@ taskkill /im StudentMain.exe /f
 这样就可以结束极域了。如果不生效，可尝试用管理员身份运行 cmd 或 PowerShell。
 
 > [!CAUTION]
-> 该方法仅适用于 [[#已被限制网络]] 部分的域名无法访问时临时破解上网限制，结束后请立刻打开[本文链接](https://blog.fblaze62.top/posts/crack-mythware/)，按照 [[#破解网络/U盘限制]] 部分的方法解除网络限制并开启极域，防止教师端发现你没有连接上。
+> 该方法仅适用于 [[#已被限制网络]] 部分的域名无法访问时临时破解上网限制，结束后请立刻打开[本文链接](https://blog.fblaze62.top/posts/crack-mythware/)，按照 [[#破解网络 / U盘限制]] 部分的方法解除网络限制并开启极域，防止教师端发现你没有连接上。
 
 ## 屏幕广播
 
@@ -71,7 +71,7 @@ taskkill /im StudentMain.exe /f
 ### 禁用全屏广播
 
 > [!TIP]
-> 进行本部分的操作前请先[[#破解网络/U盘限制|解除网络限制]]，或将所需的文件存储在U盘中。
+> 进行本部分的操作前请先[[#破解网络 / U盘限制|解除网络限制]]，或将所需的文件存储在U盘中。
 
 你可以借助 [极域工具包](https://blog.csdn.net/weixin_42112038/article/details/127480471) 窗口化屏幕广播，下载链接：[蓝奏云](https://wwt.lanzoub.com/b00pu06li)(提取码：`bbzl`)/[GitHub Releases](https://github.com/BengbuGuards/MythwareToolkit/releases)。
 
@@ -86,7 +86,7 @@ taskkill /im StudentMain.exe /f
 ## 防截屏
 
 > [!TIP]
-> 进行本部分的操作前请先[[#破解网络/U盘限制|解除网络限制]]，或将所需的文件存储在U盘中。
+> 进行本部分的操作前请先[[#破解网络 / U盘限制|解除网络限制]]，或将所需的文件存储在U盘中。
 
 可以使用[这个工具](https://www.cnblogs.com/petyr/articles/19001342)让老师查看你的屏幕时看不到你设定的窗口，下载链接：[GUI版(推荐)](https://wwzk.lanzouo.com/igG7a31kn7kf)/[命令行版](https://wwzk.lanzouo.com/iTQDY31j84zg)(提取码：`114514`)。
 

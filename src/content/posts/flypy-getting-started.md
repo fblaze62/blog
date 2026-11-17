@@ -1,5 +1,5 @@
 ---
-title: 又快又准还好学——小鹤音形入门
+title: 又快又准还好学 小鹤音形入门
 published: 2026-08-31
 updated: 2026-09-01
 description: 小鹤音形输入方案的学习经历。
